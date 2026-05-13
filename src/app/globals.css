@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: #070a1c;
+  color: #e7ecff;
+  min-height: 100vh;
+}
+
+body {
+  background-image:
+    radial-gradient(1200px 600px at 20% -10%, rgba(34, 211, 238, 0.12), transparent 60%),
+    radial-gradient(900px 500px at 110% 10%, rgba(126, 137, 220, 0.12), transparent 55%),
+    radial-gradient(1000px 700px at 50% 120%, rgba(34, 211, 238, 0.08), transparent 60%),
+    linear-gradient(180deg, #060819 0%, #070a1c 100%);
+  background-attachment: fixed;
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-white/5 bg-white/[0.03] backdrop-blur-md shadow-soft;
+  }
+  .card-hover {
+    @apply transition hover:border-white/10 hover:bg-white/[0.05];
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-medium transition focus:outline-none focus:ring-2 focus:ring-accent-500/40 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply btn bg-accent-500 text-ink-950 hover:bg-accent-400;
+  }
+  .btn-ghost {
+    @apply btn border border-white/10 bg-white/0 text-white hover:bg-white/[0.05];
+  }
+  .btn-soft {
+    @apply btn bg-white/[0.06] text-white hover:bg-white/[0.10] border border-white/5;
+  }
+  .input {
+    @apply w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-2.5 text-sm text-white placeholder:text-white/40 focus:border-accent-500/60 focus:outline-none focus:ring-2 focus:ring-accent-500/30;
+  }
+  .label {
+    @apply text-xs font-medium uppercase tracking-wide text-white/60;
+  }
+  .pill {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-medium;
+  }
+  .pill-accent {
+    @apply pill bg-accent-500/15 text-accent-300 ring-1 ring-inset ring-accent-400/30;
+  }
+  .pill-warn {
+    @apply pill bg-amber-400/15 text-amber-200 ring-1 ring-inset ring-amber-400/30;
+  }
+  .pill-danger {
+    @apply pill bg-rose-400/15 text-rose-200 ring-1 ring-inset ring-rose-400/30;
+  }
+  .pill-ok {
+    @apply pill bg-emerald-400/15 text-emerald-200 ring-1 ring-inset ring-emerald-400/30;
+  }
+  .pill-muted {
+    @apply pill bg-white/[0.06] text-white/70 ring-1 ring-inset ring-white/10;
+  }
+  .section-title {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-white/50;
+  }
+  .divider {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent;
+  }
+}
+
+/* Markdown body styling */
+.prose-mini {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: rgba(231, 236, 255, 0.92);
+}
+.prose-mini h1,
+.prose-mini h2,
+.prose-mini h3 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-top: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+.prose-mini h1 {
+  font-size: 1.15rem;
+}
+.prose-mini h2 {
+  font-size: 1.02rem;
+}
+.prose-mini h3 {
+  font-size: 0.94rem;
+}
+.prose-mini p {
+  margin-bottom: 0.55rem;
+}
+.prose-mini ul,
+.prose-mini ol {
+  padding-left: 1.1rem;
+  margin-bottom: 0.55rem;
+}
+.prose-mini ul {
+  list-style: disc;
+}
+.prose-mini ol {
+  list-style: decimal;
+}
+.prose-mini code {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 0.05rem 0.35rem;
+  font-size: 0.85em;
+}
+.prose-mini a {
+  color: #67e8f9;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.prose-mini table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0 0.7rem;
+  font-size: 0.85rem;
+}
+.prose-mini th,
+.prose-mini td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.35rem 0.55rem;
+  text-align: left;
+}
+.prose-mini th {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
