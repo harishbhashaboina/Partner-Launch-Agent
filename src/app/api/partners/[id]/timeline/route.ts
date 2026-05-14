@@ -17,7 +17,7 @@ export async function POST(
       partnerChat: p.partnerChat && {
         ...p.partnerChat,
         partnerInputs: {
-          ...p.partnerChat.partnerInputs,
+          ...(p.partnerChat.partnerInputs ?? {}),
           targetDate: timeline.targetDate,
         },
       },

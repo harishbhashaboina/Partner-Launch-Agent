@@ -1,8 +1,11 @@
 // Seeds the store with sample partners across stages so the demo looks alive.
-import { nanoid } from "nanoid";
 import { promises as fs } from "fs";
 import path from "path";
 import type { Partner, Store } from "../src/lib/types";
+import {
+  formatIntakeQuestionMessage,
+  loadFlatIntakeQuestions,
+} from "../src/lib/partner-intake-questions";
 
 const STORE_PATH = path.join(process.cwd(), "data", "store.json");
 const UPLOAD_DIR = path.join(process.cwd(), "uploads");
@@ -64,7 +67,14 @@ Reply here with edits or call out blockers before we hit "Approve & Launch to Pa
   };
 }
 
-function p2(): Partner {
+function p2(flat: import("../src/lib/partner-intake-questions").FlatIntakeQuestion[]): Partner {
+  const welcome = `Hi Marcus 👋
+
+I'm ABC's Partner Launch Agent. Congrats on signing with ABC.
+
+We'll capture your **Partner Launch Intake** here so we can fill the launch templates (Partner Data Brief, Integration Guide, decks, and FAQs) for your team.
+
+Take your time — you can attach files where helpful (logos, one-pagers, etc.).`;
   return {
     id: "demo-northbeam",
     name: "Northbeam Advisors",
@@ -111,41 +121,52 @@ Partner-facing chat going out today; we'll set a target launch date and confirm 
     },
     partnerChat: {
       token: "demo-northbeam-token",
-      step: "integration-details",
-      attachments: [],
-      partnerInputs: {
-        reviewNotes:
-          "Looks accurate. One add: we'd like to be positioned as 'mid-market re-platform specialists' specifically, not generic advisors.",
+      step: "intake",
+      intakeIndex: 2,
+      intakeAnswers: {
+        [flat[0].id]: "Northbeam Advisors",
+        [flat[1].id]:
+          "Fast-growing GTM advisory shop that lands ABC inside mid-market deals via outbound referral.",
       },
+      attachments: [],
+      partnerInputs: {},
       lastPartnerResponseAt: iso(1),
       messages: [
         {
           id: "m1",
           role: "agent",
           ts: iso(2),
-          content: `Hi Marcus 👋
-
-I'm ABC's Partner Launch Agent. Congrats on signing — I'll help us go from "signed" to "live" cleanly.
-
-Could you review the brief and share anything you'd change, add, or want our team to know?`,
-          meta: { step: "welcome" },
+          content: `${welcome}\n\n${formatIntakeQuestionMessage(flat[0], 0, flat.length)}`,
+          meta: { step: "intake" },
         },
         {
           id: "m2",
           role: "partner",
           ts: iso(1),
-          content:
-            "Looks accurate. One add: we'd like to be positioned as 'mid-market re-platform specialists' specifically, not generic advisors.",
-          meta: { step: "review-details" },
+          content: "Northbeam Advisors",
+          meta: { step: "intake" },
         },
         {
           id: "m3",
           role: "agent",
           ts: iso(1),
-          content: `Thanks — got it. ✅
-
-Next, can you walk me through the **integration**? A short description is perfect, and if you have an integration / API doc, please attach it.`,
-          meta: { step: "integration-details" },
+          content: formatIntakeQuestionMessage(flat[1], 1, flat.length),
+          meta: { step: "intake" },
+        },
+        {
+          id: "m4",
+          role: "partner",
+          ts: iso(1),
+          content:
+            "Fast-growing GTM advisory shop that lands ABC inside mid-market deals via outbound referral.",
+          meta: { step: "intake" },
+        },
+        {
+          id: "m5",
+          role: "agent",
+          ts: iso(1),
+          content: formatIntakeQuestionMessage(flat[2], 2, flat.length),
+          meta: { step: "intake" },
         },
       ],
     },
@@ -202,6 +223,8 @@ Launch timeline + 3 launch communications in motion.`,
     partnerChat: {
       token: "demo-helix-token",
       step: "closed",
+      intakeIndex: 0,
+      intakeAnswers: {},
       attachments: [
         {
           id: "att1",
@@ -303,7 +326,14 @@ function addDays(d: Date, days: number): string {
   return n.toISOString();
 }
 
-function p4(): Partner {
+function p4(flat: import("../src/lib/partner-intake-questions").FlatIntakeQuestion[]): Partner {
+  const welcome = `Hi Sam 👋
+
+I'm ABC's Partner Launch Agent. Congrats on signing with ABC.
+
+We'll capture your **Partner Launch Intake** here so we can fill the launch templates (Partner Data Brief, Integration Guide, decks, and FAQs) for your team.
+
+Take your time — you can attach files where helpful (logos, one-pagers, etc.).`;
   return {
     id: "demo-quietchannel",
     name: "QuietChannel",
@@ -332,7 +362,9 @@ function p4(): Partner {
     },
     partnerChat: {
       token: "demo-quietchannel-token",
-      step: "review-details",
+      step: "intake",
+      intakeIndex: 0,
+      intakeAnswers: {},
       attachments: [],
       partnerInputs: {},
       lastPartnerResponseAt: undefined,
@@ -341,9 +373,8 @@ function p4(): Partner {
           id: "m1",
           role: "agent",
           ts: iso(35),
-          content:
-            "Hi Sam — welcome aboard. Could you review the brief and let me know if anything needs updating?",
-          meta: { step: "welcome" },
+          content: `${welcome}\n\n${formatIntakeQuestionMessage(flat[0], 0, flat.length)}`,
+          meta: { step: "intake" },
         },
       ],
     },
@@ -353,11 +384,12 @@ function p4(): Partner {
 async function main() {
   await fs.mkdir(path.dirname(STORE_PATH), { recursive: true });
   await fs.mkdir(UPLOAD_DIR, { recursive: true });
+  const flat = await loadFlatIntakeQuestions();
   const store: Store = {
     partners: {},
     order: [],
   };
-  for (const p of [p1(), p2(), p3(), p4()]) {
+  for (const p of [p1(), p2(flat), p3(), p4(flat)]) {
     store.partners[p.id] = p;
     store.order.push(p.id);
   }

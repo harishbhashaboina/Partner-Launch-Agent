@@ -5,6 +5,12 @@ import {
   updatePartner,
 } from "@/lib/storage";
 import { partnerChatPrompt } from "@/lib/agent";
+import {
+  formatIntakeQuestionMessage,
+  getCurrentIntakeQuestion,
+  getIntakeQuestionCount,
+  loadFlatIntakeQuestions,
+} from "@/lib/partner-intake-questions";
 import type {
   Attachment,
   ChatMessage,
@@ -17,79 +23,15 @@ interface IncomingMessage {
   attachments?: Attachment[];
 }
 
-const NEXT_STEP: Record<PartnerChatStep, PartnerChatStep> = {
-  welcome: "review-details",
-  "review-details": "integration-details",
-  "integration-details": "target-date",
-  "target-date": "summary",
-  summary: "closed",
-  closed: "closed",
-};
-
-function parseDate(text: string): string | undefined {
-  const trimmed = text.trim();
-  if (!trimmed) return undefined;
-
-  const direct = new Date(trimmed);
-  if (!Number.isNaN(direct.getTime())) return direct.toISOString();
-
-  const months: Record<string, number> = {
-    jan: 0, january: 0,
-    feb: 1, february: 1,
-    mar: 2, march: 2,
-    apr: 3, april: 3,
-    may: 4,
-    jun: 5, june: 5,
-    jul: 6, july: 6,
-    aug: 7, august: 7,
-    sep: 8, sept: 8, september: 8,
-    oct: 9, october: 9,
-    nov: 10, november: 10,
-    dec: 11, december: 11,
-  };
-  const lower = trimmed.toLowerCase();
-
-  const monthWord = `(jan|january|feb|february|mar|march|apr|april|may|jun|june|jul|july|aug|august|sep|sept|september|oct|october|nov|november|dec|december)`;
-  const cleaned = lower.replace(/(\d+)(st|nd|rd|th)\b/g, "$1");
-
-  const monthFirst = cleaned.match(
-    new RegExp(`\\b${monthWord}\\b[\\s.,]*?(\\d{1,2})?(?:[\\s.,]*(\\d{4}))?`),
-  );
-  const dayFirst = cleaned.match(
-    new RegExp(`\\b(\\d{1,2})[\\s.,]+${monthWord}\\b(?:[\\s.,]*(\\d{4}))?`),
-  );
-
-  if (monthFirst || dayFirst) {
-    const monthName = (dayFirst ? dayFirst[2] : monthFirst![1]) as string;
-    const dayHint = dayFirst
-      ? Number(dayFirst[1])
-      : monthFirst![2]
-        ? Number(monthFirst![2])
-        : undefined;
-    const yearStr = dayFirst ? dayFirst[3] : monthFirst![3];
-    const m = months[monthName];
-    const year = yearStr ? Number(yearStr) : new Date().getFullYear();
-    const part = cleaned.match(/\b(early|mid|late|end of|beginning of)\b/);
-    let day = dayHint ?? 15;
-    if (!dayHint && part) {
-      const kw = part[1];
-      if (kw === "early" || kw === "beginning of") day = 5;
-      else if (kw === "mid") day = 15;
-      else day = 25;
-    }
-    const candidate = new Date(year, m, day);
-    if (candidate.getTime() < Date.now()) candidate.setFullYear(year + 1);
-    if (!Number.isNaN(candidate.getTime())) return candidate.toISOString();
+function migrateLegacyStep(step: PartnerChatStep): PartnerChatStep {
+  if (
+    step === "review-details" ||
+    step === "integration-details" ||
+    step === "target-date"
+  ) {
+    return "intake";
   }
-
-  const qtr = lower.match(/\bq([1-4])\s*(\d{4})?/);
-  if (qtr) {
-    const q = Number(qtr[1]);
-    const year = qtr[2] ? Number(qtr[2]) : new Date().getFullYear();
-    return new Date(year, (q - 1) * 3 + 1, 15).toISOString();
-  }
-
-  return undefined;
+  return step;
 }
 
 export async function POST(
@@ -101,16 +43,14 @@ export async function POST(
   if (!partner || !partner.partnerChat)
     return NextResponse.json({ error: "Not found" }, { status: 404 });
 
-  const currentStep = partner.partnerChat.step;
-  const partnerInputs = { ...partner.partnerChat.partnerInputs };
-
-  if (currentStep === "review-details") {
-    partnerInputs.reviewNotes = body.content;
-  } else if (currentStep === "integration-details") {
-    partnerInputs.integrationDescription = body.content;
-  } else if (currentStep === "target-date") {
-    partnerInputs.targetDate = parseDate(body.content) ?? partnerInputs.targetDate;
-  }
+  const flat = await loadFlatIntakeQuestions();
+  let step = migrateLegacyStep(partner.partnerChat.step);
+  let intakeIndex = partner.partnerChat.intakeIndex ?? 0;
+  const intakeAnswers: Record<string, unknown> = {
+    ...(partner.partnerChat.intakeAnswers ?? {}),
+  };
+  const intakeTotal = () => getIntakeQuestionCount(flat, intakeAnswers);
+  const partnerInputs = { ...(partner.partnerChat.partnerInputs ?? {}) };
 
   const now = new Date().toISOString();
   const partnerMsg: ChatMessage = {
@@ -119,36 +59,88 @@ export async function POST(
     ts: now,
     content: body.content,
     attachments: body.attachments ?? [],
-    meta: { step: currentStep },
+    meta: { step },
   };
 
-  const nextStep = NEXT_STEP[currentStep];
+  const messages: ChatMessage[] = [
+    ...partner.partnerChat.messages,
+    partnerMsg,
+  ];
 
-  let agentMsg: ChatMessage | undefined;
-  let secondAgentMsg: ChatMessage | undefined;
-  if (nextStep !== "closed") {
-    agentMsg = {
+  let nextStep = step;
+  const agentMessages: ChatMessage[] = [];
+
+  if (step === "intake") {
+    const totalBefore = intakeTotal();
+    if (intakeIndex < totalBefore) {
+      const q = getCurrentIntakeQuestion(flat, intakeAnswers, intakeIndex);
+      if (q) intakeAnswers[q.id] = body.content;
+      intakeIndex += 1;
+    }
+
+    const totalAfter = intakeTotal();
+    if (intakeIndex < totalAfter) {
+      const nq = getCurrentIntakeQuestion(flat, intakeAnswers, intakeIndex);
+      if (nq) {
+        agentMessages.push({
+          id: nanoid(8),
+          role: "agent",
+          ts: new Date(Date.now() + 80).toISOString(),
+          content: formatIntakeQuestionMessage(nq, intakeIndex, totalAfter),
+          meta: { step: "intake" },
+        });
+      } else {
+        nextStep = "summary";
+        agentMessages.push({
+          id: nanoid(8),
+          role: "agent",
+          ts: new Date(Date.now() + 80).toISOString(),
+          content: await partnerChatPrompt({
+            partner: {
+              ...partner,
+              partnerChat: {
+                ...partner.partnerChat,
+                intakeAnswers,
+                intakeIndex,
+                partnerInputs,
+              },
+            },
+            step: "summary",
+          }),
+          meta: { step: "summary" },
+        });
+      }
+    } else if (intakeIndex >= totalAfter && totalAfter > 0) {
+      nextStep = "summary";
+      agentMessages.push({
+        id: nanoid(8),
+        role: "agent",
+        ts: new Date(Date.now() + 80).toISOString(),
+        content: await partnerChatPrompt({
+          partner: {
+            ...partner,
+            partnerChat: {
+              ...partner.partnerChat,
+              intakeAnswers,
+              intakeIndex,
+              partnerInputs,
+            },
+          },
+          step: "summary",
+        }),
+        meta: { step: "summary" },
+      });
+    }
+  } else if (step === "summary") {
+    partnerInputs.reviewNotes = body.content;
+    agentMessages.push({
       id: nanoid(8),
       role: "agent",
-      ts: new Date(Date.now() + 100).toISOString(),
-      content: await partnerChatPrompt({
-        partner: { ...partner, partnerChat: { ...partner.partnerChat, partnerInputs } },
-        step: nextStep,
-      }),
-      meta: { step: nextStep },
-    };
-  }
-  if (nextStep === "summary") {
-    secondAgentMsg = {
-      id: nanoid(8),
-      role: "agent",
-      ts: new Date(Date.now() + 200).toISOString(),
-      content: await partnerChatPrompt({
-        partner: { ...partner, partnerChat: { ...partner.partnerChat, partnerInputs } },
-        step: "summary",
-      }),
+      ts: new Date(Date.now() + 80).toISOString(),
+      content:
+        "Thanks — noted. When you are ready, use **Confirm & Close** to finalize and generate your launch pack.",
       meta: { step: "summary" },
-    };
+    });
   }
 
   const updated = await updatePartner(partner.id, (p): Partner => {
@@ -158,17 +150,14 @@ export async function POST(
       partnerChat: {
         ...p.partnerChat,
         step: nextStep,
+        intakeIndex,
+        intakeAnswers,
         partnerInputs,
         attachments: [
           ...p.partnerChat.attachments,
           ...(body.attachments ?? []),
         ],
-        messages: [
-          ...p.partnerChat.messages,
-          partnerMsg,
-          ...(agentMsg ? [agentMsg] : []),
-          ...(secondAgentMsg ? [secondAgentMsg] : []),
-        ],
+        messages: [...messages, ...agentMessages],
         lastPartnerResponseAt: now,
       },
     };
