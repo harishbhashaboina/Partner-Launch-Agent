@@ -1,58 +1,76 @@
 {
   "partners": {
-    "demo-loop-data": {
-      "id": "demo-loop-data",
-      "name": "Loop Data",
-      "website": "loopdata.io",
+    "gymlaunch": {
+      "id": "gymlaunch",
+      "name": "GymLaunch",
+      "website": "gymlaunch.com",
       "contact": {
-        "name": "Priya Shah",
-        "email": "priya@loopdata.io"
+        "name": "Partner Lead",
+        "email": "partnerships@gymlaunch.com"
       },
-      "createdAt": "2026-05-10T10:52:28.862Z",
-      "updatedAt": "2026-05-12T11:03:09.059Z",
-      "stage": "internal-review",
+      "createdAt": "2026-03-01T10:00:00.000Z",
+      "updatedAt": "2026-05-14T15:00:00.000Z",
+      "stage": "live",
       "followUps": [],
       "research": {
-        "valueProp": "Loop Data turns warehouse models into governed activation surfaces. Joint with ABC, customers move from a Snowflake or BigQuery model to a live workflow inside ABC without brittle reverse-ETL — cutting time-to-activation from weeks to hours.",
-        "idealCustomerProfile": "Mid-market data and revenue teams (300–3,000 employees) running Snowflake/BigQuery with a downstream activation gap. Strong fit when there's an analytics engineer in seat and at least one revenue system already integrated with ABC.",
-        "archetype": "Data Affiliate",
-        "archetypeRationale": "Loop Data's value lands inside ABC through a technical integration. Sales motion is integration-first, monetization typically via API fee, primary KPI is product adoption and retention.",
-        "scope": "Phase 1 (60 days): production-grade Loop ↔ ABC integration, joint landing page, one anchor customer reference. Phase 2: in-product cross-promotion + quarterly business reviews.",
-        "competitiveLandscape": "Sits alongside generic reverse-ETL tools but wins on governance and lineage on the activation path. Few competitors integrate this tightly into ABC.",
+        "valueProp": "Gym Launch is a business consulting and digital marketing agency built specifically to help Gyms and Studios grow their memberships, revenue and profit.",
+        "idealCustomerProfile": "Independent gyms and boutique studios looking to grow membership, revenue, and profitability through proven sales and marketing playbooks.",
+        "archetype": "Go-To-Market",
+        "archetypeRationale": "GymLaunch's motion is consulting + marketing services that drive demand into ABC's gym customers — classic Go-To-Market lift via co-selling and joint demand gen.",
+        "scope": "Joint demand gen with Glofox + Ignite gym customers, co-branded campaigns, and shared playbooks for membership growth.",
+        "competitiveLandscape": "Other gym-focused agencies exist, but GymLaunch's track record and depth in the fitness vertical is differentiated.",
+        "riskFlags": []
+      }
+    },
+    "your-reformer": {
+      "id": "your-reformer",
+      "name": "Your Reformer",
+      "website": "yourreformer.com",
+      "contact": {
+        "name": "Partner Lead",
+        "email": "partnerships@yourreformer.com"
+      },
+      "createdAt": "2026-04-05T10:00:00.000Z",
+      "updatedAt": "2026-05-14T15:27:15.910Z",
+      "stage": "launching",
+      "followUps": [],
+      "research": {
+        "valueProp": "YR will integrate with Glofox & Ignite allowing customers to seamlessly offer Your Reformer machine bookings, check-ins and class booking data through their preferred ABC platform.",
+        "idealCustomerProfile": "Pilates and reformer studios on Glofox or Ignite that want a unified experience for machine bookings, attendance, and class scheduling.",
+        "archetype": "Channel",
+        "archetypeRationale": "Your Reformer extends ABC's reach into the reformer Pilates segment via a hardware-aware integration — a Channel motion that opens a new buyer surface.",
+        "scope": "Phase 1: Glofox integration for reformer bookings + check-ins. Phase 2: Ignite parity and class booking analytics.",
+        "competitiveLandscape": "Few hardware-integrated reformer partners with native Glofox/Ignite support — strong defensibility.",
         "riskFlags": [
-          "Security review needed for warehouse credentials"
+          "Hardware/firmware compatibility matrix to be confirmed"
         ]
       },
-      "internalAwareness": {
-        "subject": "[Partnerships] We've signed Loop Data — Data Affiliate",
-        "body": "## Overview\nWe've signed **Loop Data** ([loopdata.io](https://loopdata.io)) as a new Data Affiliate partner. The integration moves into onboarding this week with primary contact **Priya Shah** (priya@loopdata.io).\n\n## Value Prop\nLoop Data turns warehouse models into governed activation surfaces. Joint with ABC, customers move from a Snowflake/BigQuery model to a live workflow inside ABC without brittle reverse-ETL.\n\n## Ideal Customer Profile\nMid-market data and revenue teams (300–3,000 employees) on Snowflake/BigQuery with a downstream activation gap.\n\n## Partner Archetype — Data Affiliate\nLoop Data's value lands inside ABC through a technical integration. Integration-first sales motion. Monetization via API fee.\n\n## Scope\nPhase 1 (60 days): production-grade integration, joint landing page, one anchor reference. Phase 2: in-product cross-promotion + QBRs.\n\n## What to expect next\n- Partner-facing launch chat goes out today.\n- The agent will follow up if the partner is unresponsive at 10/20/30 days.\n- Once intake closes, we'll publish a launch timeline with three communications.\n\nReply here with edits or call out blockers before we hit \"Approve & Launch to Partner\"."
-      },
       "timeline": {
-        "targetDate": "2026-06-26T11:03:09.058Z",
+        "targetDate": "2026-06-28T15:27:15.909Z",
         "milestones": [
           {
             "name": "Kickoff & technical scoping",
-            "date": "2026-05-29T11:03:09.058Z",
+            "date": "2026-05-31T15:27:15.909Z",
             "description": "Joint kickoff with ABC + partner eng. Lock down API surface, auth, environments."
           },
           {
             "name": "Build & sandbox certification",
-            "date": "2026-06-08T11:03:09.058Z",
+            "date": "2026-06-10T15:27:15.909Z",
             "description": "Partner builds against sandbox; ABC certifies happy-path + edge cases."
           },
           {
             "name": "Beta with anchor customers",
-            "date": "2026-06-16T11:03:09.058Z",
+            "date": "2026-06-18T15:27:15.909Z",
             "description": "2–3 anchor customers in beta. Capture quotes for launch comms."
           },
           {
             "name": "Launch readiness review",
-            "date": "2026-06-21T11:03:09.058Z",
+            "date": "2026-06-23T15:27:15.909Z",
             "description": "Cross-functional review: Sales, CS, Marketing, Support. Go/no-go."
           },
           {
             "name": "Public launch",
-            "date": "2026-06-26T11:03:09.058Z",
+            "date": "2026-06-28T15:27:15.909Z",
             "description": "Integration live. Comms 3 sent."
           }
         ],
@@ -60,10 +78,10 @@
           {
             "id": "coming-soon",
             "title": "Coming Soon",
-            "sendDate": "2026-06-05T11:03:09.058Z",
+            "sendDate": "2026-06-07T15:27:15.909Z",
             "status": "drafted",
-            "subject": "Coming soon: Loop Data × ABC",
-            "body": "## Coming soon: Loop Data × ABC\n\nWe're a few weeks out from launching our integration with **Loop Data** (Data Affiliate). Here's the short version so you can start positioning it.\n\n**Why it matters**\nLoop Data turns warehouse models into governed activation surfaces. Joint with ABC, customers move from a Snowflake or BigQuery model to a live workflow inside ABC without brittle reverse-ETL — cutting time-to-activation from weeks to hours.\n\n**Who it's for**\nMid-market data and revenue teams (300–3,000 employees) running Snowflake/BigQuery with a downstream activation gap. Strong fit when there's an analytics engineer in seat and at least one revenue system already integrated with ABC.\n\n**Key dates**\n- Beta with anchor customers: see launch timeline\n- Launch readiness review: see launch timeline\n- Public launch: Invalid Date\n\nThe full Prepare-for-Launch packet (process guide, integration guide, FAQ, internal talk tracks) drops one week out. Reply here with questions.",
+            "subject": "Coming soon: Your Reformer × ABC",
+            "body": "We are excited to introduce our newest Channel Partnership, **Your Reformer**. Here's some key details to be aware of.\n\n**Why it Matters**\nYR will integrate with Glofox & Ignite allowing customers to seamlessly offer Your Reformer machine bookings, check-ins and class booking data through their preferred ABC platform. They offer best-in-class support and preferred pricing for ABC customers.\n\n**Who it's for**\nThis will be available for Glofox clients initially and for Ignite clients later (Q4). Pilates and reformer studios on Glofox or Ignite that want a unified experience for machine bookings, attendance, and class scheduling.\n\n**Key Dates**\n- Glofox Pilot: June 18, 2026\n- Glofox Start Sell: June 28, 2026\n- Ignite: TBD (Q4)\n\n**Prepare for Launch**\nYour full Launch Readiness packet will drop 2 weeks before your finalized start sell date. Additional details will be posted here. Stay tuned!",
             "attachments": [
               "Partner Brief (1-pager)",
               "Key dates"
@@ -72,10 +90,10 @@
           {
             "id": "prepare-for-launch",
             "title": "Prepare for Launch",
-            "sendDate": "2026-06-19T11:03:09.058Z",
+            "sendDate": "2026-06-21T15:27:15.909Z",
             "status": "drafted",
-            "subject": "Get ready: Loop Data × ABC launches June 26, 2026",
-            "body": "## Prepare for launch: Loop Data × ABC\n\nWe launch in one week. Use this packet to get fully ready.\n\n**Integration overview (from partner)**\nIntegration details to be confirmed with partner.\n\n**What's attached**\n- Process Guide — how to position, qualify, and hand off\n- Integration Guide — technical reference for solutions and support\n- FAQ — top 10 questions with crisp answers\n- Internal Talk Tracks — for AEs, CSMs, and support\n\n**Action items**\n- AEs: review the talk track and the ICP one-liner.\n- CS: review the integration guide; flag accounts already asking for this.\n- Support: scan the FAQ; ping us with anything unclear before launch day.\n\nQuestions? Reply here.",
+            "subject": "Get ready: Your Reformer × ABC launches June 28, 2026",
+            "body": "## Prepare for launch: Your Reformer × ABC\n\nWe launch in one week. Use this packet to get fully ready.\n\n**Integration overview (from partner)**\nIntegration details to be confirmed with partner.\n\n**What's attached**\n- Process Guide — how to position, qualify, and hand off\n- Integration Guide — technical reference for solutions and support\n- FAQ — top 10 questions with crisp answers\n- Internal Talk Tracks — for AEs, CSMs, and support\n\n**Action items**\n- AEs: review the talk track and the ICP one-liner.\n- CS: review the integration guide; flag accounts already asking for this.\n- Support: scan the FAQ; ping us with anything unclear before launch day.\n\nQuestions? Reply here.",
             "attachments": [
               "Process Guide",
               "Integration Guide",
@@ -86,10 +104,10 @@
           {
             "id": "new-partner-live",
             "title": "New Partner is Live",
-            "sendDate": "2026-06-26T11:03:09.058Z",
+            "sendDate": "2026-06-28T15:27:15.909Z",
             "status": "drafted",
-            "subject": "Loop Data × ABC is live",
-            "body": "## Loop Data × ABC is live\n\nThe integration is live as of today.\n\n**The short pitch**\nLoop Data turns warehouse models into governed activation surfaces. Joint with ABC, customers move from a Snowflake or BigQuery model to a live workflow inside ABC without brittle reverse-ETL — cutting time-to-activation from weeks to hours.\n\n**Resources (all in one place)**\n- Customer-facing deck\n- External one-pager\n- All internal templates (process, integration, FAQ, talk tracks)\n\n**Who to route to**\n- Active opportunities: AEs can lead with the joint value prop on accounts that fit the ICP.\n- Existing customers: CS team has a target list of accounts already showing intent signals.\n\nWe'll share a 30-day readout with metrics and customer stories. Until then — go sell it.",
+            "subject": "Your Reformer × ABC is live",
+            "body": "## Your Reformer × ABC is live\n\nThe integration is live as of today.\n\n**The short pitch**\nYR will integrate with Glofox & Ignite allowing customers to seamlessly offer Your Reformer machine bookings, check-ins and class booking data through their preferred ABC platform.\n\n**Resources (all in one place)**\n- Customer-facing deck\n- External one-pager\n- All internal templates (process, integration, FAQ, talk tracks)\n\n**Who to route to**\n- Active opportunities: AEs can lead with the joint value prop on accounts that fit the ICP.\n- Existing customers: CS team has a target list of accounts already showing intent signals.\n\nWe'll share a 30-day readout with metrics and customer stories. Until then — go sell it.",
             "attachments": [
               "Customer-facing PPT",
               "External One-Pager",
@@ -99,50 +117,198 @@
         ]
       }
     },
-    "demo-northbeam": {
-      "id": "demo-northbeam",
-      "name": "Northbeam Advisors",
-      "website": "northbeam.co",
+    "pipe": {
+      "id": "pipe",
+      "name": "Pipe",
+      "website": "pipe.com",
       "contact": {
-        "name": "Marcus Reed",
-        "email": "marcus@northbeam.co"
+        "name": "Partner Lead",
+        "email": "partnerships@pipe.com"
       },
-      "createdAt": "2026-04-28T10:52:28.863Z",
-      "updatedAt": "2026-05-12T10:53:29.681Z",
-      "stage": "launching",
+      "createdAt": "2026-04-22T10:00:00.000Z",
+      "updatedAt": "2026-05-14T15:00:00.000Z",
+      "stage": "internal-review",
       "followUps": [],
       "research": {
-        "valueProp": "Northbeam is a fast-growing GTM advisory shop that lands ABC inside mid-market deals via outbound referral. Their team brings warm intros and senior-level relationships across the revenue stack.",
-        "idealCustomerProfile": "Mid-market companies (500–5,000 employees) actively re-platforming their revenue stack, where Northbeam is already advising on tooling decisions.",
-        "archetype": "Go-To-Market",
-        "archetypeRationale": "Northbeam's strongest motion is outbound referral. Value: higher close rates and lower churn. Revenue share monetization.",
-        "scope": "Phase 1: 5 anchor referrals in 60 days + co-branded one-pager. Phase 2: shared QBR cadence + jointly run executive briefings.",
-        "competitiveLandscape": "Competing advisory shops exist, but Northbeam's tight integration into ABC's deal cycle differentiates.",
+        "valueProp": "Pipe is a capital provider that ABC Fitness Solutions, LLC has partnered with to launch ABC Capital and is not otherwise affiliated with ABC Fitness Solutions, LLC.",
+        "idealCustomerProfile": "ABC gym and studio customers seeking working capital and growth financing through ABC Capital.",
+        "archetype": "Platform",
+        "archetypeRationale": "Pipe powers the ABC Capital platform offering — a Platform partnership that adds a financial services surface inside ABC's product.",
+        "scope": "Launch ABC Capital, joint underwriting flow, and in-product offers for eligible ABC customers.",
+        "competitiveLandscape": "Embedded capital providers exist; Pipe differentiates on speed, pricing, and developer-grade APIs.",
         "riskFlags": [
-          "Referral attribution flow not yet wired"
+          "Compliance and disclosure language pending legal review"
         ]
       },
       "internalAwareness": {
-        "subject": "[Partnerships] We've signed Northbeam Advisors — Go-To-Market",
-        "body": "## Overview\nNorthbeam Advisors is signed as a Go-To-Market partner. Outbound referral motion, contact: Marcus Reed.\n\n## Value Prop\nWarm-intro firepower into mid-market revenue stack re-platform deals.\n\n## Ideal Customer Profile\n500–5,000 employee companies in re-platform mode that Northbeam already advises.\n\n## Partner Archetype — Go-To-Market\nOutbound referral, revenue share monetization, primary KPI: win rate and ARR.\n\n## Scope\n5 anchor referrals in 60 days + co-branded one-pager.\n\n## What to expect next\nPartner-facing chat going out today; we'll set a target launch date and confirm the attribution flow.",
-        "approvedAt": "2026-05-02T10:52:28.863Z"
+        "subject": "[Partnerships] Pipe — Platform partner under internal review",
+        "body": "## Overview\nPipe is in internal review as a Platform partner powering **ABC Capital** for ABC Fitness Solutions customers.\n\n## Value Prop\nWorking capital + growth financing inside ABC, underwritten and funded by Pipe.\n\n## Disclosure\nPipe is the capital provider that ABC has partnered with to launch ABC Capital and is not otherwise affiliated with ABC Fitness Solutions, LLC."
+      }
+    },
+    "gantner": {
+      "id": "gantner",
+      "name": "Gantner",
+      "website": "gantner.com",
+      "contact": {
+        "name": "Partner Lead",
+        "email": "partnerships@gantner.com"
+      },
+      "createdAt": "2026-03-20T10:00:00.000Z",
+      "updatedAt": "2026-05-14T16:01:51.617Z",
+      "stage": "launching",
+      "followUps": [],
+      "research": {
+        "valueProp": "Ganter is a leading global provider of Access Control Software. They are building a custom integration purpose built for the fitness industry.",
+        "idealCustomerProfile": "This is for clients or prospects actively seeking a new door access solution or new clubs/studios that will need door access as they prepare for opening.",
+        "archetype": "Platform",
+        "archetypeRationale": "Gantner extends ABC's platform with hardware-grade access control — a Platform partnership that deepens the operational surface inside Glofox and Ignite.",
+        "scope": "Phase 1: Glofox integration for access control + locker management. Phase 2: Ignite parity and analytics.",
+        "competitiveLandscape": "Multiple access-control vendors; Gantner's global footprint and fitness-industry focus differentiate.",
+        "riskFlags": [
+          "Hardware certification matrix and field upgrade plan TBD"
+        ]
+      },
+      "timeline": {
+        "targetDate": "2026-06-28T16:01:51.617Z",
+        "milestones": [
+          {
+            "name": "Kickoff & technical scoping",
+            "date": "2026-05-31T16:01:51.617Z",
+            "description": "Joint kickoff with ABC + partner eng. Lock down API surface, auth, environments."
+          },
+          {
+            "name": "Build & sandbox certification",
+            "date": "2026-06-10T16:01:51.617Z",
+            "description": "Partner builds against sandbox; ABC certifies happy-path + edge cases."
+          },
+          {
+            "name": "Beta with anchor customers",
+            "date": "2026-06-18T16:01:51.617Z",
+            "description": "2–3 anchor customers in beta. Capture quotes for launch comms."
+          },
+          {
+            "name": "Launch readiness review",
+            "date": "2026-06-23T16:01:51.617Z",
+            "description": "Cross-functional review: Sales, CS, Marketing, Support. Go/no-go."
+          },
+          {
+            "name": "Public launch",
+            "date": "2026-06-28T16:01:51.617Z",
+            "description": "Integration live. Comms 3 sent."
+          }
+        ],
+        "communications": [
+          {
+            "id": "coming-soon",
+            "title": "Coming Soon",
+            "sendDate": "2026-06-07T16:01:51.617Z",
+            "status": "drafted",
+            "subject": "Coming soon: Gantner × ABC",
+            "body": "We are excited to introduce our newest Platform Partnership, **Gantner**. Here's some key details to be aware of.\n\n**Why it Matters**\nGanter is a leading global provider of Access Control Software. They are building a custom integration purpose built for the fitness industry. They offer best-in-class support and preferred pricing for ABC customers.\n\n**Who it's for**\nThis will be available for Glofox clients initially and for Ignite clients later (Q4). This is for clients or prospects actively seeking a new door access solution or new clubs/studios that will need door access as they prepare for opening.\n\n**Key Dates**\n- Glofox Pilot: June 18, 2026\n- Glofox Start Sell: June 28, 2026\n- Ignite: TBD (Q4)\n\n**Prepare for Launch**\nYour full Launch Readiness packet will drop 2 weeks before your finalized start sell date. Additional details will be posted here. Stay tuned!",
+            "attachments": [
+              "Partner Brief (1-pager)",
+              "Key dates"
+            ]
+          },
+          {
+            "id": "prepare-for-launch",
+            "title": "Prepare for Launch",
+            "sendDate": "2026-06-21T16:01:51.617Z",
+            "status": "drafted",
+            "subject": "Get ready: Gantner × ABC launches June 28, 2026",
+            "body": "## Prepare for launch: Gantner × ABC\n\nWe launch in one week. Use this packet to get fully ready.\n\n**Integration overview (from partner)**\nIntegration details to be confirmed with partner.\n\n**What's attached**\n- Process Guide — how to position, qualify, and hand off\n- Integration Guide — technical reference for solutions and support\n- FAQ — top 10 questions with crisp answers\n- Internal Talk Tracks — for AEs, CSMs, and support\n\n**Action items**\n- AEs: review the talk track and the ICP one-liner.\n- CS: review the integration guide; flag accounts already asking for this.\n- Support: scan the FAQ; ping us with anything unclear before launch day.\n\nQuestions? Reply here.",
+            "attachments": [
+              "Process Guide",
+              "Integration Guide",
+              "FAQ",
+              "Internal Talk Tracks"
+            ]
+          },
+          {
+            "id": "new-partner-live",
+            "title": "New Partner is Live",
+            "sendDate": "2026-06-28T16:01:51.617Z",
+            "status": "drafted",
+            "subject": "Gantner × ABC is live",
+            "body": "## Gantner × ABC is live\n\nThe integration is live as of today.\n\n**The short pitch**\nGanter is a leading global provider of Access Control Software. They are building a custom integration purpose built for the fitness industry.\n\n**Resources (all in one place)**\n- Customer-facing deck\n- External one-pager\n- All internal templates (process, integration, FAQ, talk tracks)\n\n**Who to route to**\n- Active opportunities: AEs can lead with the joint value prop on accounts that fit the ICP.\n- Existing customers: CS team has a target list of accounts already showing intent signals.\n\nWe'll share a 30-day readout with metrics and customer stories. Until then — go sell it.",
+            "attachments": [
+              "Customer-facing PPT",
+              "External One-Pager",
+              "All internal templates"
+            ]
+          }
+        ]
+      }
+    },
+    "hyrox": {
+      "id": "hyrox",
+      "name": "HYROX",
+      "website": "hyrox.com",
+      "contact": {
+        "name": "Partner Lead",
+        "email": "partnerships@hyrox.com"
+      },
+      "createdAt": "2026-04-30T10:00:00.000Z",
+      "updatedAt": "2026-05-14T15:00:00.000Z",
+      "stage": "internal-review",
+      "followUps": [],
+      "research": {
+        "valueProp": "Many gyms offer HYROX training classes that prepare members for HYROX competitions. ABC will deliver HYROX video training content through the Glofox and Ignite apps so members can follow HYROX workouts in the gym, not just in classes.",
+        "idealCustomerProfile": "Gyms and studios on Glofox or Ignite running HYROX-style functional fitness programming whose members want to train for HYROX events year-round.",
+        "archetype": "Data Affiliate",
+        "archetypeRationale": "HYROX provides training content delivered through ABC apps — a Data Affiliate motion centered on content syndication, member engagement, and adoption.",
+        "scope": "Deliver HYROX video training in Glofox + Ignite apps; track engagement and member conversion to HYROX events.",
+        "competitiveLandscape": "Other branded fitness content libraries exist, but HYROX's tie-in to a global competition format is uniquely sticky.",
+        "riskFlags": [
+          "Content licensing scope and territory rights to be finalized"
+        ]
+      },
+      "internalAwareness": {
+        "subject": "[Partnerships] HYROX — Data Affiliate under internal review",
+        "body": "## Overview\nHYROX is in internal review as a Data Affiliate partner. ABC will deliver HYROX video training content through the Glofox and Ignite apps.\n\n## Value Prop\nMembers can follow HYROX workouts in the gym between classes, deepening engagement and feeding the HYROX competition funnel.\n\n## What to expect next\nLegal review of content licensing; partner intake chat to follow."
+      }
+    },
+    "replify": {
+      "id": "replify",
+      "name": "Replify",
+      "website": "replify.ai",
+      "contact": {
+        "name": "Partner Lead",
+        "email": "partnerships@replify.ai"
+      },
+      "createdAt": "2026-05-05T10:00:00.000Z",
+      "updatedAt": "2026-05-14T15:00:00.000Z",
+      "stage": "partner-chat",
+      "followUps": [],
+      "research": {
+        "valueProp": "Replify AI provides value by acting as a 24/7 virtual team member that automates lead capture, appointment booking, and member inquiries across phone, text, and email.",
+        "idealCustomerProfile": "Gyms and studios that want to capture more leads after-hours and reduce no-shows by automating the front-desk conversation across phone, text, and email.",
+        "archetype": "Platform",
+        "archetypeRationale": "Replify slots into ABC as an always-on AI front-desk layer — a Platform partnership that extends booking, lead capture, and member service inside Glofox and Ignite.",
+        "scope": "Phase 1: lead capture + appointment booking integration. Phase 2: member inquiry routing and analytics.",
+        "competitiveLandscape": "Generic AI receptionists exist; Replify wins on fitness-vertical context and native ABC booking integration.",
+        "riskFlags": [
+          "PII handling and call recording compliance to be confirmed per region"
+        ]
+      },
+      "internalAwareness": {
+        "subject": "[Partnerships] Replify — Platform partner in partner chat",
+        "body": "## Overview\nReplify is in the partner chat stage. They will act as a 24/7 virtual team member automating lead capture, appointment booking, and member inquiries across phone, text, and email.\n\n## Partner Archetype — Platform\nNative integration with ABC booking + member surfaces.\n\n## What to expect next\nIntake chat in motion; integration scope and target date to be confirmed."
       },
       "partnerChat": {
-        "token": "demo-northbeam-token",
-        "step": "closed",
+        "token": "replify-token",
+        "step": "integration-details",
         "attachments": [],
         "partnerInputs": {
-          "reviewNotes": "Looks accurate. One add: we'd like to be positioned as 'mid-market re-platform specialists' specifically, not generic advisors.",
-          "integrationDescription": "Auth is OAuth2 with PKCE. We hit /v1/leads to ingest. Rate limit 1k/min.",
-          "targetDate": "2026-06-29T18:30:00.000Z"
+          "reviewNotes": "Brief looks accurate."
         },
-        "lastPartnerResponseAt": "2026-05-12T10:53:29.242Z",
+        "lastPartnerResponseAt": "2026-05-13T10:00:00.000Z",
         "messages": [
           {
             "id": "m1",
             "role": "agent",
-            "ts": "2026-05-10T10:52:28.863Z",
-            "content": "Hi Marcus 👋\n\nI'm ABC's Partner Launch Agent. Congrats on signing — I'll help us go from \"signed\" to \"live\" cleanly.\n\nCould you review the brief and share anything you'd change, add, or want our team to know?",
+            "ts": "2026-05-12T10:00:00.000Z",
+            "content": "Hi Replify team 👋\n\nI'm ABC's Partner Launch Agent. Congrats on signing — I'll help us go from \"signed\" to \"live\" cleanly.\n\nCould you review the brief and share anything you'd change, add, or want our team to know?",
             "meta": {
               "step": "welcome"
             }
@@ -150,8 +316,8 @@
           {
             "id": "m2",
             "role": "partner",
-            "ts": "2026-05-11T10:52:28.863Z",
-            "content": "Looks accurate. One add: we'd like to be positioned as 'mid-market re-platform specialists' specifically, not generic advisors.",
+            "ts": "2026-05-13T10:00:00.000Z",
+            "content": "Brief looks accurate.",
             "meta": {
               "step": "review-details"
             }
@@ -159,1036 +325,71 @@
           {
             "id": "m3",
             "role": "agent",
-            "ts": "2026-05-11T10:52:28.863Z",
+            "ts": "2026-05-13T10:00:05.000Z",
             "content": "Thanks — got it. ✅\n\nNext, can you walk me through the **integration**? A short description is perfect, and if you have an integration / API doc, please attach it.",
             "meta": {
               "step": "integration-details"
             }
-          },
-          {
-            "id": "Wxl-S2qt",
-            "role": "partner",
-            "ts": "2026-05-12T10:53:21.658Z",
-            "content": "Auth is OAuth2 with PKCE. We hit /v1/leads to ingest. Rate limit 1k/min.",
-            "attachments": [],
-            "meta": {
-              "step": "integration-details"
-            }
-          },
-          {
-            "id": "XQ8rVl6o",
-            "role": "agent",
-            "ts": "2026-05-12T10:53:21.758Z",
-            "content": "Locked in. Closing out this intake — give me a moment to summarize and hand back to the ABC partner team.",
-            "meta": {
-              "step": "target-date"
-            }
-          },
-          {
-            "id": "qVQldHqA",
-            "role": "partner",
-            "ts": "2026-05-12T10:53:29.242Z",
-            "content": "Target completion: June 30, 2026",
-            "attachments": [],
-            "meta": {
-              "step": "target-date"
-            }
-          },
-          {
-            "id": "j4PIEAip",
-            "role": "agent",
-            "ts": "2026-05-12T10:53:29.342Z",
-            "content": "Here's what I've captured — please confirm or correct anything:\n\n**Partner:** Northbeam Advisors\n**Primary contact:** Marcus Reed (marcus@northbeam.co)\n\n**Value Prop**\nNorthbeam is a fast-growing GTM advisory shop that lands ABC inside mid-market deals via outbound referral. Their team brings warm intros and senior-level relationships across the revenue stack.\n\n**Ideal Customer Profile**\nMid-market companies (500–5,000 employees) actively re-platforming their revenue stack, where Northbeam is already advising on tooling decisions.\n\n**Partner notes / edits**\nLooks accurate. One add: we'd like to be positioned as 'mid-market re-platform specialists' specifically, not generic advisors.\n\n**Integration overview**\nAuth is OAuth2 with PKCE. We hit /v1/leads to ingest. Rate limit 1k/min.\n\n**Target completion date**\nJune 30, 2026\n\nIf this all looks right, hit **Confirm & Close** below and I'll publish everything to the ABC partner team.",
-            "meta": {
-              "step": "summary"
-            }
-          },
-          {
-            "id": "T1afhYek",
-            "role": "agent",
-            "ts": "2026-05-12T10:53:29.442Z",
-            "content": "Here's what I've captured — please confirm or correct anything:\n\n**Partner:** Northbeam Advisors\n**Primary contact:** Marcus Reed (marcus@northbeam.co)\n\n**Value Prop**\nNorthbeam is a fast-growing GTM advisory shop that lands ABC inside mid-market deals via outbound referral. Their team brings warm intros and senior-level relationships across the revenue stack.\n\n**Ideal Customer Profile**\nMid-market companies (500–5,000 employees) actively re-platforming their revenue stack, where Northbeam is already advising on tooling decisions.\n\n**Partner notes / edits**\nLooks accurate. One add: we'd like to be positioned as 'mid-market re-platform specialists' specifically, not generic advisors.\n\n**Integration overview**\nAuth is OAuth2 with PKCE. We hit /v1/leads to ingest. Rate limit 1k/min.\n\n**Target completion date**\nJune 30, 2026\n\nIf this all looks right, hit **Confirm & Close** below and I'll publish everything to the ABC partner team.",
-            "meta": {
-              "step": "summary"
-            }
-          },
-          {
-            "id": "5K1RAgdt",
-            "role": "agent",
-            "ts": "2026-05-12T10:53:29.679Z",
-            "content": "This intake is closed. The ABC partner team has everything they need and will reach out with the launch plan shortly. If anything changes on your side, reply here and I'll re-open the thread.",
-            "meta": {
-              "step": "closed"
-            }
-          }
-        ]
-      },
-      "summary": {
-        "finalizedAt": "2026-05-12T10:53:29.678Z",
-        "valueProp": "Northbeam is a fast-growing GTM advisory shop that lands ABC inside mid-market deals via outbound referral. Their team brings warm intros and senior-level relationships across the revenue stack.",
-        "idealCustomerProfile": "Mid-market companies (500–5,000 employees) actively re-platforming their revenue stack, where Northbeam is already advising on tooling decisions.",
-        "scope": "Phase 1: 5 anchor referrals in 60 days + co-branded one-pager. Phase 2: shared QBR cadence + jointly run executive briefings.",
-        "integrationOverview": "Auth is OAuth2 with PKCE. We hit /v1/leads to ingest. Rate limit 1k/min.",
-        "targetDate": "2026-06-29T18:30:00.000Z",
-        "partnerNotes": "Looks accurate. One add: we'd like to be positioned as 'mid-market re-platform specialists' specifically, not generic advisors."
-      },
-      "timeline": {
-        "targetDate": "2026-06-29T18:30:00.000Z",
-        "milestones": [
-          {
-            "name": "Kickoff & technical scoping",
-            "date": "2026-06-01T18:30:00.000Z",
-            "description": "Joint kickoff with ABC + partner eng. Lock down API surface, auth, environments."
-          },
-          {
-            "name": "Build & sandbox certification",
-            "date": "2026-06-11T18:30:00.000Z",
-            "description": "Partner builds against sandbox; ABC certifies happy-path + edge cases."
-          },
-          {
-            "name": "Beta with anchor customers",
-            "date": "2026-06-19T18:30:00.000Z",
-            "description": "2–3 anchor customers in beta. Capture quotes for launch comms."
-          },
-          {
-            "name": "Launch readiness review",
-            "date": "2026-06-24T18:30:00.000Z",
-            "description": "Cross-functional review: Sales, CS, Marketing, Support. Go/no-go."
-          },
-          {
-            "name": "Public launch",
-            "date": "2026-06-29T18:30:00.000Z",
-            "description": "Integration live. Comms 3 sent."
-          }
-        ],
-        "communications": [
-          {
-            "id": "coming-soon",
-            "title": "Coming Soon",
-            "sendDate": "2026-06-08T18:30:00.000Z",
-            "status": "drafted",
-            "subject": "Coming soon: Northbeam Advisors × ABC",
-            "body": "## Coming soon: Northbeam Advisors × ABC\n\nWe're a few weeks out from launching our integration with **Northbeam Advisors** (Go-To-Market). Here's the short version so you can start positioning it.\n\n**Why it matters**\nNorthbeam is a fast-growing GTM advisory shop that lands ABC inside mid-market deals via outbound referral. Their team brings warm intros and senior-level relationships across the revenue stack.\n\n**Who it's for**\nMid-market companies (500–5,000 employees) actively re-platforming their revenue stack, where Northbeam is already advising on tooling decisions.\n\n**Key dates**\n- Beta with anchor customers: see launch timeline\n- Launch readiness review: see launch timeline\n- Public launch: June 30, 2026\n\nThe full Prepare-for-Launch packet (process guide, integration guide, FAQ, internal talk tracks) drops one week out. Reply here with questions.",
-            "attachments": [
-              "Partner Brief (1-pager)",
-              "Key dates"
-            ]
-          },
-          {
-            "id": "prepare-for-launch",
-            "title": "Prepare for Launch",
-            "sendDate": "2026-06-22T18:30:00.000Z",
-            "status": "drafted",
-            "subject": "Get ready: Northbeam Advisors × ABC launches June 30, 2026",
-            "body": "## Prepare for launch: Northbeam Advisors × ABC\n\nWe launch in one week. Use this packet to get fully ready.\n\n**Integration overview (from partner)**\nAuth is OAuth2 with PKCE. We hit /v1/leads to ingest. Rate limit 1k/min.\n\n**What's attached**\n- Process Guide — how to position, qualify, and hand off\n- Integration Guide — technical reference for solutions and support\n- FAQ — top 10 questions with crisp answers\n- Internal Talk Tracks — for AEs, CSMs, and support\n\n**Action items**\n- AEs: review the talk track and the ICP one-liner.\n- CS: review the integration guide; flag accounts already asking for this.\n- Support: scan the FAQ; ping us with anything unclear before launch day.\n\nQuestions? Reply here.",
-            "attachments": [
-              "Process Guide",
-              "Integration Guide",
-              "FAQ",
-              "Internal Talk Tracks"
-            ]
-          },
-          {
-            "id": "new-partner-live",
-            "title": "New Partner is Live",
-            "sendDate": "2026-06-29T18:30:00.000Z",
-            "status": "drafted",
-            "subject": "Northbeam Advisors × ABC is live",
-            "body": "## Northbeam Advisors × ABC is live\n\nThe integration is live as of today.\n\n**The short pitch**\nNorthbeam is a fast-growing GTM advisory shop that lands ABC inside mid-market deals via outbound referral. Their team brings warm intros and senior-level relationships across the revenue stack.\n\n**Resources (all in one place)**\n- Customer-facing deck\n- External one-pager\n- All internal templates (process, integration, FAQ, talk tracks)\n\n**Who to route to**\n- Active opportunities: AEs can lead with the joint value prop on accounts that fit the ICP.\n- Existing customers: CS team has a target list of accounts already showing intent signals.\n\nWe'll share a 30-day readout with metrics and customer stories. Until then — go sell it.",
-            "attachments": [
-              "Customer-facing PPT",
-              "External One-Pager",
-              "All internal templates"
-            ]
           }
         ]
       }
     },
-    "demo-helix-platform": {
-      "id": "demo-helix-platform",
-      "name": "Helix Platform",
-      "website": "helixplatform.com",
+    "I47drnJXU3": {
+      "id": "I47drnJXU3",
+      "name": "HCL",
+      "website": "hcl.com",
       "contact": {
-        "name": "Avery Chen",
-        "email": "avery@helixplatform.com"
+        "name": "HENRY",
+        "email": "henry@gmail.com"
       },
-      "createdAt": "2026-04-02T10:52:28.863Z",
-      "updatedAt": "2026-05-12T10:53:37.898Z",
-      "stage": "retro",
-      "followUps": [],
-      "research": {
-        "valueProp": "Helix is a natural extension of ABC's platform, bundling identity + access intelligence on top of ABC. Sold together, joint customers consolidate two budget lines.",
-        "idealCustomerProfile": "Upper-mid-market and enterprise security teams (2,000+ employees) already standardized on a modern IdP, with mature audit programs.",
-        "archetype": "Platform",
-        "archetypeRationale": "Helix is sold alongside ABC. Resell motion expands ACV/LTV. Monetization via margin / reseller economics.",
-        "scope": "Phase 1: 3 lighthouse joint sells in 90 days. Phase 2: SKU bundling in ABC's reseller catalog.",
-        "competitiveLandscape": "Adjacent vendors exist but Helix's depth in access intelligence is differentiated.",
-        "riskFlags": []
-      },
-      "internalAwareness": {
-        "subject": "[Partnerships] We've signed Helix Platform — Platform",
-        "body": "## Overview\nHelix Platform is signed as a Platform partner — resell motion.\n\n## Value Prop\nBundle ABC with Helix's access intelligence layer for consolidated security spend.\n\n## Ideal Customer Profile\n2,000+ employee security teams on a modern IdP with mature audit programs.\n\n## Partner Archetype — Platform\nResell motion. Monetization: margin/reseller. KPIs: ARR expansion, ADS/attach rate, LTV.\n\n## Scope\nPhase 1: 3 lighthouse joint sells in 90 days. Phase 2: bundling in reseller catalog.\n\n## What to expect next\nLaunch timeline + 3 launch communications in motion.",
-        "approvedAt": "2026-04-04T10:52:28.863Z"
-      },
-      "partnerChat": {
-        "token": "demo-helix-token",
-        "step": "closed",
-        "attachments": [
-          {
-            "id": "att1",
-            "name": "Helix-ABC-Integration-Spec.md",
-            "size": 14820,
-            "mimeType": "text/markdown",
-            "uploadedAt": "2026-05-02T10:52:28.863Z",
-            "excerpt": "# Helix x ABC Integration\n\nAuth: OAuth2 with PKCE. Token exchange via /oauth/token..."
-          }
-        ],
-        "partnerInputs": {
-          "reviewNotes": "All looks right.",
-          "integrationDescription": "OAuth2 PKCE auth flow, REST API on top of Helix's policy engine. Read-only initially; write-back behind feature flag for v1.1.",
-          "targetDate": "2026-06-02T10:52:28.863Z"
-        },
-        "lastPartnerResponseAt": "2026-05-04T10:52:28.863Z",
-        "messages": []
-      },
-      "summary": {
-        "finalizedAt": "2026-05-04T10:52:28.863Z",
-        "valueProp": "Helix is a natural extension of ABC's platform, bundling identity + access intelligence on top of ABC.",
-        "idealCustomerProfile": "Upper-mid-market and enterprise security teams (2,000+ employees).",
-        "scope": "Phase 1: 3 lighthouse joint sells in 90 days. Phase 2: SKU bundling.",
-        "integrationOverview": "OAuth2 PKCE auth flow, REST API on top of Helix's policy engine. Read-only initially; write-back behind feature flag for v1.1.",
-        "targetDate": "2026-06-02T10:52:28.863Z",
-        "partnerNotes": "All looks right."
-      },
-      "timeline": {
-        "targetDate": "2026-06-02T10:52:28.863Z",
-        "milestones": [
-          {
-            "name": "Kickoff & technical scoping",
-            "date": "2026-05-05T10:52:28.863Z",
-            "description": "Joint kickoff. Lock down API surface, auth, environments."
-          },
-          {
-            "name": "Build & sandbox certification",
-            "date": "2026-05-15T10:52:28.863Z",
-            "description": "Helix builds against sandbox; ABC certifies."
-          },
-          {
-            "name": "Beta with anchor customers",
-            "date": "2026-05-23T10:52:28.863Z",
-            "description": "3 anchor customers in beta."
-          },
-          {
-            "name": "Launch readiness review",
-            "date": "2026-05-28T10:52:28.863Z",
-            "description": "Cross-functional go/no-go."
-          },
-          {
-            "name": "Public launch",
-            "date": "2026-06-02T10:52:28.863Z",
-            "description": "Integration live. Comms 3 sent."
-          }
-        ],
-        "communications": [
-          {
-            "id": "coming-soon",
-            "title": "Coming Soon",
-            "sendDate": "2026-05-12T10:52:28.863Z",
-            "status": "sent",
-            "subject": "Coming soon: Helix Platform × ABC",
-            "body": "Coming soon comm…",
-            "attachments": [
-              "Partner Brief",
-              "Key dates"
-            ]
-          },
-          {
-            "id": "prepare-for-launch",
-            "title": "Prepare for Launch",
-            "sendDate": "2026-05-26T10:52:28.863Z",
-            "status": "drafted",
-            "subject": "Get ready: Helix Platform × ABC launches soon",
-            "body": "Prepare for launch comm…",
-            "attachments": [
-              "Process Guide",
-              "Integration Guide",
-              "FAQ",
-              "Talk Tracks"
-            ]
-          },
-          {
-            "id": "new-partner-live",
-            "title": "New Partner is Live",
-            "sendDate": "2026-06-02T10:52:28.863Z",
-            "status": "drafted",
-            "subject": "Helix Platform × ABC is live",
-            "body": "Live comm…",
-            "attachments": [
-              "Customer PPT",
-              "One-pager",
-              "Templates"
-            ]
-          }
-        ]
-      },
-      "metrics": {
-        "submittedAt": "2026-05-12T10:53:37.898Z",
-        "kpis": {
-          "Partner-influenced ARR": "$420K",
-          "Joint customer adoption": "38%",
-          "Open opps in pipeline": "22",
-          "Win rate uplift": "+8.5pp"
-        },
-        "successStories": "Acme Corp closed in 21 days vs avg 60. Beta Industries cited the joint integration as the reason for choosing ABC.",
-        "generatedNarrative": "## Helix Platform × ABC — 30 day update\n\n**Headline:** First 30 days of the Helix Platform integration are tracking ahead of expectations on the metrics that matter for a Platform partner.\n\n**KPI Snapshot**\n| KPI | Value |\n| --- | --- |\n| Partner-influenced ARR | $420K |\n| Joint customer adoption | 38% |\n| Open opps in pipeline | 22 |\n| Win rate uplift | +8.5pp |\n\n**Customer Stories**\nAcme Corp closed in 21 days vs avg 60. Beta Industries cited the joint integration as the reason for choosing ABC.\n\n**What's Next**\n- Double down on the segments where the integration is winning.\n- Tighten the joint motion with Helix Platform on accounts already showing intent.\n- Next checkpoint in 60 days with a full ARR and adoption readout.\n\nTemplates and updated collateral are attached.",
-        "archetypeSlide": "## Partner Archetypes — where **Helix Platform** sits\n\nHere's the lowdown: ABC's partner ecosystem breaks down into four archetypes — **Data Affiliate**, **Go-To-Market**, **Platform**, and **Channel**. Each has a distinct sales motion, value add, traits, KPIs, monetization model, and revenue potential. **Helix Platform** is a **Platform** partner.\n\n### Summary by Partner Type\n\n**Data Affiliate — integration-first partner.** Integrate with ABC to add value for mutual customers or broaden reach. Drives stickiness and reduces churn by embedding into the product. Heavy on technical integration and product-led value supporting customer workflow. Measured by product adoption and customer retention. Usually pays an API fee. Low-to-medium revenue potential, but by far the most common (~91% of partners).\n\n**Go-To-Market — referral ally.** Companies with highly demanded products/services that help ABC close deals or retain customers. Sales motion is outbound referral. Boosts close rates and curbs churn. High customer demand, optional integration, sales-motion-dependent. KPIs focus on win rate and ARR. Revenue is shared. Medium-to-high revenue potential, ~5%.\n\n**Platform — resell partner.** Their product is a natural extension of ABC's platform. ABC sells the offering directly. Expands LTV and ACV. Traits include strong reach or category leadership and bundling potential. KPIs target ARR expansion, ADS/attach rate, LTV. Monetized via margin or reseller. High revenue potential, ~3%.\n\n**Channel — lead generator.** Same market and buyer as ABC, delivering inbound leads. Scales distribution and partner-sourced ARR, reduces CAC. Buyer alignment with ABC, reliance on the partner for leads. Monetized on gross revenue. Very high revenue potential, ~1%.\n\n### Key Metrics\n\n| Metric / Partner Type | Data Affiliate | Go-To-Market | Platform | Channel |\n| --- | --- | --- | --- | --- |\n| Sales Motion | n/a (integrated) | Outbound referral | Resell | Inbound lead |\n| Value | Stickiness, lower churn | Higher close rate | Expand LTV/ACV | Scale distribution |\n| Traits | Tech integration, product-led, workflow support | High demand, optional integration, sales-dependent | Strong reach, category leader, bundling | Buyer alignment, partner-led leads |\n| Primary KPIs | Product adoption, retention | Win rate, ARR | ARR expansion, ADS/attach rate, LTV | Partner-sourced ARR, CAC reduction |\n| Monetization Model | API fee | Revenue share | Margin / reseller | Gross revenue |\n| Revenue Potential | Low-medium | Medium-high | High | Very high |\n| % of Partners | ~91% | ~5% | ~3% | ~1% |\n\nIf you need to map these to specific partner candidates or want more details, just let me know."
-      }
-    },
-    "demo-quietchannel": {
-      "id": "demo-quietchannel",
-      "name": "QuietChannel",
-      "website": "quietchannel.com",
-      "contact": {
-        "name": "Sam Patel",
-        "email": "sam@quietchannel.com"
-      },
-      "createdAt": "2026-03-28T10:52:28.863Z",
-      "updatedAt": "2026-04-07T10:52:28.863Z",
+      "createdAt": "2026-05-14T15:36:23.384Z",
+      "updatedAt": "2026-05-14T15:36:32.897Z",
       "stage": "partner-chat",
       "followUps": [],
       "research": {
-        "valueProp": "QuietChannel is a developer-tooling vendor whose users overlap heavily with ABC's ICP. Joint go-to-market drives inbound leads from QuietChannel into ABC.",
-        "idealCustomerProfile": "Series B–D companies (100–800 employees) standardizing on modern developer infra.",
-        "archetype": "Channel",
-        "archetypeRationale": "QuietChannel reaches the same buyer and drives inbound leads. Monetized on gross revenue.",
-        "scope": "Co-marketing + inbound lead routing in Phase 1.",
-        "competitiveLandscape": "Unique niche; few direct competitors.",
+        "valueProp": "HCL accelerates go-to-market and operations teams workflows with workflow automation that adapts to context. Integrated with ABC, joint customers get a unified path from trigger event to action taken, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.",
+        "idealCustomerProfile": "Mid-market and upper-mid-market go-to-market and operations teams (200–5,000 employees) running a modern SaaS stack with at least one system of record. Strong fit for teams with a dedicated operations or platform lead who already operate on a modern data stack and need context-switching across point tools resolved.",
+        "archetype": "Data Affiliate",
+        "archetypeRationale": "HCL's value lands inside the product through a technical integration, driving stickiness and retention on mutual customers. Sales motion is integration-first, monetization typically via API fee.",
+        "scope": "Phase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded hcl↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.",
+        "competitiveLandscape": "HCL sits alongside a small set of point solutions but differentiates through an opinionated, outcome-led experience. ABC's partnership tightens the seam between trigger event and action taken, an area where competitors still rely on manual exports.",
         "riskFlags": [
-          "Partner hasn't replied to intake in 5 weeks"
+          "Integration ownership and SLA not yet confirmed",
+          "Need security review for any data sharing in scope",
+          "Confirm legal/contract path before public co-marketing"
         ]
       },
       "internalAwareness": {
-        "subject": "[Partnerships] We've signed QuietChannel — Channel",
-        "body": "## Overview\nQuietChannel signed as a Channel partner.",
-        "approvedAt": "2026-04-02T10:52:28.863Z"
+        "subject": "[Partnerships] We've signed HCL — Data Affiliate",
+        "body": "## Overview\nWe've signed **HCL** ([hcl.com](https://hcl.com)) as a new Data Affiliate partner. The integration moves into onboarding this week with primary contact **HENRY** (henry@gmail.com).\n\n## Value Prop\nHCL accelerates go-to-market and operations teams workflows with workflow automation that adapts to context. Integrated with ABC, joint customers get a unified path from trigger event to action taken, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n## Ideal Customer Profile\nMid-market and upper-mid-market go-to-market and operations teams (200–5,000 employees) running a modern SaaS stack with at least one system of record. Strong fit for teams with a dedicated operations or platform lead who already operate on a modern data stack and need context-switching across point tools resolved.\n\n## Partner Archetype — Data Affiliate\nHCL's value lands inside the product through a technical integration, driving stickiness and retention on mutual customers. Sales motion is integration-first, monetization typically via API fee.\n\n## Scope\nPhase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded hcl↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.\n\n## What to expect next\n- Partner-facing launch chat goes out today; we'll capture integration details, target launch date, and any partner-supplied collateral.\n- The agent will follow up if the partner is unresponsive at 10 / 20 / 30 days and notify this team.\n- Once the partner closes the chat, we'll publish a launch timeline with three communications (Coming Soon, Prepare for Launch, Live) plus customer-facing collateral.\n\nReply here with edits or call out blockers before we hit \"Approve & Launch to Partner\".",
+        "approvedAt": "2026-05-14T15:36:30.904Z"
       },
       "partnerChat": {
-        "token": "demo-quietchannel-token",
+        "token": "pv5DH9yTKkDLfn",
         "step": "review-details",
-        "attachments": [],
-        "partnerInputs": {},
         "messages": [
           {
-            "id": "m1",
+            "id": "IcASLIF1",
             "role": "agent",
-            "ts": "2026-04-07T10:52:28.863Z",
-            "content": "Hi Sam — welcome aboard. Could you review the brief and let me know if anything needs updating?",
+            "ts": "2026-05-14T15:36:32.897Z",
+            "content": "Hi HENRY 👋\n\nI'm ABC's Partner Launch Agent. Congrats on signing with ABC — I'll help us go from \"signed\" to \"live\" cleanly.\n\nHere's the brief our team put together about **HCL** so far:\n\n**Value Prop**\nHCL accelerates go-to-market and operations teams workflows with workflow automation that adapts to context. Integrated with ABC, joint customers get a unified path from trigger event to action taken, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n**Ideal Customer Profile**\nMid-market and upper-mid-market go-to-market and operations teams (200–5,000 employees) running a modern SaaS stack with at least one system of record. Strong fit for teams with a dedicated operations or platform lead who already operate on a modern data stack and need context-switching across point tools resolved.\n\n**Scope**\nPhase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded hcl↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.\n\nCould you review the above and share anything you'd change, add, or want our team to know? Even a quick \"looks good\" is great.",
             "meta": {
               "step": "welcome"
             }
           }
-        ]
-      }
-    },
-    "0HSitQ4kqm": {
-      "id": "0HSitQ4kqm",
-      "name": "Vector Insights",
-      "website": "vectorinsights.ai",
-      "contact": {
-        "name": "Alex Kim",
-        "email": "alex@vectorinsights.ai"
-      },
-      "createdAt": "2026-05-12T10:53:45.018Z",
-      "updatedAt": "2026-05-12T10:53:45.020Z",
-      "stage": "internal-review",
-      "followUps": [],
-      "research": {
-        "valueProp": "Vector Insights accelerates go-to-market and operations teams workflows with workflow automation that adapts to context. Integrated with ABC, joint customers get a unified path from trigger event to action taken, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.",
-        "idealCustomerProfile": "Mid-market and upper-mid-market go-to-market and operations teams (200–5,000 employees) running a modern SaaS stack with at least one system of record. Strong fit for teams with a dedicated operations or platform lead who already operate on a modern data stack and need context-switching across point tools resolved.",
-        "archetype": "Data Affiliate",
-        "archetypeRationale": "Vector Insights's value lands inside the product through a technical integration, driving stickiness and retention on mutual customers. Sales motion is integration-first, monetization typically via API fee.",
-        "scope": "Phase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded vectorinsights↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.",
-        "competitiveLandscape": "Vector Insights sits alongside a small set of point solutions but differentiates through an opinionated, outcome-led experience. ABC's partnership tightens the seam between trigger event and action taken, an area where competitors still rely on manual exports.",
-        "riskFlags": [
-          "Integration ownership and SLA not yet confirmed",
-          "Need security review for any data sharing in scope",
-          "Confirm legal/contract path before public co-marketing"
-        ]
-      },
-      "internalAwareness": {
-        "subject": "[Partnerships] We've signed Vector Insights — Data Affiliate",
-        "body": "## Overview\nWe've signed **Vector Insights** ([vectorinsights.ai](https://vectorinsights.ai)) as a new Data Affiliate partner. The integration moves into onboarding this week with primary contact **Alex Kim** (alex@vectorinsights.ai).\n\n## Value Prop\nVector Insights accelerates go-to-market and operations teams workflows with workflow automation that adapts to context. Integrated with ABC, joint customers get a unified path from trigger event to action taken, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n## Ideal Customer Profile\nMid-market and upper-mid-market go-to-market and operations teams (200–5,000 employees) running a modern SaaS stack with at least one system of record. Strong fit for teams with a dedicated operations or platform lead who already operate on a modern data stack and need context-switching across point tools resolved.\n\n## Partner Archetype — Data Affiliate\nVector Insights's value lands inside the product through a technical integration, driving stickiness and retention on mutual customers. Sales motion is integration-first, monetization typically via API fee.\n\n## Scope\nPhase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded vectorinsights↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.\n\n## What to expect next\n- Partner-facing launch chat goes out today; we'll capture integration details, target launch date, and any partner-supplied collateral.\n- The agent will follow up if the partner is unresponsive at 10 / 20 / 30 days and notify this team.\n- Once the partner closes the chat, we'll publish a launch timeline with three communications (Coming Soon, Prepare for Launch, Live) plus customer-facing collateral.\n\nReply here with edits or call out blockers before we hit \"Approve & Launch to Partner\"."
-      }
-    },
-    "Tpm1-FEQzf": {
-      "id": "Tpm1-FEQzf",
-      "name": "test partner",
-      "website": "acmedata.com",
-      "contact": {
-        "name": "Shivani",
-        "email": "sjain@acmedata.com"
-      },
-      "createdAt": "2026-05-12T10:56:53.544Z",
-      "updatedAt": "2026-05-12T11:07:26.597Z",
-      "stage": "launching",
-      "followUps": [],
-      "research": {
-        "valueProp": "test partner accelerates data and analytics teams workflows with governed activation across the modern data stack. Integrated with ABC, joint customers get a unified path from warehouse model to operational system, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.",
-        "idealCustomerProfile": "Mid-market and upper-mid-market data and analytics teams (200–5,000 employees) running Snowflake, BigQuery, or Databricks with a downstream activation layer. Strong fit for teams with a dedicated analytics engineering or DataOps lead who already operate on a modern data stack and need fragmented activation surfaces and brittle pipelines resolved.",
-        "archetype": "Data Affiliate",
-        "archetypeRationale": "test partner's value lands inside the product through a technical integration, driving stickiness and retention on mutual customers. Sales motion is integration-first, monetization typically via API fee.",
-        "scope": "Phase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded acmedata↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.",
-        "competitiveLandscape": "test partner sits alongside a small set of point solutions but differentiates through first-class governance and lineage on the activation path. ABC's partnership tightens the seam between warehouse model and operational system, an area where competitors still rely on manual exports.",
-        "riskFlags": [
-          "Integration ownership and SLA not yet confirmed",
-          "Need security review for any data sharing in scope",
-          "Confirm legal/contract path before public co-marketing"
-        ]
-      },
-      "internalAwareness": {
-        "subject": "[Partnerships] We've signed test partner — Data Affiliate",
-        "body": "## Overview\nWe've signed **test partner** ([acmedata.com](https://acmedata.com)) as a new Data Affiliate partner. The integration moves into onboarding this week with primary contact **Shivani** (sjain@acmedata.com).\n\n## Value Prop\ntest partner accelerates data and analytics teams workflows with governed activation across the modern data stack. Integrated with ABC, joint customers get a unified path from warehouse model to operational system, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n## Ideal Customer Profile\nMid-market and upper-mid-market data and analytics teams (200–5,000 employees) running Snowflake, BigQuery, or Databricks with a downstream activation layer. Strong fit for teams with a dedicated analytics engineering or DataOps lead who already operate on a modern data stack and need fragmented activation surfaces and brittle pipelines resolved.\n\n## Partner Archetype — Data Affiliate\ntest partner's value lands inside the product through a technical integration, driving stickiness and retention on mutual customers. Sales motion is integration-first, monetization typically via API fee.\n\n## Scope\nPhase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded acmedata↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.\n\n## What to expect next\n- Partner-facing launch chat goes out today; we'll capture integration details, target launch date, and any partner-supplied collateral.\n- The agent will follow up if the partner is unresponsive at 10 / 20 / 30 days and notify this team.\n- Once the partner closes the chat, we'll publish a launch timeline with three communications (Coming Soon, Prepare for Launch, Live) plus customer-facing collateral.\n\nReply here with edits or call out blockers before we hit \"Approve & Launch to Partner\".",
-        "approvedAt": "2026-05-12T10:57:20.618Z"
-      },
-      "partnerChat": {
-        "token": "fbKEyq0epn0ytl",
-        "step": "closed",
-        "messages": [
-          {
-            "id": "XzvHo861",
-            "role": "agent",
-            "ts": "2026-05-12T10:57:29.289Z",
-            "content": "Hi Shivani 👋\n\nI'm ABC's Partner Launch Agent. Congrats on signing with ABC — I'll help us go from \"signed\" to \"live\" cleanly.\n\nHere's the brief our team put together about **test partner** so far:\n\n**Value Prop**\ntest partner accelerates data and analytics teams workflows with governed activation across the modern data stack. Integrated with ABC, joint customers get a unified path from warehouse model to operational system, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n**Ideal Customer Profile**\nMid-market and upper-mid-market data and analytics teams (200–5,000 employees) running Snowflake, BigQuery, or Databricks with a downstream activation layer. Strong fit for teams with a dedicated analytics engineering or DataOps lead who already operate on a modern data stack and need fragmented activation surfaces and brittle pipelines resolved.\n\n**Scope**\nPhase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded acmedata↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.\n\nCould you review the above and share anything you'd change, add, or want our team to know? Even a quick \"looks good\" is great.",
-            "meta": {
-              "step": "welcome"
-            }
-          },
-          {
-            "id": "c9IMr_HW",
-            "role": "partner",
-            "ts": "2026-05-12T10:58:11.705Z",
-            "content": "looks good",
-            "attachments": [],
-            "meta": {
-              "step": "review-details"
-            }
-          },
-          {
-            "id": "h5shRd9-",
-            "role": "agent",
-            "ts": "2026-05-12T10:58:11.805Z",
-            "content": "Great — that gives me what I need to scope the launch.\n\nWhat's a realistic **target integration completion date**? (You can give an exact date or a window — e.g. \"early June\" — and I'll work backward to build the launch timeline.)",
-            "meta": {
-              "step": "integration-details"
-            }
-          },
-          {
-            "id": "V3Z16S6E",
-            "role": "partner",
-            "ts": "2026-05-12T10:58:30.135Z",
-            "content": "19th june",
-            "attachments": [],
-            "meta": {
-              "step": "integration-details"
-            }
-          },
-          {
-            "id": "xGdVAZAU",
-            "role": "agent",
-            "ts": "2026-05-12T10:58:30.235Z",
-            "content": "Locked in. Closing out this intake — give me a moment to summarize and hand back to the ABC partner team.",
-            "meta": {
-              "step": "target-date"
-            }
-          },
-          {
-            "id": "M41iU6UU",
-            "role": "partner",
-            "ts": "2026-05-12T11:00:47.361Z",
-            "content": "launch date 21st June",
-            "attachments": [],
-            "meta": {
-              "step": "target-date"
-            }
-          },
-          {
-            "id": "2TlDts-e",
-            "role": "agent",
-            "ts": "2026-05-12T11:00:47.463Z",
-            "content": "Here's what I've captured — please confirm or correct anything:\n\n**Partner:** test partner\n**Primary contact:** Shivani (sjain@acmedata.com)\n\n**Value Prop**\ntest partner accelerates data and analytics teams workflows with governed activation across the modern data stack. Integrated with ABC, joint customers get a unified path from warehouse model to operational system, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n**Ideal Customer Profile**\nMid-market and upper-mid-market data and analytics teams (200–5,000 employees) running Snowflake, BigQuery, or Databricks with a downstream activation layer. Strong fit for teams with a dedicated analytics engineering or DataOps lead who already operate on a modern data stack and need fragmented activation surfaces and brittle pipelines resolved.\n\n**Partner notes / edits**\nlooks good\n\n**Integration overview**\n19th june\n\n**Target completion date**\nInvalid Date\n\nIf this all looks right, hit **Confirm & Close** below and I'll publish everything to the ABC partner team.",
-            "meta": {
-              "step": "summary"
-            }
-          },
-          {
-            "id": "4WP3OHk_",
-            "role": "agent",
-            "ts": "2026-05-12T11:00:47.563Z",
-            "content": "Here's what I've captured — please confirm or correct anything:\n\n**Partner:** test partner\n**Primary contact:** Shivani (sjain@acmedata.com)\n\n**Value Prop**\ntest partner accelerates data and analytics teams workflows with governed activation across the modern data stack. Integrated with ABC, joint customers get a unified path from warehouse model to operational system, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n**Ideal Customer Profile**\nMid-market and upper-mid-market data and analytics teams (200–5,000 employees) running Snowflake, BigQuery, or Databricks with a downstream activation layer. Strong fit for teams with a dedicated analytics engineering or DataOps lead who already operate on a modern data stack and need fragmented activation surfaces and brittle pipelines resolved.\n\n**Partner notes / edits**\nlooks good\n\n**Integration overview**\n19th june\n\n**Target completion date**\nInvalid Date\n\nIf this all looks right, hit **Confirm & Close** below and I'll publish everything to the ABC partner team.",
-            "meta": {
-              "step": "summary"
-            }
-          },
-          {
-            "id": "DV8pJYzc",
-            "role": "agent",
-            "ts": "2026-05-12T11:01:24.596Z",
-            "content": "This intake is closed. The ABC partner team has everything they need and will reach out with the launch plan shortly. If anything changes on your side, reply here and I'll re-open the thread.",
-            "meta": {
-              "step": "closed"
-            }
-          },
-          {
-            "id": "mmKVePkt",
-            "role": "agent",
-            "ts": "2026-05-12T11:01:30.047Z",
-            "content": "This intake is closed. The ABC partner team has everything they need and will reach out with the launch plan shortly. If anything changes on your side, reply here and I'll re-open the thread.",
-            "meta": {
-              "step": "closed"
-            }
-          }
         ],
         "attachments": [],
-        "partnerInputs": {
-          "reviewNotes": "looks good",
-          "integrationDescription": "19th june",
-          "targetDate": "2026-06-20T18:30:00.000Z"
-        },
-        "lastPartnerResponseAt": "2026-05-12T11:00:47.361Z"
-      },
-      "summary": {
-        "finalizedAt": "2026-05-12T11:01:30.047Z",
-        "valueProp": "test partner accelerates data and analytics teams workflows with governed activation across the modern data stack. Integrated with ABC, joint customers get a unified path from warehouse model to operational system, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.",
-        "idealCustomerProfile": "Mid-market and upper-mid-market data and analytics teams (200–5,000 employees) running Snowflake, BigQuery, or Databricks with a downstream activation layer. Strong fit for teams with a dedicated analytics engineering or DataOps lead who already operate on a modern data stack and need fragmented activation surfaces and brittle pipelines resolved.",
-        "scope": "Phase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded acmedata↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.",
-        "integrationOverview": "19th june",
-        "targetDate": "launch date 21st June",
-        "partnerNotes": "looks good"
-      },
-      "timeline": {
-        "targetDate": "2026-06-20T18:30:00.000Z",
-        "milestones": [
-          {
-            "name": "Kickoff & technical scoping",
-            "date": "2026-05-23T18:30:00.000Z",
-            "description": "Joint kickoff with ABC + partner eng. Lock down API surface, auth, environments."
-          },
-          {
-            "name": "Build & sandbox certification",
-            "date": "2026-06-02T18:30:00.000Z",
-            "description": "Partner builds against sandbox; ABC certifies happy-path + edge cases."
-          },
-          {
-            "name": "Beta with anchor customers",
-            "date": "2026-06-10T18:30:00.000Z",
-            "description": "2–3 anchor customers in beta. Capture quotes for launch comms."
-          },
-          {
-            "name": "Launch readiness review",
-            "date": "2026-06-15T18:30:00.000Z",
-            "description": "Cross-functional review: Sales, CS, Marketing, Support. Go/no-go."
-          },
-          {
-            "name": "Public launch",
-            "date": "2026-06-20T18:30:00.000Z",
-            "description": "Integration live. Comms 3 sent."
-          }
-        ],
-        "communications": [
-          {
-            "id": "coming-soon",
-            "title": "Coming Soon",
-            "sendDate": "2026-05-30T18:30:00.000Z",
-            "status": "sent",
-            "subject": "Coming soon: test partner × ABC",
-            "body": "## Coming soon: test partner × ABC\n\nWe're a few weeks out from launching our integration with **test partner** (Data Affiliate). Here's the short version so you can start positioning it.\n\n**Why it matters**\ntest partner accelerates data and analytics teams workflows with governed activation across the modern data stack. Integrated with ABC, joint customers get a unified path from warehouse model to operational system, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n**Who it's for**\nMid-market and upper-mid-market data and analytics teams (200–5,000 employees) running Snowflake, BigQuery, or Databricks with a downstream activation layer. Strong fit for teams with a dedicated analytics engineering or DataOps lead who already operate on a modern data stack and need fragmented activation surfaces and brittle pipelines resolved.\n\n**Key dates**\n- Beta with anchor customers: see launch timeline\n- Launch readiness review: see launch timeline\n- Public launch: June 21, 2026\n\nThe full Prepare-for-Launch packet (process guide, integration guide, FAQ, internal talk tracks) drops one week out. Reply here with questions.",
-            "attachments": [
-              "Partner Brief (1-pager)",
-              "Key dates"
-            ]
-          },
-          {
-            "id": "prepare-for-launch",
-            "title": "Prepare for Launch",
-            "sendDate": "2026-06-13T18:30:00.000Z",
-            "status": "drafted",
-            "subject": "Get ready: test partner × ABC launches June 21, 2026",
-            "body": "## Prepare for launch: test partner × ABC\n\nWe launch in one week. Use this packet to get fully ready.\n\n**Integration overview (from partner)**\n19th june\n\n**What's attached**\n- Process Guide — how to position, qualify, and hand off\n- Integration Guide — technical reference for solutions and support\n- FAQ — top 10 questions with crisp answers\n- Internal Talk Tracks — for AEs, CSMs, and support\n\n**Action items**\n- AEs: review the talk track and the ICP one-liner.\n- CS: review the integration guide; flag accounts already asking for this.\n- Support: scan the FAQ; ping us with anything unclear before launch day.\n\nQuestions? Reply here.",
-            "attachments": [
-              "Process Guide",
-              "Integration Guide",
-              "FAQ",
-              "Internal Talk Tracks"
-            ]
-          },
-          {
-            "id": "new-partner-live",
-            "title": "New Partner is Live",
-            "sendDate": "2026-06-20T18:30:00.000Z",
-            "status": "drafted",
-            "subject": "test partner × ABC is live",
-            "body": "## test partner × ABC is live\n\nThe integration is live as of today.\n\n**The short pitch**\ntest partner accelerates data and analytics teams workflows with governed activation across the modern data stack. Integrated with ABC, joint customers get a unified path from warehouse model to operational system, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n**Resources (all in one place)**\n- Customer-facing deck\n- External one-pager\n- All internal templates (process, integration, FAQ, talk tracks)\n\n**Who to route to**\n- Active opportunities: AEs can lead with the joint value prop on accounts that fit the ICP.\n- Existing customers: CS team has a target list of accounts already showing intent signals.\n\nWe'll share a 30-day readout with metrics and customer stories. Until then — go sell it.",
-            "attachments": [
-              "Customer-facing PPT",
-              "External One-Pager",
-              "All internal templates"
-            ]
-          }
-        ]
-      }
-    },
-    "4XwTm7BuYB": {
-      "id": "4XwTm7BuYB",
-      "name": "Acme Data",
-      "website": "acmedata.com",
-      "contact": {
-        "name": "Bala",
-        "email": "bala@acmedata.com"
-      },
-      "createdAt": "2026-05-12T11:23:12.353Z",
-      "updatedAt": "2026-05-12T11:25:04.298Z",
-      "stage": "partner-chat",
-      "followUps": [],
-      "research": {
-        "valueProp": "Acme Data accelerates data and analytics teams workflows with governed activation across the modern data stack. Integrated with ABC, joint customers get a unified path from warehouse model to operational system, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.",
-        "idealCustomerProfile": "Mid-market and upper-mid-market data and analytics teams (200–5,000 employees) running Snowflake, BigQuery, or Databricks with a downstream activation layer. Strong fit for teams with a dedicated analytics engineering or DataOps lead who already operate on a modern data stack and need fragmented activation surfaces and brittle pipelines resolved.",
-        "archetype": "Data Affiliate",
-        "archetypeRationale": "Acme Data's value lands inside the product through a technical integration, driving stickiness and retention on mutual customers. Sales motion is integration-first, monetization typically via API fee.",
-        "scope": "Phase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded acmedata↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.",
-        "competitiveLandscape": "Acme Data sits alongside a small set of point solutions but differentiates through first-class governance and lineage on the activation path. ABC's partnership tightens the seam between warehouse model and operational system, an area where competitors still rely on manual exports.",
-        "riskFlags": [
-          "Integration ownership and SLA not yet confirmed",
-          "Need security review for any data sharing in scope",
-          "Confirm legal/contract path before public co-marketing"
-        ]
-      },
-      "internalAwareness": {
-        "subject": "[Partnerships] We've signed Acme Data — Data Affiliate",
-        "body": "## Overview\nWe've signed **Acme Data** ([acmedata.com](https://acmedata.com)) as a new Data Affiliate partner. The integration moves into onboarding this week with primary contact **Bala** (bala@acmedata.com).\n\n## Value Prop\nAcme Data accelerates data and analytics teams workflows with governed activation across the modern data stack. Integrated with ABC, joint customers get a unified path from warehouse model to operational system, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n## Ideal Customer Profile\nMid-market and upper-mid-market data and analytics teams (200–5,000 employees) running Snowflake, BigQuery, or Databricks with a downstream activation layer. Strong fit for teams with a dedicated analytics engineering or DataOps lead who already operate on a modern data stack and need fragmented activation surfaces and brittle pipelines resolved.\n\n## Partner Archetype — Data Affiliate\nAcme Data's value lands inside the product through a technical integration, driving stickiness and retention on mutual customers. Sales motion is integration-first, monetization typically via API fee.\n\n## Scope\nPhase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded acmedata↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.\n\n## What to expect next\n- Partner-facing launch chat goes out today; we'll capture integration details, target launch date, and any partner-supplied collateral.\n- The agent will follow up if the partner is unresponsive at 10 / 20 / 30 days and notify this team.\n- Once the partner closes the chat, we'll publish a launch timeline with three communications (Coming Soon, Prepare for Launch, Live) plus customer-facing collateral.\n\nReply here with edits or call out blockers before we hit \"Approve & Launch to Partner\".",
-        "approvedAt": "2026-05-12T11:23:45.892Z"
-      },
-      "partnerChat": {
-        "token": "GJpEr1qK1dr6_J",
-        "step": "target-date",
-        "messages": [
-          {
-            "id": "THnD3OhC",
-            "role": "agent",
-            "ts": "2026-05-12T11:23:57.084Z",
-            "content": "Hi Bala 👋\n\nI'm ABC's Partner Launch Agent. Congrats on signing with ABC — I'll help us go from \"signed\" to \"live\" cleanly.\n\nHere's the brief our team put together about **Acme Data** so far:\n\n**Value Prop**\nAcme Data accelerates data and analytics teams workflows with governed activation across the modern data stack. Integrated with ABC, joint customers get a unified path from warehouse model to operational system, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n**Ideal Customer Profile**\nMid-market and upper-mid-market data and analytics teams (200–5,000 employees) running Snowflake, BigQuery, or Databricks with a downstream activation layer. Strong fit for teams with a dedicated analytics engineering or DataOps lead who already operate on a modern data stack and need fragmented activation surfaces and brittle pipelines resolved.\n\n**Scope**\nPhase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded acmedata↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.\n\nCould you review the above and share anything you'd change, add, or want our team to know? Even a quick \"looks good\" is great.",
-            "meta": {
-              "step": "welcome"
-            }
-          },
-          {
-            "id": "cdxuNu2V",
-            "role": "partner",
-            "ts": "2026-05-12T11:24:40.179Z",
-            "content": "looks good",
-            "attachments": [],
-            "meta": {
-              "step": "review-details"
-            }
-          },
-          {
-            "id": "MFN4X42r",
-            "role": "agent",
-            "ts": "2026-05-12T11:24:40.279Z",
-            "content": "Great — that gives me what I need to scope the launch.\n\nWhat's a realistic **target integration completion date**? (You can give an exact date or a window — e.g. \"early June\" — and I'll work backward to build the launch timeline.)",
-            "meta": {
-              "step": "integration-details"
-            }
-          },
-          {
-            "id": "nCrQ-l9_",
-            "role": "partner",
-            "ts": "2026-05-12T11:25:04.296Z",
-            "content": "20th June",
-            "attachments": [],
-            "meta": {
-              "step": "integration-details"
-            }
-          },
-          {
-            "id": "QJQ7C76u",
-            "role": "agent",
-            "ts": "2026-05-12T11:25:04.396Z",
-            "content": "Locked in. Closing out this intake — give me a moment to summarize and hand back to the ABC partner team.",
-            "meta": {
-              "step": "target-date"
-            }
-          }
-        ],
-        "attachments": [],
-        "partnerInputs": {
-          "reviewNotes": "looks good",
-          "integrationDescription": "20th June"
-        },
-        "lastPartnerResponseAt": "2026-05-12T11:25:04.296Z"
-      }
-    },
-    "qyE25RLt78": {
-      "id": "qyE25RLt78",
-      "name": "Emcure",
-      "website": "emcure.com",
-      "contact": {
-        "name": "Harish",
-        "email": "harish@emcure.com"
-      },
-      "createdAt": "2026-05-12T12:22:51.501Z",
-      "updatedAt": "2026-05-12T12:29:20.931Z",
-      "stage": "partner-chat",
-      "followUps": [],
-      "research": {
-        "valueProp": "Emcure accelerates go-to-market and operations teams workflows with workflow automation that adapts to context. Integrated with ABC, joint customers get a unified path from trigger event to action taken, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.",
-        "idealCustomerProfile": "Mid-market and upper-mid-market go-to-market and operations teams (200–5,000 employees) running a modern SaaS stack with at least one system of record. Strong fit for teams with a dedicated operations or platform lead who already operate on a modern data stack and need context-switching across point tools resolved.",
-        "archetype": "Data Affiliate",
-        "archetypeRationale": "Emcure's value lands inside the product through a technical integration, driving stickiness and retention on mutual customers. Sales motion is integration-first, monetization typically via API fee.",
-        "scope": "Phase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded emcure↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.",
-        "competitiveLandscape": "Emcure sits alongside a small set of point solutions but differentiates through an opinionated, outcome-led experience. ABC's partnership tightens the seam between trigger event and action taken, an area where competitors still rely on manual exports.",
-        "riskFlags": [
-          "Integration ownership and SLA not yet confirmed",
-          "Need security review for any data sharing in scope",
-          "Confirm legal/contract path before public co-marketing"
-        ]
-      },
-      "internalAwareness": {
-        "subject": "[Partnerships] We've signed Emcure — Data Affiliate",
-        "body": "## Overview\nWe've signed **Emcure** ([emcure.com](https://emcure.com)) as a new Data Affiliate partner. The integration moves into onboarding this week with primary contact **Harish** (harish@emcure.com).\n\n## Value Prop\nEmcure accelerates go-to-market and operations teams workflows with workflow automation that adapts to context. Integrated with ABC, joint customers get a unified path from trigger event to action taken, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n## Ideal Customer Profile\nMid-market and upper-mid-market go-to-market and operations teams (200–5,000 employees) running a modern SaaS stack with at least one system of record. Strong fit for teams with a dedicated operations or platform lead who already operate on a modern data stack and need context-switching across point tools resolved.\n\n## Partner Archetype — Data Affiliate\nEmcure's value lands inside the product through a technical integration, driving stickiness and retention on mutual customers. Sales motion is integration-first, monetization typically via API fee.\n\n## Scope\nPhase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded emcure↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.\n\n## What to expect next\n- Partner-facing launch chat goes out today; we'll capture integration details, target launch date, and any partner-supplied collateral.\n- The agent will follow up if the partner is unresponsive at 10 / 20 / 30 days and notify this team.\n- Once the partner closes the chat, we'll publish a launch timeline with three communications (Coming Soon, Prepare for Launch, Live) plus customer-facing collateral.\n\nReply here with edits or call out blockers before we hit \"Approve & Launch to Partner\".",
-        "approvedAt": "2026-05-12T12:23:22.498Z"
-      },
-      "partnerChat": {
-        "token": "cXOehwEQYC4DTa",
-        "step": "summary",
-        "messages": [
-          {
-            "id": "P7ZgH2E0",
-            "role": "agent",
-            "ts": "2026-05-12T12:23:28.531Z",
-            "content": "Hi Harish 👋\n\nI'm ABC's Partner Launch Agent. Congrats on signing with ABC — I'll help us go from \"signed\" to \"live\" cleanly.\n\nHere's the brief our team put together about **Emcure** so far:\n\n**Value Prop**\nEmcure accelerates go-to-market and operations teams workflows with workflow automation that adapts to context. Integrated with ABC, joint customers get a unified path from trigger event to action taken, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n**Ideal Customer Profile**\nMid-market and upper-mid-market go-to-market and operations teams (200–5,000 employees) running a modern SaaS stack with at least one system of record. Strong fit for teams with a dedicated operations or platform lead who already operate on a modern data stack and need context-switching across point tools resolved.\n\n**Scope**\nPhase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded emcure↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.\n\nCould you review the above and share anything you'd change, add, or want our team to know? Even a quick \"looks good\" is great.",
-            "meta": {
-              "step": "welcome"
-            }
-          },
-          {
-            "id": "Ea6s2mOc",
-            "role": "partner",
-            "ts": "2026-05-12T12:24:32.895Z",
-            "content": "looks good",
-            "attachments": [],
-            "meta": {
-              "step": "review-details"
-            }
-          },
-          {
-            "id": "hiufqEe-",
-            "role": "agent",
-            "ts": "2026-05-12T12:24:32.995Z",
-            "content": "Great — that gives me what I need to scope the launch.\n\nWhat's a realistic **target integration completion date**? (You can give an exact date or a window — e.g. \"early June\" — and I'll work backward to build the launch timeline.)",
-            "meta": {
-              "step": "integration-details"
-            }
-          },
-          {
-            "id": "3S-bIKUN",
-            "role": "partner",
-            "ts": "2026-05-12T12:24:46.026Z",
-            "content": "17th May",
-            "attachments": [],
-            "meta": {
-              "step": "integration-details"
-            }
-          },
-          {
-            "id": "5mtmniry",
-            "role": "agent",
-            "ts": "2026-05-12T12:24:46.126Z",
-            "content": "Locked in. Closing out this intake — give me a moment to summarize and hand back to the ABC partner team.",
-            "meta": {
-              "step": "target-date"
-            }
-          },
-          {
-            "id": "hEl3ot2s",
-            "role": "partner",
-            "ts": "2026-05-12T12:29:20.926Z",
-            "content": "close chat",
-            "attachments": [],
-            "meta": {
-              "step": "target-date"
-            }
-          },
-          {
-            "id": "9ljc7c8N",
-            "role": "agent",
-            "ts": "2026-05-12T12:29:21.028Z",
-            "content": "Here's what I've captured — please confirm or correct anything:\n\n**Partner:** Emcure\n**Primary contact:** Harish (harish@emcure.com)\n\n**Value Prop**\nEmcure accelerates go-to-market and operations teams workflows with workflow automation that adapts to context. Integrated with ABC, joint customers get a unified path from trigger event to action taken, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n**Ideal Customer Profile**\nMid-market and upper-mid-market go-to-market and operations teams (200–5,000 employees) running a modern SaaS stack with at least one system of record. Strong fit for teams with a dedicated operations or platform lead who already operate on a modern data stack and need context-switching across point tools resolved.\n\n**Partner notes / edits**\nlooks good\n\n**Integration overview**\n17th May\n\n**Target completion date**\nJune 26, 2026\n\nIf this all looks right, hit **Confirm & Close** below and I'll publish everything to the ABC partner team.",
-            "meta": {
-              "step": "summary"
-            }
-          },
-          {
-            "id": "1AEI8Fx9",
-            "role": "agent",
-            "ts": "2026-05-12T12:29:21.129Z",
-            "content": "Here's what I've captured — please confirm or correct anything:\n\n**Partner:** Emcure\n**Primary contact:** Harish (harish@emcure.com)\n\n**Value Prop**\nEmcure accelerates go-to-market and operations teams workflows with workflow automation that adapts to context. Integrated with ABC, joint customers get a unified path from trigger event to action taken, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n**Ideal Customer Profile**\nMid-market and upper-mid-market go-to-market and operations teams (200–5,000 employees) running a modern SaaS stack with at least one system of record. Strong fit for teams with a dedicated operations or platform lead who already operate on a modern data stack and need context-switching across point tools resolved.\n\n**Partner notes / edits**\nlooks good\n\n**Integration overview**\n17th May\n\n**Target completion date**\nJune 26, 2026\n\nIf this all looks right, hit **Confirm & Close** below and I'll publish everything to the ABC partner team.",
-            "meta": {
-              "step": "summary"
-            }
-          }
-        ],
-        "attachments": [],
-        "partnerInputs": {
-          "reviewNotes": "looks good",
-          "integrationDescription": "17th May",
-          "targetDate": "2026-06-26T12:26:18.745Z"
-        },
-        "lastPartnerResponseAt": "2026-05-12T12:29:20.926Z"
-      },
-      "timeline": {
-        "targetDate": "2026-06-26T12:26:18.745Z",
-        "milestones": [
-          {
-            "name": "Kickoff & technical scoping",
-            "date": "2026-05-29T12:26:18.745Z",
-            "description": "Joint kickoff with ABC + partner eng. Lock down API surface, auth, environments."
-          },
-          {
-            "name": "Build & sandbox certification",
-            "date": "2026-06-08T12:26:18.745Z",
-            "description": "Partner builds against sandbox; ABC certifies happy-path + edge cases."
-          },
-          {
-            "name": "Beta with anchor customers",
-            "date": "2026-06-16T12:26:18.745Z",
-            "description": "2–3 anchor customers in beta. Capture quotes for launch comms."
-          },
-          {
-            "name": "Launch readiness review",
-            "date": "2026-06-21T12:26:18.745Z",
-            "description": "Cross-functional review: Sales, CS, Marketing, Support. Go/no-go."
-          },
-          {
-            "name": "Public launch",
-            "date": "2026-06-26T12:26:18.745Z",
-            "description": "Integration live. Comms 3 sent."
-          }
-        ],
-        "communications": [
-          {
-            "id": "coming-soon",
-            "title": "Coming Soon",
-            "sendDate": "2026-06-05T12:26:18.745Z",
-            "status": "drafted",
-            "subject": "Coming soon: Emcure × ABC",
-            "body": "## Coming soon: Emcure × ABC\n\nWe're a few weeks out from launching our integration with **Emcure** (Data Affiliate). Here's the short version so you can start positioning it.\n\n**Why it matters**\nEmcure accelerates go-to-market and operations teams workflows with workflow automation that adapts to context. Integrated with ABC, joint customers get a unified path from trigger event to action taken, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n**Who it's for**\nMid-market and upper-mid-market go-to-market and operations teams (200–5,000 employees) running a modern SaaS stack with at least one system of record. Strong fit for teams with a dedicated operations or platform lead who already operate on a modern data stack and need context-switching across point tools resolved.\n\n**Key dates**\n- Beta with anchor customers: see launch timeline\n- Launch readiness review: see launch timeline\n- Public launch: June 26, 2026\n\nThe full Prepare-for-Launch packet (process guide, integration guide, FAQ, internal talk tracks) drops one week out. Reply here with questions.",
-            "attachments": [
-              "Partner Brief (1-pager)",
-              "Key dates"
-            ]
-          },
-          {
-            "id": "prepare-for-launch",
-            "title": "Prepare for Launch",
-            "sendDate": "2026-06-19T12:26:18.745Z",
-            "status": "drafted",
-            "subject": "Get ready: Emcure × ABC launches June 26, 2026",
-            "body": "## Prepare for launch: Emcure × ABC\n\nWe launch in one week. Use this packet to get fully ready.\n\n**Integration overview (from partner)**\n17th May\n\n**What's attached**\n- Process Guide — how to position, qualify, and hand off\n- Integration Guide — technical reference for solutions and support\n- FAQ — top 10 questions with crisp answers\n- Internal Talk Tracks — for AEs, CSMs, and support\n\n**Action items**\n- AEs: review the talk track and the ICP one-liner.\n- CS: review the integration guide; flag accounts already asking for this.\n- Support: scan the FAQ; ping us with anything unclear before launch day.\n\nQuestions? Reply here.",
-            "attachments": [
-              "Process Guide",
-              "Integration Guide",
-              "FAQ",
-              "Internal Talk Tracks"
-            ]
-          },
-          {
-            "id": "new-partner-live",
-            "title": "New Partner is Live",
-            "sendDate": "2026-06-26T12:26:18.745Z",
-            "status": "drafted",
-            "subject": "Emcure × ABC is live",
-            "body": "## Emcure × ABC is live\n\nThe integration is live as of today.\n\n**The short pitch**\nEmcure accelerates go-to-market and operations teams workflows with workflow automation that adapts to context. Integrated with ABC, joint customers get a unified path from trigger event to action taken, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n**Resources (all in one place)**\n- Customer-facing deck\n- External one-pager\n- All internal templates (process, integration, FAQ, talk tracks)\n\n**Who to route to**\n- Active opportunities: AEs can lead with the joint value prop on accounts that fit the ICP.\n- Existing customers: CS team has a target list of accounts already showing intent signals.\n\nWe'll share a 30-day readout with metrics and customer stories. Until then — go sell it.",
-            "attachments": [
-              "Customer-facing PPT",
-              "External One-Pager",
-              "All internal templates"
-            ]
-          }
-        ]
-      }
-    },
-    "vJnmHYH5cy": {
-      "id": "vJnmHYH5cy",
-      "name": "Acme",
-      "website": "acmedata.com",
-      "contact": {
-        "name": "Brooke",
-        "email": "brooke@acme.com"
-      },
-      "createdAt": "2026-05-12T14:16:57.209Z",
-      "updatedAt": "2026-05-12T14:19:58.744Z",
-      "stage": "partner-chat",
-      "followUps": [],
-      "research": {
-        "valueProp": "Acme accelerates data and analytics teams workflows with governed activation across the modern data stack. Integrated with ABC, joint customers get a unified path from warehouse model to operational system, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.",
-        "idealCustomerProfile": "Mid-market and upper-mid-market data and analytics teams (200–5,000 employees) running Snowflake, BigQuery, or Databricks with a downstream activation layer. Strong fit for teams with a dedicated analytics engineering or DataOps lead who already operate on a modern data stack and need fragmented activation surfaces and brittle pipelines resolved.",
-        "archetype": "Data Affiliate",
-        "archetypeRationale": "Acme's value lands inside the product through a technical integration, driving stickiness and retention on mutual customers. Sales motion is integration-first, monetization typically via API fee.",
-        "scope": "Phase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded acmedata↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.",
-        "competitiveLandscape": "Acme sits alongside a small set of point solutions but differentiates through first-class governance and lineage on the activation path. ABC's partnership tightens the seam between warehouse model and operational system, an area where competitors still rely on manual exports.",
-        "riskFlags": [
-          "Integration ownership and SLA not yet confirmed",
-          "Need security review for any data sharing in scope",
-          "Confirm legal/contract path before public co-marketing"
-        ]
-      },
-      "internalAwareness": {
-        "subject": "[Partnerships] We've signed Acme — Data Affiliate",
-        "body": "## Overview\nWe've signed **Acme** ([acmedata.com](https://acmedata.com)) as a new Data Affiliate partner. The integration moves into onboarding this week with primary contact **Brooke** (brooke@acme.com).\n\n## Value Prop\nAcme accelerates data and analytics teams workflows with governed activation across the modern data stack. Integrated with ABC, joint customers get a unified path from warehouse model to operational system, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n## Ideal Customer Profile\nMid-market and upper-mid-market data and analytics teams (200–5,000 employees) running Snowflake, BigQuery, or Databricks with a downstream activation layer. Strong fit for teams with a dedicated analytics engineering or DataOps lead who already operate on a modern data stack and need fragmented activation surfaces and brittle pipelines resolved.\n\n## Partner Archetype — Data Affiliate\nAcme's value lands inside the product through a technical integration, driving stickiness and retention on mutual customers. Sales motion is integration-first, monetization typically via API fee.\n\n## Scope\nPhase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded acmedata↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.\n\n## What to expect next\n- Partner-facing launch chat goes out today; we'll capture integration details, target launch date, and any partner-supplied collateral.\n- The agent will follow up if the partner is unresponsive at 10 / 20 / 30 days and notify this team.\n- Once the partner closes the chat, we'll publish a launch timeline with three communications (Coming Soon, Prepare for Launch, Live) plus customer-facing collateral.\n\nReply here with edits or call out blockers before we hit \"Approve & Launch to Partner\".",
-        "approvedAt": "2026-05-12T14:17:39.989Z"
-      },
-      "partnerChat": {
-        "token": "6IbF9ecJ69zbVY",
-        "step": "target-date",
-        "messages": [
-          {
-            "id": "qiDjO2hJ",
-            "role": "agent",
-            "ts": "2026-05-12T14:17:47.111Z",
-            "content": "Hi Brooke 👋\n\nI'm ABC's Partner Launch Agent. Congrats on signing with ABC — I'll help us go from \"signed\" to \"live\" cleanly.\n\nHere's the brief our team put together about **Acme** so far:\n\n**Value Prop**\nAcme accelerates data and analytics teams workflows with governed activation across the modern data stack. Integrated with ABC, joint customers get a unified path from warehouse model to operational system, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n**Ideal Customer Profile**\nMid-market and upper-mid-market data and analytics teams (200–5,000 employees) running Snowflake, BigQuery, or Databricks with a downstream activation layer. Strong fit for teams with a dedicated analytics engineering or DataOps lead who already operate on a modern data stack and need fragmented activation surfaces and brittle pipelines resolved.\n\n**Scope**\nPhase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded acmedata↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.\n\nCould you review the above and share anything you'd change, add, or want our team to know? Even a quick \"looks good\" is great.",
-            "meta": {
-              "step": "welcome"
-            }
-          },
-          {
-            "id": "pVvkOamy",
-            "role": "partner",
-            "ts": "2026-05-12T14:19:23.067Z",
-            "content": "looks good",
-            "attachments": [],
-            "meta": {
-              "step": "review-details"
-            }
-          },
-          {
-            "id": "DPr7nX0e",
-            "role": "agent",
-            "ts": "2026-05-12T14:19:23.168Z",
-            "content": "Great — that gives me what I need to scope the launch.\n\nWhat's a realistic **target integration completion date**? (You can give an exact date or a window — e.g. \"early June\" — and I'll work backward to build the launch timeline.)",
-            "meta": {
-              "step": "integration-details"
-            }
-          },
-          {
-            "id": "4whvuruf",
-            "role": "partner",
-            "ts": "2026-05-12T14:19:33.638Z",
-            "content": "20th May",
-            "attachments": [],
-            "meta": {
-              "step": "integration-details"
-            }
-          },
-          {
-            "id": "1d54mDQJ",
-            "role": "agent",
-            "ts": "2026-05-12T14:19:33.739Z",
-            "content": "Locked in. Closing out this intake — give me a moment to summarize and hand back to the ABC partner team.",
-            "meta": {
-              "step": "target-date"
-            }
-          }
-        ],
-        "attachments": [],
-        "partnerInputs": {
-          "reviewNotes": "looks good",
-          "integrationDescription": "20th May",
-          "targetDate": "2026-06-26T14:19:58.713Z"
-        },
-        "lastPartnerResponseAt": "2026-05-12T14:19:33.638Z"
-      },
-      "timeline": {
-        "targetDate": "2026-06-26T14:19:58.713Z",
-        "milestones": [
-          {
-            "name": "Kickoff & technical scoping",
-            "date": "2026-05-29T14:19:58.713Z",
-            "description": "Joint kickoff with ABC + partner eng. Lock down API surface, auth, environments."
-          },
-          {
-            "name": "Build & sandbox certification",
-            "date": "2026-06-08T14:19:58.713Z",
-            "description": "Partner builds against sandbox; ABC certifies happy-path + edge cases."
-          },
-          {
-            "name": "Beta with anchor customers",
-            "date": "2026-06-16T14:19:58.713Z",
-            "description": "2–3 anchor customers in beta. Capture quotes for launch comms."
-          },
-          {
-            "name": "Launch readiness review",
-            "date": "2026-06-21T14:19:58.713Z",
-            "description": "Cross-functional review: Sales, CS, Marketing, Support. Go/no-go."
-          },
-          {
-            "name": "Public launch",
-            "date": "2026-06-26T14:19:58.713Z",
-            "description": "Integration live. Comms 3 sent."
-          }
-        ],
-        "communications": [
-          {
-            "id": "coming-soon",
-            "title": "Coming Soon",
-            "sendDate": "2026-06-05T14:19:58.713Z",
-            "status": "drafted",
-            "subject": "Coming soon: Acme × ABC",
-            "body": "## Coming soon: Acme × ABC\n\nWe're a few weeks out from launching our integration with **Acme** (Data Affiliate). Here's the short version so you can start positioning it.\n\n**Why it matters**\nAcme accelerates data and analytics teams workflows with governed activation across the modern data stack. Integrated with ABC, joint customers get a unified path from warehouse model to operational system, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n**Who it's for**\nMid-market and upper-mid-market data and analytics teams (200–5,000 employees) running Snowflake, BigQuery, or Databricks with a downstream activation layer. Strong fit for teams with a dedicated analytics engineering or DataOps lead who already operate on a modern data stack and need fragmented activation surfaces and brittle pipelines resolved.\n\n**Key dates**\n- Beta with anchor customers: see launch timeline\n- Launch readiness review: see launch timeline\n- Public launch: June 26, 2026\n\nThe full Prepare-for-Launch packet (process guide, integration guide, FAQ, internal talk tracks) drops one week out. Reply here with questions.",
-            "attachments": [
-              "Partner Brief (1-pager)",
-              "Key dates"
-            ]
-          },
-          {
-            "id": "prepare-for-launch",
-            "title": "Prepare for Launch",
-            "sendDate": "2026-06-19T14:19:58.713Z",
-            "status": "drafted",
-            "subject": "Get ready: Acme × ABC launches June 26, 2026",
-            "body": "## Prepare for launch: Acme × ABC\n\nWe launch in one week. Use this packet to get fully ready.\n\n**Integration overview (from partner)**\n20th May\n\n**What's attached**\n- Process Guide — how to position, qualify, and hand off\n- Integration Guide — technical reference for solutions and support\n- FAQ — top 10 questions with crisp answers\n- Internal Talk Tracks — for AEs, CSMs, and support\n\n**Action items**\n- AEs: review the talk track and the ICP one-liner.\n- CS: review the integration guide; flag accounts already asking for this.\n- Support: scan the FAQ; ping us with anything unclear before launch day.\n\nQuestions? Reply here.",
-            "attachments": [
-              "Process Guide",
-              "Integration Guide",
-              "FAQ",
-              "Internal Talk Tracks"
-            ]
-          },
-          {
-            "id": "new-partner-live",
-            "title": "New Partner is Live",
-            "sendDate": "2026-06-26T14:19:58.713Z",
-            "status": "drafted",
-            "subject": "Acme × ABC is live",
-            "body": "## Acme × ABC is live\n\nThe integration is live as of today.\n\n**The short pitch**\nAcme accelerates data and analytics teams workflows with governed activation across the modern data stack. Integrated with ABC, joint customers get a unified path from warehouse model to operational system, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n**Resources (all in one place)**\n- Customer-facing deck\n- External one-pager\n- All internal templates (process, integration, FAQ, talk tracks)\n\n**Who to route to**\n- Active opportunities: AEs can lead with the joint value prop on accounts that fit the ICP.\n- Existing customers: CS team has a target list of accounts already showing intent signals.\n\nWe'll share a 30-day readout with metrics and customer stories. Until then — go sell it.",
-            "attachments": [
-              "Customer-facing PPT",
-              "External One-Pager",
-              "All internal templates"
-            ]
-          }
-        ]
+        "partnerInputs": {}
       }
     }
   },
   "order": [
-    "vJnmHYH5cy",
-    "qyE25RLt78",
-    "4XwTm7BuYB",
-    "Tpm1-FEQzf",
-    "0HSitQ4kqm",
-    "demo-loop-data",
-    "demo-northbeam",
-    "demo-helix-platform",
-    "demo-quietchannel"
+    "I47drnJXU3",
+    "gymlaunch",
+    "your-reformer",
+    "pipe",
+    "gantner",
+    "hyrox",
+    "replify"
   ]
 }
