@@ -578,17 +578,38 @@ function ChatTab({
         </div>
         <div className="card p-4">
           <div className="section-title">Captured so far</div>
-          <CapturedRow label="Review notes" value={chat.partnerInputs.reviewNotes} />
+          <CapturedRow
+            label="Partner name (intake)"
+            value={
+              chat.intakeAnswers?.partner_name !== undefined
+                ? String(chat.intakeAnswers.partner_name)
+                : undefined
+            }
+          />
+          <CapturedRow
+            label="Notes"
+            value={chat.partnerInputs?.reviewNotes}
+          />
           <CapturedRow
             label="Integration"
-            value={chat.partnerInputs.integrationDescription}
+            value={
+              chat.intakeAnswers?.customer_facing_workflow !== undefined
+                ? String(chat.intakeAnswers.customer_facing_workflow)
+                : chat.partnerInputs?.integrationDescription
+            }
           />
           <CapturedRow
             label="Target date"
             value={
-              chat.partnerInputs.targetDate
-                ? humanDate(chat.partnerInputs.targetDate)
-                : undefined
+              (() => {
+                const raw =
+                  chat.intakeAnswers?.target_go_live_date ??
+                  chat.intakeAnswers?.launch_date ??
+                  chat.partnerInputs?.targetDate;
+                if (typeof raw !== "string" || !raw.trim()) return undefined;
+                const d = new Date(raw);
+                return Number.isNaN(d.getTime()) ? raw : humanDate(raw);
+              })()
             }
           />
           <div className="mt-3 text-xs text-white/40">
@@ -614,6 +635,8 @@ function CapturedRow({ label, value }: { label: string; value?: string }) {
 
 function stepLabel(s: string): string {
   switch (s) {
+    case "intake":
+      return "Intake in progress";
     case "review-details":
       return "Awaiting review";
     case "integration-details":

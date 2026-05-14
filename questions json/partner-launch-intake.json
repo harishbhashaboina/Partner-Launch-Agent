@@ -1,0 +1,524 @@
+{
+  "partner_launch_intake": [
+    {
+      "section": "Partner basics (all templates)",
+      "questions": [
+        {
+          "id": "partner_name",
+          "label": "What is the partner name?",
+          "type": "text",
+          "required": true
+        },
+        {
+          "id": "partner_one_liner",
+          "label": "In one sentence, what does the partner do?",
+          "type": "textarea",
+          "required": true
+        },
+        {
+          "id": "partnership_type",
+          "label": "What type of partnership is this?",
+          "type": "single_select",
+          "options": [
+            "Data Affiliate",
+            "Referral",
+            "Platform",
+            "Channel"
+          ],
+          "required": true
+        },
+        {
+          "id": "launch_date",
+          "label": "What is the planned partner launch date?",
+          "type": "date",
+          "required": false
+        },
+        {
+          "id": "partner_logo",
+          "label": "Upload the partner logo or provide a logo URL.",
+          "type": "file_or_url",
+          "required": false
+        }
+      ]
+    },
+    {
+      "section": "Scope (Data Brief, decks, FAQ)",
+      "questions": [
+        {
+          "id": "abc_products",
+          "label": "Which ABC products does this partner support?",
+          "type": "multi_select",
+          "options": [
+            "Ignite",
+            "GloFox",
+            "Trainerize",
+            "Evo",
+            "GymSales"
+          ],
+          "required": true
+        },
+        {
+          "id": "customer_segments",
+          "label": "Which customer segments are targeted?",
+          "type": "multi_select",
+          "options": [
+            "Gym",
+            "Studio",
+            "Coach"
+          ],
+          "required": true
+        },
+        {
+          "id": "sub_segments",
+          "label": "Which sub-segments apply?",
+          "type": "multi_select",
+          "options": [
+            "SMB (1 location)",
+            "MML (2\u201340 locations)",
+            "GES (40+ locations)"
+          ],
+          "required": true
+        },
+        {
+          "id": "geographies",
+          "label": "Which geographies are supported?",
+          "type": "multi_select",
+          "options": [
+            "US",
+            "Canada",
+            "LatAm",
+            "EMEA",
+            "APAC",
+            "Other"
+          ],
+          "required": true
+        },
+        {
+          "id": "other_geography",
+          "label": "If Other, specify the supported geography.",
+          "type": "text",
+          "required_if": {
+            "field": "geographies",
+            "contains": "Other"
+          }
+        }
+      ]
+    },
+    {
+      "section": "Value & positioning (customer deck, FAQ, ICP)",
+      "questions": [
+        {
+          "id": "operator_value",
+          "label": "What business problems does this partner solve for operators or gym owners?",
+          "type": "textarea",
+          "helper_text": "Include outcomes like reduced manual work, new revenue, improved retention, better member experience, etc.",
+          "required": true
+        },
+        {
+          "id": "member_value",
+          "label": "How does this improve the member experience?",
+          "type": "textarea",
+          "required": true
+        },
+        {
+          "id": "pain_points",
+          "label": "What customer pain points or complaints indicate a strong fit?",
+          "type": "textarea",
+          "helper_text": "Enter **3 to 5** pain points or customer phrases, **one per line** (bullets optional). Example: \"Members can't check in when Wi\u2011Fi drops\"",
+          "required": true
+        },
+        {
+          "id": "not_a_fit",
+          "label": "What type of customer is NOT a fit?",
+          "type": "textarea",
+          "required": true
+        },
+        {
+          "id": "ideal_customer_profile",
+          "label": "Describe the ideal customer profile.",
+          "type": "textarea",
+          "helper_text": "Include business size, revenue range, operational maturity, member count, and typical use case.",
+          "required": true
+        }
+      ]
+    },
+    {
+      "section": "Pricing & commercials (FAQ, Process Guide)",
+      "questions": [
+        {
+          "id": "pricing_model",
+          "label": "How is the partner priced?",
+          "type": "textarea",
+          "helper_text": "Include monthly fees, per-location pricing, usage tiers, referral-only pricing, discounts, bundles, or N/A.",
+          "required": true
+        },
+        {
+          "id": "abc_discounts",
+          "label": "Are there ABC-exclusive discounts or bundles?",
+          "type": "textarea",
+          "required": false
+        },
+        {
+          "id": "commission_model",
+          "label": "What commissions, referral fees, spiffs, or booking incentives apply?",
+          "type": "textarea",
+          "required": false
+        },
+        {
+          "id": "upsell_cross_sell",
+          "label": "Are there natural upsell or cross-sell opportunities?",
+          "type": "textarea",
+          "required": false
+        }
+      ]
+    },
+    {
+      "section": "Integration scope",
+      "questions": [
+        {
+          "id": "has_integration",
+          "label": "Is there an integration?",
+          "type": "single_select",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "section": "Integration & technical (Data Brief, Integration Guide)",
+      "questions": [
+        {
+          "id": "integration_name",
+          "label": "What is the official integration name?",
+          "type": "text",
+          "required": true
+        },
+        {
+          "id": "target_go_live_date",
+          "label": "What is the target integration go-live date?",
+          "type": "date",
+          "required": false
+        },
+        {
+          "id": "integrated_products",
+          "label": "Which ABC products are integrated?",
+          "type": "multi_select",
+          "options": [
+            "Ignite",
+            "GloFox",
+            "Trainerize",
+            "Evo",
+            "GymSales"
+          ],
+          "required": true
+        },
+        {
+          "id": "customer_facing_workflow",
+          "label": "Describe how the integration works from the customer perspective.",
+          "type": "textarea",
+          "helper_text": "Explain what flows between systems, where setup happens, and what the customer sees day-to-day.",
+          "required": true
+        },
+        {
+          "id": "setup_model",
+          "label": "What setup model applies?",
+          "type": "single_select",
+          "options": [
+            "Self-Serve",
+            "Partner-Assisted",
+            "ABC-Assisted"
+          ],
+          "required": true
+        },
+        {
+          "id": "prerequisites",
+          "label": "What prerequisites are required before activation?",
+          "type": "repeatable_group",
+          "min_items": 0,
+          "fields": [
+            {
+              "id": "requirement",
+              "label": "Requirement",
+              "type": "text",
+              "required": true
+            },
+            {
+              "id": "details",
+              "label": "Details / specifics",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "id": "owner",
+              "label": "Who is responsible?",
+              "type": "single_select",
+              "options": [
+                "ABC",
+                "Partner",
+                "Customer"
+              ],
+              "required": true
+            }
+          ]
+        },
+        {
+          "id": "data_exchange",
+          "label": "What data is exchanged between ABC and the partner?",
+          "type": "repeatable_group",
+          "min_items": 0,
+          "fields": [
+            {
+              "id": "direction",
+              "label": "Direction",
+              "type": "single_select",
+              "options": [
+                "ABC \u2192 Partner",
+                "Partner \u2192 ABC"
+              ],
+              "required": true
+            },
+            {
+              "id": "field_name",
+              "label": "Field name",
+              "type": "text",
+              "required": true
+            },
+            {
+              "id": "data_type",
+              "label": "Data type",
+              "type": "text",
+              "required": false
+            },
+            {
+              "id": "trigger_frequency",
+              "label": "Trigger / frequency",
+              "type": "text",
+              "required": false
+            },
+            {
+              "id": "notes_conditions",
+              "label": "Notes / conditions",
+              "type": "textarea",
+              "required": false
+            }
+          ]
+        },
+        {
+          "id": "known_limitations",
+          "label": "What known limitations or constraints exist?",
+          "type": "repeatable_group",
+          "min_items": 0,
+          "fields": [
+            {
+              "id": "limitation",
+              "label": "Limitation",
+              "type": "text",
+              "required": true
+            },
+            {
+              "id": "impact",
+              "label": "Impact",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "id": "workaround",
+              "label": "Workaround, if any",
+              "type": "textarea",
+              "required": false
+            }
+          ]
+        },
+        {
+          "id": "common_errors",
+          "label": "What common issues or errors occur and how are they resolved?",
+          "type": "repeatable_group",
+          "min_items": 0,
+          "fields": [
+            {
+              "id": "error_symptom",
+              "label": "Error / symptom",
+              "type": "text",
+              "required": true
+            },
+            {
+              "id": "likely_cause",
+              "label": "Likely cause",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "id": "first_responder",
+              "label": "First responder",
+              "type": "single_select",
+              "options": [
+                "ABC",
+                "Partner",
+                "Customer"
+              ],
+              "required": false
+            },
+            {
+              "id": "resolution_steps",
+              "label": "Resolution steps",
+              "type": "textarea",
+              "required": false
+            }
+          ]
+        },
+        {
+          "id": "integration_support_contact",
+          "label": "Who handles integration support?",
+          "type": "email",
+          "required": true
+        }
+      ]
+    },
+    {
+      "section": "Activation & operations (Integration Guide, Process Guide)",
+      "questions": [
+        {
+          "id": "activation_process",
+          "label": "Describe the onboarding and activation process end-to-end.",
+          "type": "textarea",
+          "required": true
+        },
+        {
+          "id": "responsibility_matrix",
+          "label": "What responsibilities belong to ABC, the partner, and the customer?",
+          "type": "group",
+          "fields": [
+            {
+              "id": "abc_owns",
+              "label": "ABC owns",
+              "type": "textarea",
+              "required": true
+            },
+            {
+              "id": "partner_owns",
+              "label": "Partner owns",
+              "type": "textarea",
+              "required": true
+            },
+            {
+              "id": "customer_owns",
+              "label": "Customer owns",
+              "type": "textarea",
+              "required": true
+            }
+          ]
+        },
+        {
+          "id": "onboarding_timeline",
+          "label": "How long does onboarding typically take?",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "section": "Sales workflow (FAQ, Process Guide)",
+      "questions": [
+        {
+          "id": "sales_motion",
+          "label": "Which sales motion applies?",
+          "type": "multi_select",
+          "options": [
+            "Referral",
+            "Resell",
+            "Both"
+          ],
+          "required": true
+        },
+        {
+          "id": "referral_process",
+          "label": "How does the referral or sales process work?",
+          "type": "textarea",
+          "helper_text": "Include referral steps, routing, tracking, and post-submission customer experience.",
+          "required": true
+        },
+        {
+          "id": "post_referral_journey",
+          "label": "What happens after a referral is submitted?",
+          "type": "textarea",
+          "required": true
+        },
+        {
+          "id": "referral_tracking",
+          "label": "How can reps track referral status?",
+          "type": "textarea",
+          "required": false
+        },
+        {
+          "id": "sales_materials",
+          "label": "What sales or support materials are available?",
+          "type": "repeatable_group",
+          "min_items": 0,
+          "fields": [
+            {
+              "id": "material_name",
+              "label": "Material name",
+              "type": "text",
+              "required": true
+            },
+            {
+              "id": "material_type",
+              "label": "Material type",
+              "type": "single_select",
+              "options": [
+                "One-pager",
+                "Deck",
+                "Demo link",
+                "Email template",
+                "Talk track",
+                "Battlecard",
+                "Other"
+              ],
+              "required": true
+            },
+            {
+              "id": "material_link",
+              "label": "Link or location",
+              "type": "url",
+              "required": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Support & contacts (FAQ, Process Guide)",
+      "questions": [
+        {
+          "id": "support_ticket_process",
+          "label": "How should support tickets be logged?",
+          "type": "textarea",
+          "helper_text": "Include product category, case type, required fields, and what gets escalated to the partner.",
+          "required": true
+        },
+        {
+          "id": "contacts",
+          "label": "Who are the primary contacts? (minimum 3)",
+          "type": "textarea",
+          "helper_text": "Enter **exactly 3** contacts, **one per line**, using this pattern: **Type | Name | Title | Email | Phone or Slack**. Example: Partner Contact | Jane Doe | VP Sales | jane@partner.com | @jane-partner",
+          "required": true
+        }
+      ]
+    },
+    {
+      "section": "Social proof (customer deck)",
+      "questions": [
+        {
+          "id": "social_proof",
+          "label": "Do you have a customer quote, testimonial, case study, or measurable outcome?",
+          "type": "textarea",
+          "helper_text": "Example: \u201cWe saved 10 hours/week on admin.\u201d \u2014 Gym Owner, Denver. Enter TBD if unavailable.",
+          "required": false
+        }
+      ]
+    }
+  ]
+}
