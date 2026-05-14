@@ -56,10 +56,15 @@ interface CatalogCache {
 
 let cache: CatalogCache | null = null;
 
-const DEFAULT_DIR = "/Users/saikumarguntoju/PartnerTemplatesFilled";
+const DEFAULT_DIR = "Users/harishbhashaboina/Desktop/hackathon/Partner-Launch-Agent/generated";
+const DEFAULT_BRIEF_FILENAME = "intake-expanded.json";
 
 export function partnerTemplatesDir(): string {
   return process.env.PARTNER_TEMPLATES_DIR || DEFAULT_DIR;
+}
+
+export function partnerBriefFilename(): string {
+  return process.env.PARTNER_BRIEF_FILENAME || DEFAULT_BRIEF_FILENAME;
 }
 
 export async function loadPartnerCatalog(): Promise<CatalogPartner[]> {
@@ -81,11 +86,12 @@ export async function loadPartnerCatalog(): Promise<CatalogPartner[]> {
 
   const entries = await fs.readdir(dir, { withFileTypes: true });
   const partners: CatalogPartner[] = [];
+  const briefFilename = partnerBriefFilename();
 
   for (const entry of entries) {
     if (!entry.isDirectory()) continue;
     const folder = path.join(dir, entry.name);
-    const briefPath = path.join(folder, "brief.json");
+    const briefPath = path.join(folder, briefFilename);
     let raw: string;
     try {
       raw = await fs.readFile(briefPath, "utf8");
