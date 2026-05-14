@@ -172,10 +172,10 @@ export function PartnerChatClient({
                 value={text}
                 onChange={(e) => setText(e.target.value)}
                 onKeyDown={(e) => {
-                  if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) {
-                    e.preventDefault();
-                    send();
-                  }
+                  if (e.key !== "Enter" || e.shiftKey) return;
+                  if (e.nativeEvent.isComposing) return;
+                  e.preventDefault();
+                  void send();
                 }}
               />
               {chat.step === "summary" ? (
@@ -197,7 +197,8 @@ export function PartnerChatClient({
               )}
             </div>
             <div className="mt-1 text-[10px] text-white/30">
-              ⌘/Ctrl + Enter to send · attachments go to the ABC partner team
+              Enter to send · Shift+Enter for a new line · attachments go to the
+              ABC partner team
             </div>
           </div>
         ) : (
