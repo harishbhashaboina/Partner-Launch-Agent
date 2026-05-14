@@ -10,9 +10,10 @@ import type {
 import { addDays, formatISO } from "./time";
 
 const apiKey = process.env.OPENAI_API_KEY;
+const baseURL = process.env.OPENAI_BASE_URL || undefined;
 const model = process.env.OPENAI_MODEL || "gpt-4o-mini";
 
-const client = apiKey ? new OpenAI({ apiKey }) : null;
+const client = apiKey ? new OpenAI({ apiKey, baseURL }) : null;
 
 export function agentMode(): "openai" | "mock" {
   return client ? "openai" : "mock";

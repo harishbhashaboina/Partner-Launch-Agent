@@ -2,6 +2,7 @@ import Link from "next/link";
 import { listPartners } from "@/lib/storage";
 import { PartnerCard } from "@/components/PartnerCard";
 import { evaluateFollowUps } from "@/lib/followups";
+import { IgniteAIAssistant } from "@/components/IgniteAIAssistant";
 
 export const dynamic = "force-dynamic";
 
@@ -81,6 +82,8 @@ export default async function Dashboard() {
           </div>
         )}
       </section>
+
+      <IgniteAIAssistant />
     </div>
   );
 }
