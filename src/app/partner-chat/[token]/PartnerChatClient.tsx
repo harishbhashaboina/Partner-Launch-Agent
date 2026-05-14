@@ -286,14 +286,16 @@ function TypingDots() {
 
 function labelForStep(s: string): string {
   switch (s) {
+    case "intake":
+      return "Partner intake";
+    case "summary":
+      return "Final review";
     case "review-details":
       return "Step 1 of 3 · Review";
     case "integration-details":
       return "Step 2 of 3 · Integration";
     case "target-date":
       return "Step 3 of 3 · Target date";
-    case "summary":
-      return "Final review";
     default:
       return s;
   }
