@@ -56,8 +56,8 @@ interface CatalogCache {
 
 let cache: CatalogCache | null = null;
 
-const DEFAULT_DIR = "/Users/saikumarguntoju/PartnerTemplatesFilled";
-const DEFAULT_BRIEF_FILENAME = "brief.json";
+const DEFAULT_DIR = "Users/harishbhashaboina/Desktop/hackathon/Partner-Launch-Agent/generated";
+const DEFAULT_BRIEF_FILENAME = "intake-expanded.json";
 
 export function partnerTemplatesDir(): string {
   return process.env.PARTNER_TEMPLATES_DIR || DEFAULT_DIR;
