@@ -8,8 +8,8 @@
         "name": "Priya Shah",
         "email": "priya@loopdata.io"
       },
-      "createdAt": "2026-05-11T12:02:28.253Z",
-      "updatedAt": "2026-05-13T12:02:28.253Z",
+      "createdAt": "2026-05-12T10:29:22.195Z",
+      "updatedAt": "2026-05-14T10:29:22.195Z",
       "stage": "internal-review",
       "followUps": [],
       "research": {
@@ -36,9 +36,9 @@
         "name": "Marcus Reed",
         "email": "marcus@northbeam.co"
       },
-      "createdAt": "2026-04-29T12:02:28.253Z",
-      "updatedAt": "2026-05-13T12:13:16.280Z",
-      "stage": "launching",
+      "createdAt": "2026-04-30T10:29:22.195Z",
+      "updatedAt": "2026-05-13T10:29:22.195Z",
+      "stage": "partner-chat",
       "followUps": [],
       "research": {
         "valueProp": "Northbeam is a fast-growing GTM advisory shop that lands ABC inside mid-market deals via outbound referral. Their team brings warm intros and senior-level relationships across the revenue stack.",
@@ -54,69 +54,25 @@
       "internalAwareness": {
         "subject": "[Partnerships] We've signed Northbeam Advisors — Go-To-Market",
         "body": "## Overview\nNorthbeam Advisors is signed as a Go-To-Market partner. Outbound referral motion, contact: Marcus Reed.\n\n## Value Prop\nWarm-intro firepower into mid-market revenue stack re-platform deals.\n\n## Ideal Customer Profile\n500–5,000 employee companies in re-platform mode that Northbeam already advises.\n\n## Partner Archetype — Go-To-Market\nOutbound referral, revenue share monetization, primary KPI: win rate and ARR.\n\n## Scope\n5 anchor referrals in 60 days + co-branded one-pager.\n\n## What to expect next\nPartner-facing chat going out today; we'll set a target launch date and confirm the attribution flow.",
-        "approvedAt": "2026-05-03T12:02:28.253Z"
+        "approvedAt": "2026-05-04T10:29:22.195Z"
       },
       "partnerChat": {
         "token": "demo-northbeam-token",
-        "step": "closed",
-        "intakeIndex": 42,
+        "step": "intake",
+        "intakeIndex": 2,
         "intakeAnswers": {
           "partner_name": "Northbeam Advisors",
-          "partner_one_liner": "Fast-growing GTM advisory shop that lands ABC inside mid-market deals via outbound referral.",
-          "partnership_type": "Referral",
-          "launch_date": "early June",
-          "partner_logo": "describe the file",
-          "abc_products": "Ignite",
-          "customer_segments": "Gym",
-          "sub_segments": "MML",
-          "geographies": "US",
-          "other_geography": "na",
-          "operator_value": "reduced manual work, new revenue, improved retention, better member experience, etc.",
-          "member_value": "nothing",
-          "pain_points": "\"Members can't check in when Wi‑Fi drops",
-          "not_a_fit": "customer deck",
-          "ideal_customer_profile": "business size 1200, revenue range 100k$, operational maturity, member count, and typical use case.",
-          "pricing_model": "monthly fees",
-          "abc_discounts": "yes",
-          "commission_model": "none",
-          "upsell_cross_sell": "cross sell",
-          "integration_name": "payments processing partner",
-          "target_go_live_date": "early June",
-          "integrated_products": "Ignite",
-          "customer_facing_workflow": "flows between systems, where setup happens, and what the customer sees day-to-day.",
-          "setup_model": "Self-Serve",
-          "prerequisites": "none",
-          "data_exchange": "none",
-          "known_limitations": "limited",
-          "common_errors": "no issues",
-          "integration_support_contact": "abc",
-          "activation_process": "onboaridng is end to end",
-          "responsibility_matrix.abc_owns": "everything",
-          "responsibility_matrix.partner_owns": "process guide",
-          "responsibility_matrix.customer_owns": "talktrack",
-          "onboarding_timeline": "2 weeks",
-          "sales_motion": "referral",
-          "referral_process": "end to end",
-          "post_referral_journey": "the work begins",
-          "referral_tracking": "thru website",
-          "sales_materials": "none",
-          "support_ticket_process": "thru portal",
-          "contacts": "Ignite | western | VP | Integration@abc | @ignite",
-          "social_proof": "We saved 10 hours/week on admin.” — Gym Owner, Denver. Enter TBD if unavailable."
+          "partner_one_liner": "Fast-growing GTM advisory shop that lands ABC inside mid-market deals via outbound referral."
         },
         "attachments": [],
-        "partnerInputs": {
-          "targetDate": "2026-06-04T18:30:00.000Z",
-          "integrationDescription": "flows between systems, where setup happens, and what the customer sees day-to-day.",
-          "reviewNotes": ""
-        },
-        "lastPartnerResponseAt": "2026-05-13T12:13:05.434Z",
+        "partnerInputs": {},
+        "lastPartnerResponseAt": "2026-05-13T10:29:22.195Z",
         "messages": [
           {
             "id": "m1",
             "role": "agent",
-            "ts": "2026-05-11T12:02:28.253Z",
-            "content": "Hi Marcus 👋\n\nI'm ABC's Partner Launch Agent. Congrats on signing with ABC.\n\nWe'll capture your **Partner Launch Intake** here so we can fill the launch templates (Partner Data Brief, Integration Guide, decks, and FAQs) for your team.\n\nTake your time — you can attach files where helpful (logos, one-pagers, etc.).\n\n**Partner basics (all templates)** · Question 1 of 42\n\nWhat is the partner name?",
+            "ts": "2026-05-12T10:29:22.195Z",
+            "content": "Hi Marcus 👋\n\nI'm ABC's Partner Launch Agent. Congrats on signing with ABC.\n\nWe'll capture your **Partner Launch Intake** here so we can fill the launch templates (Partner Data Brief, Integration Guide, decks, and FAQs) for your team.\n\nTake your time — you can attach files where helpful (logos, one-pagers, etc.).\n\n**Partner basics (all templates)** · Question 1 of 43\n\nWhat is the partner name?",
             "meta": {
               "step": "intake"
             }
@@ -124,7 +80,7 @@
           {
             "id": "m2",
             "role": "partner",
-            "ts": "2026-05-12T12:02:28.253Z",
+            "ts": "2026-05-13T10:29:22.195Z",
             "content": "Northbeam Advisors",
             "meta": {
               "step": "intake"
@@ -133,8 +89,8 @@
           {
             "id": "m3",
             "role": "agent",
-            "ts": "2026-05-12T12:02:28.253Z",
-            "content": "**Partner basics (all templates)** · Question 2 of 42\n\nIn one sentence, what does the partner do?",
+            "ts": "2026-05-13T10:29:22.195Z",
+            "content": "**Partner basics (all templates)** · Question 2 of 43\n\nIn one sentence, what does the partner do?",
             "meta": {
               "step": "intake"
             }
@@ -142,7 +98,7 @@
           {
             "id": "m4",
             "role": "partner",
-            "ts": "2026-05-12T12:02:28.253Z",
+            "ts": "2026-05-13T10:29:22.195Z",
             "content": "Fast-growing GTM advisory shop that lands ABC inside mid-market deals via outbound referral.",
             "meta": {
               "step": "intake"
@@ -151,860 +107,11 @@
           {
             "id": "m5",
             "role": "agent",
-            "ts": "2026-05-12T12:02:28.253Z",
-            "content": "**Partner basics (all templates)** · Question 3 of 42\n\nWhat type of partnership is this?\n\nOptions: Data Affiliate · Referral · Platform · Channel",
+            "ts": "2026-05-13T10:29:22.195Z",
+            "content": "**Partner basics (all templates)** · Question 3 of 43\n\nWhat type of partnership is this?\n\nOptions: Data Affiliate · Referral · Platform · Channel",
             "meta": {
               "step": "intake"
             }
-          },
-          {
-            "id": "42Qb7dWA",
-            "role": "partner",
-            "ts": "2026-05-13T12:03:16.329Z",
-            "content": "Referral",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "9qaZCkAG",
-            "role": "agent",
-            "ts": "2026-05-13T12:03:16.409Z",
-            "content": "**Partner basics (all templates)** · Question 4 of 42\n\nWhat is the planned partner launch date?\n\n_Use an ISO date (2026-06-01) or a phrase like “early June”._",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "j5E6zj-O",
-            "role": "partner",
-            "ts": "2026-05-13T12:03:22.881Z",
-            "content": "early June",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "YXLyJH0X",
-            "role": "agent",
-            "ts": "2026-05-13T12:03:22.961Z",
-            "content": "**Partner basics (all templates)** · Question 5 of 42\n\nUpload the partner logo or provide a logo URL.\n\n_Paste a URL, describe the file, or use the paperclip to attach._",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "Hd_yDQZr",
-            "role": "partner",
-            "ts": "2026-05-13T12:03:30.461Z",
-            "content": "describe the file",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "MzThRbiW",
-            "role": "agent",
-            "ts": "2026-05-13T12:03:30.541Z",
-            "content": "**Scope (Data Brief, decks, FAQ)** · Question 6 of 42\n\nWhich ABC products does this partner support?\n\nOptions (reply with one line, comma-separated): Ignite, GloFox, Trainerize, Evo, GymSales",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "Z9RZQqBu",
-            "role": "partner",
-            "ts": "2026-05-13T12:03:46.622Z",
-            "content": "Ignite",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "G_4krcJR",
-            "role": "agent",
-            "ts": "2026-05-13T12:03:46.702Z",
-            "content": "**Scope (Data Brief, decks, FAQ)** · Question 7 of 42\n\nWhich customer segments are targeted?\n\nOptions (reply with one line, comma-separated): Gym, Studio, Coach",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "uGSGWZlo",
-            "role": "partner",
-            "ts": "2026-05-13T12:04:17.204Z",
-            "content": "Gym",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "G_KjoPvH",
-            "role": "agent",
-            "ts": "2026-05-13T12:04:17.284Z",
-            "content": "**Scope (Data Brief, decks, FAQ)** · Question 8 of 42\n\nWhich sub-segments apply?\n\nOptions (reply with one line, comma-separated): SMB (1 location), MML (2–40 locations), GES (40+ locations)",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "sazAIZ-v",
-            "role": "partner",
-            "ts": "2026-05-13T12:04:53.794Z",
-            "content": "MML",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "et5o48CN",
-            "role": "agent",
-            "ts": "2026-05-13T12:04:53.874Z",
-            "content": "**Scope (Data Brief, decks, FAQ)** · Question 9 of 42\n\nWhich geographies are supported?\n\nOptions (reply with one line, comma-separated): US, Canada, LatAm, EMEA, APAC, Other",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "MtNtcMOY",
-            "role": "partner",
-            "ts": "2026-05-13T12:04:58.185Z",
-            "content": "US",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "bTe51uXv",
-            "role": "agent",
-            "ts": "2026-05-13T12:04:58.265Z",
-            "content": "**Scope (Data Brief, decks, FAQ)** · Question 10 of 42\n\nIf Other, specify the supported geography.",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "VgQ0XH5Q",
-            "role": "partner",
-            "ts": "2026-05-13T12:05:43.238Z",
-            "content": "na",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "J0a9BDnI",
-            "role": "agent",
-            "ts": "2026-05-13T12:05:43.318Z",
-            "content": "**Value & positioning (customer deck, FAQ, ICP)** · Question 11 of 42\n\nWhat business problems does this partner solve for operators or gym owners?\n\n_Include outcomes like reduced manual work, new revenue, improved retention, better member experience, etc._",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "AWTyt7Su",
-            "role": "partner",
-            "ts": "2026-05-13T12:05:55.760Z",
-            "content": "reduced manual work, new revenue, improved retention, better member experience, etc.",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "ENvQOghU",
-            "role": "agent",
-            "ts": "2026-05-13T12:05:55.840Z",
-            "content": "**Value & positioning (customer deck, FAQ, ICP)** · Question 12 of 42\n\nHow does this improve the member experience?",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "amoeJLXA",
-            "role": "partner",
-            "ts": "2026-05-13T12:06:02.633Z",
-            "content": "nothing",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "3O9BmLR1",
-            "role": "agent",
-            "ts": "2026-05-13T12:06:02.713Z",
-            "content": "**Value & positioning (customer deck, FAQ, ICP)** · Question 13 of 42\n\nWhat customer pain points or complaints indicate a strong fit?\n\n_Enter **3 to 5** pain points or customer phrases, **one per line** (bullets optional). Example: \"Members can't check in when Wi‑Fi drops\"_",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "dGYEg13M",
-            "role": "partner",
-            "ts": "2026-05-13T12:06:10.523Z",
-            "content": "\"Members can't check in when Wi‑Fi drops",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "9FaoWoCK",
-            "role": "agent",
-            "ts": "2026-05-13T12:06:10.604Z",
-            "content": "**Value & positioning (customer deck, FAQ, ICP)** · Question 14 of 42\n\nWhat type of customer is NOT a fit?",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "ai8cQy-n",
-            "role": "partner",
-            "ts": "2026-05-13T12:06:32.036Z",
-            "content": "customer deck",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "LVMYY98g",
-            "role": "agent",
-            "ts": "2026-05-13T12:06:32.116Z",
-            "content": "**Value & positioning (customer deck, FAQ, ICP)** · Question 15 of 42\n\nDescribe the ideal customer profile.\n\n_Include business size, revenue range, operational maturity, member count, and typical use case._",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "j9rqqUZa",
-            "role": "partner",
-            "ts": "2026-05-13T12:07:01.539Z",
-            "content": "business size 1200, revenue range 100k$, operational maturity, member count, and typical use case.",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "H8XjmJ6r",
-            "role": "agent",
-            "ts": "2026-05-13T12:07:01.619Z",
-            "content": "**Pricing & commercials (FAQ, Process Guide)** · Question 16 of 42\n\nHow is the partner priced?\n\n_Include monthly fees, per-location pricing, usage tiers, referral-only pricing, discounts, bundles, or N/A._",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "Kv9fvtW4",
-            "role": "partner",
-            "ts": "2026-05-13T12:07:09.249Z",
-            "content": "monthly fees",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "wNZug22y",
-            "role": "agent",
-            "ts": "2026-05-13T12:07:09.329Z",
-            "content": "**Pricing & commercials (FAQ, Process Guide)** · Question 17 of 42\n\nAre there ABC-exclusive discounts or bundles?",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "SAE3zPUK",
-            "role": "partner",
-            "ts": "2026-05-13T12:07:14.173Z",
-            "content": "yes",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "WwOX4QlA",
-            "role": "agent",
-            "ts": "2026-05-13T12:07:14.253Z",
-            "content": "**Pricing & commercials (FAQ, Process Guide)** · Question 18 of 42\n\nWhat commissions, referral fees, spiffs, or booking incentives apply?",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "_XYf4NBR",
-            "role": "partner",
-            "ts": "2026-05-13T12:07:20.750Z",
-            "content": "none",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "ClR4GSLR",
-            "role": "agent",
-            "ts": "2026-05-13T12:07:20.830Z",
-            "content": "**Pricing & commercials (FAQ, Process Guide)** · Question 19 of 42\n\nAre there natural upsell or cross-sell opportunities?",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "6jkssQvR",
-            "role": "partner",
-            "ts": "2026-05-13T12:07:25.941Z",
-            "content": "cross sell",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "EFmROFVr",
-            "role": "agent",
-            "ts": "2026-05-13T12:07:26.021Z",
-            "content": "**Integration & technical (Data Brief, Integration Guide)** · Question 20 of 42\n\nWhat is the official integration name?",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "aaD1f51R",
-            "role": "partner",
-            "ts": "2026-05-13T12:07:34.779Z",
-            "content": "payments processing partner",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "3pjpQ5Rl",
-            "role": "agent",
-            "ts": "2026-05-13T12:07:34.859Z",
-            "content": "**Integration & technical (Data Brief, Integration Guide)** · Question 21 of 42\n\nWhat is the target integration go-live date?\n\n_Use an ISO date (2026-06-01) or a phrase like “early June”._",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "yr4vs3Yj",
-            "role": "partner",
-            "ts": "2026-05-13T12:07:39.959Z",
-            "content": "early June",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "dORmtxCR",
-            "role": "agent",
-            "ts": "2026-05-13T12:07:40.044Z",
-            "content": "**Integration & technical (Data Brief, Integration Guide)** · Question 22 of 42\n\nWhich ABC products are integrated?\n\nOptions (reply with one line, comma-separated): Ignite, GloFox, Trainerize, Evo, GymSales",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "krnyp4ll",
-            "role": "partner",
-            "ts": "2026-05-13T12:07:45.642Z",
-            "content": "Ignite",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "_9Fgcywr",
-            "role": "agent",
-            "ts": "2026-05-13T12:07:45.722Z",
-            "content": "**Integration & technical (Data Brief, Integration Guide)** · Question 23 of 42\n\nDescribe how the integration works from the customer perspective.\n\n_Explain what flows between systems, where setup happens, and what the customer sees day-to-day._",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "KNTmX7Oq",
-            "role": "partner",
-            "ts": "2026-05-13T12:07:53.544Z",
-            "content": "flows between systems, where setup happens, and what the customer sees day-to-day.",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "O928UTq4",
-            "role": "agent",
-            "ts": "2026-05-13T12:07:53.624Z",
-            "content": "**Integration & technical (Data Brief, Integration Guide)** · Question 24 of 42\n\nWhat setup model applies?\n\nOptions: Self-Serve · Partner-Assisted · ABC-Assisted",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "XkuYpQ89",
-            "role": "partner",
-            "ts": "2026-05-13T12:08:00.388Z",
-            "content": "Self-Serve",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "2PWtruOm",
-            "role": "agent",
-            "ts": "2026-05-13T12:08:00.468Z",
-            "content": "**Integration & technical (Data Brief, Integration Guide)** · Question 25 of 42\n\nWhat prerequisites are required before activation? (reply **None** if not applicable, otherwise use a short bullet list — one item per line)",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "mv3VSIur",
-            "role": "partner",
-            "ts": "2026-05-13T12:08:06.276Z",
-            "content": "none",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "qCB9xSQq",
-            "role": "agent",
-            "ts": "2026-05-13T12:08:06.356Z",
-            "content": "**Integration & technical (Data Brief, Integration Guide)** · Question 26 of 42\n\nWhat data is exchanged between ABC and the partner? (reply **None** if not applicable, otherwise use a short bullet list — one item per line)",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "QLS0_Z05",
-            "role": "partner",
-            "ts": "2026-05-13T12:08:12.580Z",
-            "content": "none",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "OJhsRZqE",
-            "role": "agent",
-            "ts": "2026-05-13T12:08:12.660Z",
-            "content": "**Integration & technical (Data Brief, Integration Guide)** · Question 27 of 42\n\nWhat known limitations or constraints exist? (reply **None** if not applicable, otherwise use a short bullet list — one item per line)",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "3oeFBVZw",
-            "role": "partner",
-            "ts": "2026-05-13T12:08:18.487Z",
-            "content": "limited",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "mvJgyk6J",
-            "role": "agent",
-            "ts": "2026-05-13T12:08:18.567Z",
-            "content": "**Integration & technical (Data Brief, Integration Guide)** · Question 28 of 42\n\nWhat common issues or errors occur and how are they resolved? (reply **None** if not applicable, otherwise use a short bullet list — one item per line)",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "Q8Iaze6-",
-            "role": "partner",
-            "ts": "2026-05-13T12:08:24.005Z",
-            "content": "no issues",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "wAkB-JDb",
-            "role": "agent",
-            "ts": "2026-05-13T12:08:24.085Z",
-            "content": "**Integration & technical (Data Brief, Integration Guide)** · Question 29 of 42\n\nWho handles integration support?",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "4H_SwMTk",
-            "role": "partner",
-            "ts": "2026-05-13T12:08:27.940Z",
-            "content": "abc",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "JAeRPaXk",
-            "role": "agent",
-            "ts": "2026-05-13T12:08:28.020Z",
-            "content": "**Activation & operations (Integration Guide, Process Guide)** · Question 30 of 42\n\nDescribe the onboarding and activation process end-to-end.",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "1_stNs9Y",
-            "role": "partner",
-            "ts": "2026-05-13T12:08:35.933Z",
-            "content": "onboaridng is end to end",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "u5e7UGxD",
-            "role": "agent",
-            "ts": "2026-05-13T12:08:36.013Z",
-            "content": "**Activation & operations (Integration Guide, Process Guide)** · Question 31 of 42\n\nABC owns",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "gY3cMngN",
-            "role": "partner",
-            "ts": "2026-05-13T12:08:41.878Z",
-            "content": "everything",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "xaB_NyHT",
-            "role": "agent",
-            "ts": "2026-05-13T12:08:41.958Z",
-            "content": "**Activation & operations (Integration Guide, Process Guide)** · Question 32 of 42\n\nPartner owns",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "uE1uNrOa",
-            "role": "partner",
-            "ts": "2026-05-13T12:08:47.194Z",
-            "content": "process guide",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "k1eV-kKV",
-            "role": "agent",
-            "ts": "2026-05-13T12:08:47.274Z",
-            "content": "**Activation & operations (Integration Guide, Process Guide)** · Question 33 of 42\n\nCustomer owns",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "w3MUvlqB",
-            "role": "partner",
-            "ts": "2026-05-13T12:08:54.745Z",
-            "content": "talktrack",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "b5cMQ79P",
-            "role": "agent",
-            "ts": "2026-05-13T12:08:54.825Z",
-            "content": "**Activation & operations (Integration Guide, Process Guide)** · Question 34 of 42\n\nHow long does onboarding typically take?",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "KlGn2TW2",
-            "role": "partner",
-            "ts": "2026-05-13T12:08:59.051Z",
-            "content": "2 weeks",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "wt7TvtYq",
-            "role": "agent",
-            "ts": "2026-05-13T12:08:59.131Z",
-            "content": "**Sales workflow (FAQ, Process Guide)** · Question 35 of 42\n\nWhich sales motion applies?\n\nOptions (reply with one line, comma-separated): Referral, Resell, Both",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "955ZhBpO",
-            "role": "partner",
-            "ts": "2026-05-13T12:09:05.681Z",
-            "content": "referral",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "IwYNdNAM",
-            "role": "agent",
-            "ts": "2026-05-13T12:09:05.761Z",
-            "content": "**Sales workflow (FAQ, Process Guide)** · Question 36 of 42\n\nHow does the referral or sales process work?\n\n_Include referral steps, routing, tracking, and post-submission customer experience._",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "-F4yzQ9n",
-            "role": "partner",
-            "ts": "2026-05-13T12:09:12.671Z",
-            "content": "end to end",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "NIi2mqgJ",
-            "role": "agent",
-            "ts": "2026-05-13T12:09:12.751Z",
-            "content": "**Sales workflow (FAQ, Process Guide)** · Question 37 of 42\n\nWhat happens after a referral is submitted?",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "RhH9eQ3h",
-            "role": "partner",
-            "ts": "2026-05-13T12:09:21.508Z",
-            "content": "the work begins",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "N1tITV5w",
-            "role": "agent",
-            "ts": "2026-05-13T12:09:21.589Z",
-            "content": "**Sales workflow (FAQ, Process Guide)** · Question 38 of 42\n\nHow can reps track referral status?",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "al-i2N82",
-            "role": "partner",
-            "ts": "2026-05-13T12:09:29.711Z",
-            "content": "thru website",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "UqAQ-cqq",
-            "role": "agent",
-            "ts": "2026-05-13T12:09:29.791Z",
-            "content": "**Sales workflow (FAQ, Process Guide)** · Question 39 of 42\n\nWhat sales or support materials are available? (reply **None** if not applicable, otherwise use a short bullet list — one item per line)",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "zKyquHSm",
-            "role": "partner",
-            "ts": "2026-05-13T12:09:34.732Z",
-            "content": "none",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "onSxC34_",
-            "role": "agent",
-            "ts": "2026-05-13T12:09:34.812Z",
-            "content": "**Support & contacts (FAQ, Process Guide)** · Question 40 of 42\n\nHow should support tickets be logged?\n\n_Include product category, case type, required fields, and what gets escalated to the partner._",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "LAXWPR25",
-            "role": "partner",
-            "ts": "2026-05-13T12:09:40.894Z",
-            "content": "thru portal",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "YTlxjMJ0",
-            "role": "agent",
-            "ts": "2026-05-13T12:09:40.974Z",
-            "content": "**Support & contacts (FAQ, Process Guide)** · Question 41 of 42\n\nWho are the primary contacts? (minimum 3)\n\n_Enter **exactly 3** contacts, **one per line**, using this pattern: **Type | Name | Title | Email | Phone or Slack**. Example: Partner Contact | Jane Doe | VP Sales | jane@partner.com | @jane-partner_",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "htoe7rZq",
-            "role": "partner",
-            "ts": "2026-05-13T12:12:55.947Z",
-            "content": "Ignite | western | VP | Integration@abc | @ignite",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "l99S_QA7",
-            "role": "agent",
-            "ts": "2026-05-13T12:12:56.027Z",
-            "content": "**Social proof (customer deck)** · Question 42 of 42\n\nDo you have a customer quote, testimonial, case study, or measurable outcome?\n\n_Example: “We saved 10 hours/week on admin.” — Gym Owner, Denver. Enter TBD if unavailable._",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "zojZ8lOq",
-            "role": "partner",
-            "ts": "2026-05-13T12:13:05.434Z",
-            "content": "We saved 10 hours/week on admin.” — Gym Owner, Denver. Enter TBD if unavailable.",
-            "attachments": [],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "tKli5iAj",
-            "role": "agent",
-            "ts": "2026-05-13T12:13:05.514Z",
-            "content": "Here's what I've captured from the intake — please confirm or correct anything:\n\n**Partner (from intake):** Northbeam Advisors\n**Primary contact:** Marcus Reed (marcus@northbeam.co)\n\n**Research brief (internal draft)**\n\n**Value Prop**\nNorthbeam is a fast-growing GTM advisory shop that lands ABC inside mid-market deals via outbound referral. Their team brings warm intros and senior-level relationships across the revenue stack.\n\n**Ideal Customer Profile**\nMid-market companies (500–5,000 employees) actively re-platforming their revenue stack, where Northbeam is already advising on tooling decisions.\n\n**Scope**\nPhase 1: 5 anchor referrals in 60 days + co-branded one-pager. Phase 2: shared QBR cadence + jointly run executive briefings.\n\n**Integration overview (from intake)**\nflows between systems, where setup happens, and what the customer sees day-to-day.\n\n**Target go-live (from intake)**\nearly June\n\n**Partner notes / corrections**\n_(none — add below if needed)_\n\nIf this looks right, hit **Confirm & Close** below. We'll generate filled templates under your partner folder.",
-            "meta": {
-              "step": "summary"
-            }
-          },
-          {
-            "id": "qYfP_oj_",
-            "role": "agent",
-            "ts": "2026-05-13T12:13:16.261Z",
-            "content": "This intake is closed. The ABC partner team has everything they need and will reach out with the launch plan shortly. If anything changes on your side, reply here and we'll re-open the thread.\n\nGenerated files under `/Users/harishbhashaboina/Desktop/hackathon/Partner-Launch-Agent/generated/Northbeam Advisors` (11 items).",
-            "meta": {
-              "step": "closed"
-            }
-          }
-        ]
-      },
-      "summary": {
-        "finalizedAt": "2026-05-13T12:13:16.222Z",
-        "valueProp": "Northbeam is a fast-growing GTM advisory shop that lands ABC inside mid-market deals via outbound referral. Their team brings warm intros and senior-level relationships across the revenue stack.",
-        "idealCustomerProfile": "Mid-market companies (500–5,000 employees) actively re-platforming their revenue stack, where Northbeam is already advising on tooling decisions.",
-        "scope": "Phase 1: 5 anchor referrals in 60 days + co-branded one-pager. Phase 2: shared QBR cadence + jointly run executive briefings.",
-        "integrationOverview": "flows between systems, where setup happens, and what the customer sees day-to-day.",
-        "targetDate": "early June",
-        "partnerNotes": ""
-      },
-      "timeline": {
-        "targetDate": "2026-06-04T18:30:00.000Z",
-        "milestones": [
-          {
-            "name": "Kickoff & technical scoping",
-            "date": "2026-05-07T18:30:00.000Z",
-            "description": "Joint kickoff with ABC + partner eng. Lock down API surface, auth, environments."
-          },
-          {
-            "name": "Build & sandbox certification",
-            "date": "2026-05-17T18:30:00.000Z",
-            "description": "Partner builds against sandbox; ABC certifies happy-path + edge cases."
-          },
-          {
-            "name": "Beta with anchor customers",
-            "date": "2026-05-25T18:30:00.000Z",
-            "description": "2–3 anchor customers in beta. Capture quotes for launch comms."
-          },
-          {
-            "name": "Launch readiness review",
-            "date": "2026-05-30T18:30:00.000Z",
-            "description": "Cross-functional review: Sales, CS, Marketing, Support. Go/no-go."
-          },
-          {
-            "name": "Public launch",
-            "date": "2026-06-04T18:30:00.000Z",
-            "description": "Integration live. Comms 3 sent."
-          }
-        ],
-        "communications": [
-          {
-            "id": "coming-soon",
-            "title": "Coming Soon",
-            "sendDate": "2026-05-14T18:30:00.000Z",
-            "status": "drafted",
-            "subject": "Coming soon: Northbeam Advisors × ABC",
-            "body": "## Coming soon: Northbeam Advisors × ABC\n\nWe're a few weeks out from launching our integration with **Northbeam Advisors** (Go-To-Market). Here's the short version so you can start positioning it.\n\n**Why it matters**\nNorthbeam is a fast-growing GTM advisory shop that lands ABC inside mid-market deals via outbound referral. Their team brings warm intros and senior-level relationships across the revenue stack.\n\n**Who it's for**\nMid-market companies (500–5,000 employees) actively re-platforming their revenue stack, where Northbeam is already advising on tooling decisions.\n\n**Key dates**\n- Beta with anchor customers: see launch timeline\n- Launch readiness review: see launch timeline\n- Public launch: 5 June 2026\n\nThe full Prepare-for-Launch packet (process guide, integration guide, FAQ, internal talk tracks) drops one week out. Reply here with questions.",
-            "attachments": [
-              "Partner Brief (1-pager)",
-              "Key dates"
-            ]
-          },
-          {
-            "id": "prepare-for-launch",
-            "title": "Prepare for Launch",
-            "sendDate": "2026-05-28T18:30:00.000Z",
-            "status": "drafted",
-            "subject": "Get ready: Northbeam Advisors × ABC launches 5 June 2026",
-            "body": "## Prepare for launch: Northbeam Advisors × ABC\n\nWe launch in one week. Use this packet to get fully ready.\n\n**Integration overview (from partner)**\nflows between systems, where setup happens, and what the customer sees day-to-day.\n\n**What's attached**\n- Process Guide — how to position, qualify, and hand off\n- Integration Guide — technical reference for solutions and support\n- FAQ — top 10 questions with crisp answers\n- Internal Talk Tracks — for AEs, CSMs, and support\n\n**Action items**\n- AEs: review the talk track and the ICP one-liner.\n- CS: review the integration guide; flag accounts already asking for this.\n- Support: scan the FAQ; ping us with anything unclear before launch day.\n\nQuestions? Reply here.",
-            "attachments": [
-              "Process Guide",
-              "Integration Guide",
-              "FAQ",
-              "Internal Talk Tracks"
-            ]
-          },
-          {
-            "id": "new-partner-live",
-            "title": "New Partner is Live",
-            "sendDate": "2026-06-04T18:30:00.000Z",
-            "status": "drafted",
-            "subject": "Northbeam Advisors × ABC is live",
-            "body": "## Northbeam Advisors × ABC is live\n\nThe integration is live as of today.\n\n**The short pitch**\nNorthbeam is a fast-growing GTM advisory shop that lands ABC inside mid-market deals via outbound referral. Their team brings warm intros and senior-level relationships across the revenue stack.\n\n**Resources (all in one place)**\n- Customer-facing deck\n- External one-pager\n- All internal templates (process, integration, FAQ, talk tracks)\n\n**Who to route to**\n- Active opportunities: AEs can lead with the joint value prop on accounts that fit the ICP.\n- Existing customers: CS team has a target list of accounts already showing intent signals.\n\nWe'll share a 30-day readout with metrics and customer stories. Until then — go sell it.",
-            "attachments": [
-              "Customer-facing PPT",
-              "External One-Pager",
-              "All internal templates"
-            ]
           }
         ]
       }
@@ -1017,8 +124,8 @@
         "name": "Avery Chen",
         "email": "avery@helixplatform.com"
       },
-      "createdAt": "2026-04-03T12:02:28.253Z",
-      "updatedAt": "2026-05-11T12:02:28.253Z",
+      "createdAt": "2026-04-04T10:29:22.195Z",
+      "updatedAt": "2026-05-12T10:29:22.195Z",
       "stage": "launching",
       "followUps": [],
       "research": {
@@ -1033,7 +140,7 @@
       "internalAwareness": {
         "subject": "[Partnerships] We've signed Helix Platform — Platform",
         "body": "## Overview\nHelix Platform is signed as a Platform partner — resell motion.\n\n## Value Prop\nBundle ABC with Helix's access intelligence layer for consolidated security spend.\n\n## Ideal Customer Profile\n2,000+ employee security teams on a modern IdP with mature audit programs.\n\n## Partner Archetype — Platform\nResell motion. Monetization: margin/reseller. KPIs: ARR expansion, ADS/attach rate, LTV.\n\n## Scope\nPhase 1: 3 lighthouse joint sells in 90 days. Phase 2: bundling in reseller catalog.\n\n## What to expect next\nLaunch timeline + 3 launch communications in motion.",
-        "approvedAt": "2026-04-05T12:02:28.253Z"
+        "approvedAt": "2026-04-06T10:29:22.195Z"
       },
       "partnerChat": {
         "token": "demo-helix-token",
@@ -1046,53 +153,53 @@
             "name": "Helix-ABC-Integration-Spec.md",
             "size": 14820,
             "mimeType": "text/markdown",
-            "uploadedAt": "2026-05-03T12:02:28.253Z",
+            "uploadedAt": "2026-05-04T10:29:22.195Z",
             "excerpt": "# Helix x ABC Integration\n\nAuth: OAuth2 with PKCE. Token exchange via /oauth/token..."
           }
         ],
         "partnerInputs": {
           "reviewNotes": "All looks right.",
           "integrationDescription": "OAuth2 PKCE auth flow, REST API on top of Helix's policy engine. Read-only initially; write-back behind feature flag for v1.1.",
-          "targetDate": "2026-06-03T12:02:28.253Z"
+          "targetDate": "2026-06-04T10:29:22.195Z"
         },
-        "lastPartnerResponseAt": "2026-05-05T12:02:28.253Z",
+        "lastPartnerResponseAt": "2026-05-06T10:29:22.195Z",
         "messages": []
       },
       "summary": {
-        "finalizedAt": "2026-05-05T12:02:28.253Z",
+        "finalizedAt": "2026-05-06T10:29:22.195Z",
         "valueProp": "Helix is a natural extension of ABC's platform, bundling identity + access intelligence on top of ABC.",
         "idealCustomerProfile": "Upper-mid-market and enterprise security teams (2,000+ employees).",
         "scope": "Phase 1: 3 lighthouse joint sells in 90 days. Phase 2: SKU bundling.",
         "integrationOverview": "OAuth2 PKCE auth flow, REST API on top of Helix's policy engine. Read-only initially; write-back behind feature flag for v1.1.",
-        "targetDate": "2026-06-03T12:02:28.253Z",
+        "targetDate": "2026-06-04T10:29:22.195Z",
         "partnerNotes": "All looks right."
       },
       "timeline": {
-        "targetDate": "2026-06-03T12:02:28.253Z",
+        "targetDate": "2026-06-04T10:29:22.195Z",
         "milestones": [
           {
             "name": "Kickoff & technical scoping",
-            "date": "2026-05-06T12:02:28.253Z",
+            "date": "2026-05-07T10:29:22.195Z",
             "description": "Joint kickoff. Lock down API surface, auth, environments."
           },
           {
             "name": "Build & sandbox certification",
-            "date": "2026-05-16T12:02:28.253Z",
+            "date": "2026-05-17T10:29:22.195Z",
             "description": "Helix builds against sandbox; ABC certifies."
           },
           {
             "name": "Beta with anchor customers",
-            "date": "2026-05-24T12:02:28.253Z",
+            "date": "2026-05-25T10:29:22.195Z",
             "description": "3 anchor customers in beta."
           },
           {
             "name": "Launch readiness review",
-            "date": "2026-05-29T12:02:28.253Z",
+            "date": "2026-05-30T10:29:22.195Z",
             "description": "Cross-functional go/no-go."
           },
           {
             "name": "Public launch",
-            "date": "2026-06-03T12:02:28.253Z",
+            "date": "2026-06-04T10:29:22.195Z",
             "description": "Integration live. Comms 3 sent."
           }
         ],
@@ -1100,7 +207,7 @@
           {
             "id": "coming-soon",
             "title": "Coming Soon",
-            "sendDate": "2026-05-13T12:02:28.253Z",
+            "sendDate": "2026-05-14T10:29:22.195Z",
             "status": "sent",
             "subject": "Coming soon: Helix Platform × ABC",
             "body": "Coming soon comm…",
@@ -1112,7 +219,7 @@
           {
             "id": "prepare-for-launch",
             "title": "Prepare for Launch",
-            "sendDate": "2026-05-27T12:02:28.253Z",
+            "sendDate": "2026-05-28T10:29:22.195Z",
             "status": "drafted",
             "subject": "Get ready: Helix Platform × ABC launches soon",
             "body": "Prepare for launch comm…",
@@ -1126,7 +233,7 @@
           {
             "id": "new-partner-live",
             "title": "New Partner is Live",
-            "sendDate": "2026-06-03T12:02:28.253Z",
+            "sendDate": "2026-06-04T10:29:22.195Z",
             "status": "drafted",
             "subject": "Helix Platform × ABC is live",
             "body": "Live comm…",
@@ -1147,29 +254,10 @@
         "name": "Sam Patel",
         "email": "sam@quietchannel.com"
       },
-      "createdAt": "2026-03-29T12:02:28.253Z",
-      "updatedAt": "2026-05-13T13:30:12.081Z",
+      "createdAt": "2026-03-30T10:29:22.195Z",
+      "updatedAt": "2026-04-09T10:29:22.195Z",
       "stage": "partner-chat",
-      "followUps": [
-        {
-          "level": 10,
-          "triggeredAt": "2026-05-13T12:19:36.815Z",
-          "acknowledged": true,
-          "message": "Gentle nudge: Sam from QuietChannel hasn't replied in 10 days. The Partner team has been notified."
-        },
-        {
-          "level": 20,
-          "triggeredAt": "2026-05-13T12:19:36.815Z",
-          "acknowledged": true,
-          "message": "Heads up: 20 days without a response from QuietChannel. Partner team escalation suggested — consider a direct outreach."
-        },
-        {
-          "level": 30,
-          "triggeredAt": "2026-05-13T12:19:36.815Z",
-          "acknowledged": true,
-          "message": "Escalation: 30 days without a response from QuietChannel. Recommend pausing internal launch comms and re-confirming partner commitment."
-        }
-      ],
+      "followUps": [],
       "research": {
         "valueProp": "QuietChannel is a developer-tooling vendor whose users overlap heavily with ABC's ICP. Joint go-to-market drives inbound leads from QuietChannel into ABC.",
         "idealCustomerProfile": "Series B–D companies (100–800 employees) standardizing on modern developer infra.",
@@ -1184,7 +272,7 @@
       "internalAwareness": {
         "subject": "[Partnerships] We've signed QuietChannel — Channel",
         "body": "## Overview\nQuietChannel signed as a Channel partner.",
-        "approvedAt": "2026-04-03T12:02:28.253Z"
+        "approvedAt": "2026-04-04T10:29:22.195Z"
       },
       "partnerChat": {
         "token": "demo-quietchannel-token",
@@ -1197,8 +285,8 @@
           {
             "id": "m1",
             "role": "agent",
-            "ts": "2026-04-08T12:02:28.253Z",
-            "content": "Hi Sam 👋\n\nI'm ABC's Partner Launch Agent. Congrats on signing with ABC.\n\nWe'll capture your **Partner Launch Intake** here so we can fill the launch templates (Partner Data Brief, Integration Guide, decks, and FAQs) for your team.\n\nTake your time — you can attach files where helpful (logos, one-pagers, etc.).\n\n**Partner basics (all templates)** · Question 1 of 42\n\nWhat is the partner name?",
+            "ts": "2026-04-09T10:29:22.195Z",
+            "content": "Hi Sam 👋\n\nI'm ABC's Partner Launch Agent. Congrats on signing with ABC.\n\nWe'll capture your **Partner Launch Intake** here so we can fill the launch templates (Partner Data Brief, Integration Guide, decks, and FAQs) for your team.\n\nTake your time — you can attach files where helpful (logos, one-pagers, etc.).\n\n**Partner basics (all templates)** · Question 1 of 43\n\nWhat is the partner name?",
             "meta": {
               "step": "intake"
             }
@@ -1206,113 +294,25 @@
         ]
       }
     },
-    "_IPOnAEfSl": {
-      "id": "_IPOnAEfSl",
-      "name": "acme data",
-      "website": "acmedata.com",
+    "Hek9awJGEW": {
+      "id": "Hek9awJGEW",
+      "name": "harish estates",
+      "website": "harishestates.com",
       "contact": {
-        "name": "Jordan Lee",
-        "email": "jordan@acmedata.com"
+        "name": "Harish B",
+        "email": "harish@harishestates"
       },
-      "createdAt": "2026-05-13T12:20:08.745Z",
-      "updatedAt": "2026-05-13T12:25:53.787Z",
+      "createdAt": "2026-05-14T10:30:04.817Z",
+      "updatedAt": "2026-05-14T10:34:34.021Z",
       "stage": "partner-chat",
       "followUps": [],
       "research": {
-        "valueProp": "acme data accelerates data and analytics teams workflows with governed activation across the modern data stack. Integrated with ABC, joint customers get a unified path from warehouse model to operational system, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.",
-        "idealCustomerProfile": "Mid-market and upper-mid-market data and analytics teams (200–5,000 employees) running Snowflake, BigQuery, or Databricks with a downstream activation layer. Strong fit for teams with a dedicated analytics engineering or DataOps lead who already operate on a modern data stack and need fragmented activation surfaces and brittle pipelines resolved.",
-        "archetype": "Data Affiliate",
-        "archetypeRationale": "acme data's value lands inside the product through a technical integration, driving stickiness and retention on mutual customers. Sales motion is integration-first, monetization typically via API fee.",
-        "scope": "Phase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded acmedata↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.",
-        "competitiveLandscape": "acme data sits alongside a small set of point solutions but differentiates through first-class governance and lineage on the activation path. ABC's partnership tightens the seam between warehouse model and operational system, an area where competitors still rely on manual exports.",
-        "riskFlags": [
-          "Integration ownership and SLA not yet confirmed",
-          "Need security review for any data sharing in scope",
-          "Confirm legal/contract path before public co-marketing"
-        ]
-      },
-      "internalAwareness": {
-        "subject": "[Partnerships] We've signed acme data — Data Affiliate",
-        "body": "## Overview\nWe've signed **acme data** ([acmedata.com](https://acmedata.com)) as a new Data Affiliate partner. The integration moves into onboarding this week with primary contact **Jordan Lee** (jordan@acmedata.com).\n\n## Value Prop\nacme data accelerates data and analytics teams workflows with governed activation across the modern data stack. Integrated with ABC, joint customers get a unified path from warehouse model to operational system, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n## Ideal Customer Profile\nMid-market and upper-mid-market data and analytics teams (200–5,000 employees) running Snowflake, BigQuery, or Databricks with a downstream activation layer. Strong fit for teams with a dedicated analytics engineering or DataOps lead who already operate on a modern data stack and need fragmented activation surfaces and brittle pipelines resolved.\n\n## Partner Archetype — Data Affiliate\nacme data's value lands inside the product through a technical integration, driving stickiness and retention on mutual customers. Sales motion is integration-first, monetization typically via API fee.\n\n## Scope\nPhase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded acmedata↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.\n\n## What to expect next\n- Partner-facing launch chat goes out today; we'll capture integration details, target launch date, and any partner-supplied collateral.\n- The agent will follow up if the partner is unresponsive at 10 / 20 / 30 days and notify this team.\n- Once the partner closes the chat, we'll publish a launch timeline with three communications (Coming Soon, Prepare for Launch, Live) plus customer-facing collateral.\n\nReply here with edits or call out blockers before we hit \"Approve & Launch to Partner\".",
-        "approvedAt": "2026-05-13T12:20:10.712Z"
-      },
-      "partnerChat": {
-        "token": "4X04PTwUU7bkFF",
-        "step": "intake",
-        "intakeIndex": 1,
-        "intakeAnswers": {
-          "partner_name": ""
-        },
-        "partnerInputs": {},
-        "messages": [
-          {
-            "id": "_hskkxhS",
-            "role": "agent",
-            "ts": "2026-05-13T12:20:12.265Z",
-            "content": "Hi Jordan 👋\n\nI'm ABC's Partner Launch Agent. Congrats on signing with ABC.\n\nWe'll capture your **Partner Launch Intake** here so we can fill the launch templates (Partner Data Brief, Integration Guide, decks, and FAQs) for your team.\n\nTake your time — you can attach files where helpful (logos, one-pagers, etc.).\n\n**Partner basics (all templates)** · Question 1 of 42\n\nWhat is the partner name?",
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "WQY88Rx0",
-            "role": "partner",
-            "ts": "2026-05-13T12:25:53.782Z",
-            "content": "",
-            "attachments": [
-              {
-                "id": "6Cd4sdgPFL",
-                "name": "Partner Data Brief.docx",
-                "size": 336958,
-                "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-                "uploadedAt": "2026-05-13T12:25:51.865Z"
-              }
-            ],
-            "meta": {
-              "step": "intake"
-            }
-          },
-          {
-            "id": "qNmNYFLG",
-            "role": "agent",
-            "ts": "2026-05-13T12:25:53.862Z",
-            "content": "**Partner basics (all templates)** · Question 2 of 42\n\nIn one sentence, what does the partner do?",
-            "meta": {
-              "step": "intake"
-            }
-          }
-        ],
-        "attachments": [
-          {
-            "id": "6Cd4sdgPFL",
-            "name": "Partner Data Brief.docx",
-            "size": 336958,
-            "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-            "uploadedAt": "2026-05-13T12:25:51.865Z"
-          }
-        ],
-        "lastPartnerResponseAt": "2026-05-13T12:25:53.782Z"
-      }
-    },
-    "NmvxksNHd7": {
-      "id": "NmvxksNHd7",
-      "name": "live partner",
-      "website": "liveaparter@abc",
-      "contact": {
-        "name": "harish",
-        "email": "harish@livepartner"
-      },
-      "createdAt": "2026-05-13T13:19:52.556Z",
-      "updatedAt": "2026-05-13T13:20:14.131Z",
-      "stage": "partner-chat",
-      "followUps": [],
-      "research": {
-        "valueProp": "live partner accelerates go-to-market and operations teams workflows with workflow automation that adapts to context. Integrated with ABC, joint customers get a unified path from trigger event to action taken, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.",
+        "valueProp": "harish estates accelerates go-to-market and operations teams workflows with workflow automation that adapts to context. Integrated with ABC, joint customers get a unified path from trigger event to action taken, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.",
         "idealCustomerProfile": "Mid-market and upper-mid-market go-to-market and operations teams (200–5,000 employees) running a modern SaaS stack with at least one system of record. Strong fit for teams with a dedicated operations or platform lead who already operate on a modern data stack and need context-switching across point tools resolved.",
         "archetype": "Data Affiliate",
-        "archetypeRationale": "live partner's value lands inside the product through a technical integration, driving stickiness and retention on mutual customers. Sales motion is integration-first, monetization typically via API fee.",
-        "scope": "Phase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded abc↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.",
-        "competitiveLandscape": "live partner sits alongside a small set of point solutions but differentiates through an opinionated, outcome-led experience. ABC's partnership tightens the seam between trigger event and action taken, an area where competitors still rely on manual exports.",
+        "archetypeRationale": "harish estates's value lands inside the product through a technical integration, driving stickiness and retention on mutual customers. Sales motion is integration-first, monetization typically via API fee.",
+        "scope": "Phase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded harishestates↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.",
+        "competitiveLandscape": "harish estates sits alongside a small set of point solutions but differentiates through an opinionated, outcome-led experience. ABC's partnership tightens the seam between trigger event and action taken, an area where competitors still rely on manual exports.",
         "riskFlags": [
           "Integration ownership and SLA not yet confirmed",
           "Need security review for any data sharing in scope",
@@ -1320,116 +320,595 @@
         ]
       },
       "internalAwareness": {
-        "subject": "[Partnerships] We've signed live partner — Data Affiliate",
-        "body": "## Overview\nWe've signed **live partner** ([abc](https://liveaparter@abc)) as a new Data Affiliate partner. The integration moves into onboarding this week with primary contact **harish** (harish@livepartner).\n\n## Value Prop\nlive partner accelerates go-to-market and operations teams workflows with workflow automation that adapts to context. Integrated with ABC, joint customers get a unified path from trigger event to action taken, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n## Ideal Customer Profile\nMid-market and upper-mid-market go-to-market and operations teams (200–5,000 employees) running a modern SaaS stack with at least one system of record. Strong fit for teams with a dedicated operations or platform lead who already operate on a modern data stack and need context-switching across point tools resolved.\n\n## Partner Archetype — Data Affiliate\nlive partner's value lands inside the product through a technical integration, driving stickiness and retention on mutual customers. Sales motion is integration-first, monetization typically via API fee.\n\n## Scope\nPhase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded abc↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.\n\n## What to expect next\n- Partner-facing launch chat goes out today; we'll capture integration details, target launch date, and any partner-supplied collateral.\n- The agent will follow up if the partner is unresponsive at 10 / 20 / 30 days and notify this team.\n- Once the partner closes the chat, we'll publish a launch timeline with three communications (Coming Soon, Prepare for Launch, Live) plus customer-facing collateral.\n\nReply here with edits or call out blockers before we hit \"Approve & Launch to Partner\".",
-        "approvedAt": "2026-05-13T13:19:55.738Z"
+        "subject": "[Partnerships] We've signed harish estates — Data Affiliate",
+        "body": "## Overview\nWe've signed **harish estates** ([harishestates.com](https://harishestates.com)) as a new Data Affiliate partner. The integration moves into onboarding this week with primary contact **Harish B** (harish@harishestates).\n\n## Value Prop\nharish estates accelerates go-to-market and operations teams workflows with workflow automation that adapts to context. Integrated with ABC, joint customers get a unified path from trigger event to action taken, reducing manual reconciliation and shrinking time-to-value by an estimated 30–40%.\n\n## Ideal Customer Profile\nMid-market and upper-mid-market go-to-market and operations teams (200–5,000 employees) running a modern SaaS stack with at least one system of record. Strong fit for teams with a dedicated operations or platform lead who already operate on a modern data stack and need context-switching across point tools resolved.\n\n## Partner Archetype — Data Affiliate\nharish estates's value lands inside the product through a technical integration, driving stickiness and retention on mutual customers. Sales motion is integration-first, monetization typically via API fee.\n\n## Scope\nPhase 1 (60 days): production-grade API integration with ABC, joint co-marketing landing page, and one anchor customer reference. Phase 2 (post-launch): expanded harishestates↔ABC sync surface, in-product cross-promotion, and quarterly business reviews.\n\n## What to expect next\n- Partner-facing launch chat goes out today; we'll capture integration details, target launch date, and any partner-supplied collateral.\n- The agent will follow up if the partner is unresponsive at 10 / 20 / 30 days and notify this team.\n- Once the partner closes the chat, we'll publish a launch timeline with three communications (Coming Soon, Prepare for Launch, Live) plus customer-facing collateral.\n\nReply here with edits or call out blockers before we hit \"Approve & Launch to Partner\".",
+        "approvedAt": "2026-05-14T10:30:09.808Z"
       },
       "partnerChat": {
-        "token": "KmgEzmXJevaNHn",
+        "token": "k_cNBbUUKes4yU",
         "step": "intake",
-        "intakeIndex": 4,
+        "intakeIndex": 28,
         "intakeAnswers": {
-          "partner_name": "sdf",
-          "partner_one_liner": "dfs",
-          "partnership_type": "sdf",
-          "launch_date": "sdf"
+          "partner_name": "harish estates",
+          "partner_one_liner": "estates",
+          "partnership_type": "Platform",
+          "launch_date": "early June",
+          "partner_logo": "none",
+          "abc_products": "Ignite",
+          "customer_segments": "Gym",
+          "sub_segments": "MML",
+          "geographies": "US",
+          "other_geography": "none",
+          "operator_value": "new revenue",
+          "member_value": "very well",
+          "pain_points": "Members can't check in when Wi‑Fi drops",
+          "not_a_fit": "B2B",
+          "ideal_customer_profile": "100 crore turn over business size",
+          "pricing_model": "monthly",
+          "abc_discounts": "yes",
+          "commission_model": "none",
+          "upsell_cross_sell": "cross sell",
+          "has_integration": "No",
+          "activation_process": "onboaridng is end to end process",
+          "responsibility_matrix.abc_owns": "everything",
+          "responsibility_matrix.partner_owns": "everything",
+          "responsibility_matrix.customer_owns": "none",
+          "onboarding_timeline": "1 week",
+          "sales_motion": "yes",
+          "referral_process": "end to end",
+          "post_referral_journey": "follow up"
         },
         "partnerInputs": {},
         "messages": [
           {
-            "id": "nnZRetDI",
+            "id": "Ta4xgPYP",
             "role": "agent",
-            "ts": "2026-05-13T13:19:58.265Z",
-            "content": "Hi harish 👋\n\nI'm ABC's Partner Launch Agent. Congrats on signing with ABC.\n\nWe'll capture your **Partner Launch Intake** here so we can fill the launch templates (Partner Data Brief, Integration Guide, decks, and FAQs) for your team.\n\nTake your time — you can attach files where helpful (logos, one-pagers, etc.).\n\n**Partner basics (all templates)** · Question 1 of 42\n\nWhat is the partner name?",
+            "ts": "2026-05-14T10:30:11.549Z",
+            "content": "Hi Harish 👋\n\nI'm ABC's Partner Launch Agent. Congrats on signing with ABC.\n\nWe'll capture your **Partner Launch Intake** here so we can fill the launch templates (Partner Data Brief, Integration Guide, decks, and FAQs) for your team.\n\nTake your time — you can attach files where helpful (logos, one-pagers, etc.).\n\n**Partner basics (all templates)** · Question 1 of 43\n\nWhat is the partner name?",
             "meta": {
               "step": "intake"
             }
           },
           {
-            "id": "QxPptu_n",
+            "id": "BGqBFwa8",
             "role": "partner",
-            "ts": "2026-05-13T13:20:07.383Z",
-            "content": "sdf",
+            "ts": "2026-05-14T10:30:21.486Z",
+            "content": "harish estates",
             "attachments": [],
             "meta": {
               "step": "intake"
             }
           },
           {
-            "id": "H8GEC2Ug",
+            "id": "rTQZqQFJ",
             "role": "agent",
-            "ts": "2026-05-13T13:20:07.463Z",
-            "content": "**Partner basics (all templates)** · Question 2 of 42\n\nIn one sentence, what does the partner do?",
+            "ts": "2026-05-14T10:30:21.566Z",
+            "content": "**Partner basics (all templates)** · Question 2 of 43\n\nIn one sentence, what does the partner do?",
             "meta": {
               "step": "intake"
             }
           },
           {
-            "id": "2CvaJ_02",
+            "id": "vwvznLkZ",
             "role": "partner",
-            "ts": "2026-05-13T13:20:10.277Z",
-            "content": "dfs",
+            "ts": "2026-05-14T10:30:28.719Z",
+            "content": "estates",
             "attachments": [],
             "meta": {
               "step": "intake"
             }
           },
           {
-            "id": "WEPyrzKI",
+            "id": "cal_3-RH",
             "role": "agent",
-            "ts": "2026-05-13T13:20:10.357Z",
-            "content": "**Partner basics (all templates)** · Question 3 of 42\n\nWhat type of partnership is this?\n\nOptions: Data Affiliate · Referral · Platform · Channel",
+            "ts": "2026-05-14T10:30:28.799Z",
+            "content": "**Partner basics (all templates)** · Question 3 of 43\n\nWhat type of partnership is this?\n\nOptions: Data Affiliate · Referral · Platform · Channel",
             "meta": {
               "step": "intake"
             }
           },
           {
-            "id": "r2tGR8to",
+            "id": "kGaY50SQ",
             "role": "partner",
-            "ts": "2026-05-13T13:20:12.851Z",
-            "content": "sdf",
+            "ts": "2026-05-14T10:30:34.644Z",
+            "content": "Platform",
             "attachments": [],
             "meta": {
               "step": "intake"
             }
           },
           {
-            "id": "HNR1dWtz",
+            "id": "yw45ttPV",
             "role": "agent",
-            "ts": "2026-05-13T13:20:12.931Z",
-            "content": "**Partner basics (all templates)** · Question 4 of 42\n\nWhat is the planned partner launch date?\n\n_Use an ISO date (2026-06-01) or a phrase like “early June”._",
+            "ts": "2026-05-14T10:30:34.724Z",
+            "content": "**Partner basics (all templates)** · Question 4 of 43\n\nWhat is the planned partner launch date?\n\n_Use an ISO date (2026-06-01) or a phrase like “early June”._",
             "meta": {
               "step": "intake"
             }
           },
           {
-            "id": "EykJE28_",
+            "id": "YsmXGWSD",
             "role": "partner",
-            "ts": "2026-05-13T13:20:14.130Z",
-            "content": "sdf",
+            "ts": "2026-05-14T10:30:40.267Z",
+            "content": "early June",
             "attachments": [],
             "meta": {
               "step": "intake"
             }
           },
           {
-            "id": "P5GK1YzW",
+            "id": "wAcJpeO-",
             "role": "agent",
-            "ts": "2026-05-13T13:20:14.210Z",
-            "content": "**Partner basics (all templates)** · Question 5 of 42\n\nUpload the partner logo or provide a logo URL.\n\n_Paste a URL, describe the file, or use the paperclip to attach._",
+            "ts": "2026-05-14T10:30:40.348Z",
+            "content": "**Partner basics (all templates)** · Question 5 of 43\n\nUpload the partner logo or provide a logo URL.\n\n_Paste a URL, describe the file, or use the paperclip to attach._",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "6YEW6z9F",
+            "role": "partner",
+            "ts": "2026-05-14T10:30:44.966Z",
+            "content": "none",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "Tnar5o95",
+            "role": "agent",
+            "ts": "2026-05-14T10:30:45.046Z",
+            "content": "**Scope (Data Brief, decks, FAQ)** · Question 6 of 43\n\nWhich ABC products does this partner support?\n\nOptions (reply with one line, comma-separated): Ignite, GloFox, Trainerize, Evo, GymSales",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "3Vr8IcOX",
+            "role": "partner",
+            "ts": "2026-05-14T10:30:50.161Z",
+            "content": "Ignite",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "UG1ig7Lz",
+            "role": "agent",
+            "ts": "2026-05-14T10:30:50.241Z",
+            "content": "**Scope (Data Brief, decks, FAQ)** · Question 7 of 43\n\nWhich customer segments are targeted?\n\nOptions (reply with one line, comma-separated): Gym, Studio, Coach",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "R7K9ybNj",
+            "role": "partner",
+            "ts": "2026-05-14T10:30:54.834Z",
+            "content": "Gym",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "mHPiWrvt",
+            "role": "agent",
+            "ts": "2026-05-14T10:30:54.914Z",
+            "content": "**Scope (Data Brief, decks, FAQ)** · Question 8 of 43\n\nWhich sub-segments apply?\n\nOptions (reply with one line, comma-separated): SMB (1 location), MML (2–40 locations), GES (40+ locations)",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "_Mlz3l5N",
+            "role": "partner",
+            "ts": "2026-05-14T10:30:59.513Z",
+            "content": "MML",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "368ZDrzz",
+            "role": "agent",
+            "ts": "2026-05-14T10:30:59.593Z",
+            "content": "**Scope (Data Brief, decks, FAQ)** · Question 9 of 43\n\nWhich geographies are supported?\n\nOptions (reply with one line, comma-separated): US, Canada, LatAm, EMEA, APAC, Other",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "e7yccYPg",
+            "role": "partner",
+            "ts": "2026-05-14T10:31:03.489Z",
+            "content": "US",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "7xvGuicn",
+            "role": "agent",
+            "ts": "2026-05-14T10:31:03.570Z",
+            "content": "**Scope (Data Brief, decks, FAQ)** · Question 10 of 43\n\nIf Other, specify the supported geography.",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "0e_y_Kh-",
+            "role": "partner",
+            "ts": "2026-05-14T10:31:10.049Z",
+            "content": "none",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "L7_PBHTd",
+            "role": "agent",
+            "ts": "2026-05-14T10:31:10.129Z",
+            "content": "**Value & positioning (customer deck, FAQ, ICP)** · Question 11 of 43\n\nWhat business problems does this partner solve for operators or gym owners?\n\n_Include outcomes like reduced manual work, new revenue, improved retention, better member experience, etc._",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "8W0bwDIC",
+            "role": "partner",
+            "ts": "2026-05-14T10:31:16.838Z",
+            "content": "new revenue",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "8HL3zW4K",
+            "role": "agent",
+            "ts": "2026-05-14T10:31:16.918Z",
+            "content": "**Value & positioning (customer deck, FAQ, ICP)** · Question 12 of 43\n\nHow does this improve the member experience?",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "NiBFYQpA",
+            "role": "partner",
+            "ts": "2026-05-14T10:31:23.132Z",
+            "content": "very well",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "CQrX7EWU",
+            "role": "agent",
+            "ts": "2026-05-14T10:31:23.212Z",
+            "content": "**Value & positioning (customer deck, FAQ, ICP)** · Question 13 of 43\n\nWhat customer pain points or complaints indicate a strong fit?\n\n_Enter **3 to 5** pain points or customer phrases, **one per line** (bullets optional). Example: \"Members can't check in when Wi‑Fi drops\"_",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "wSEbdoDZ",
+            "role": "partner",
+            "ts": "2026-05-14T10:31:32.701Z",
+            "content": "Members can't check in when Wi‑Fi drops",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "w8tLS8UQ",
+            "role": "agent",
+            "ts": "2026-05-14T10:31:32.781Z",
+            "content": "**Value & positioning (customer deck, FAQ, ICP)** · Question 14 of 43\n\nWhat type of customer is NOT a fit?",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "5ShbCtlK",
+            "role": "partner",
+            "ts": "2026-05-14T10:31:40.179Z",
+            "content": "B2B",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "mbaVRT9c",
+            "role": "agent",
+            "ts": "2026-05-14T10:31:40.259Z",
+            "content": "**Value & positioning (customer deck, FAQ, ICP)** · Question 15 of 43\n\nDescribe the ideal customer profile.\n\n_Include business size, revenue range, operational maturity, member count, and typical use case._",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "YbMpR4t3",
+            "role": "partner",
+            "ts": "2026-05-14T10:31:56.267Z",
+            "content": "100 crore turn over business size",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "8yiAstCR",
+            "role": "agent",
+            "ts": "2026-05-14T10:31:56.347Z",
+            "content": "**Pricing & commercials (FAQ, Process Guide)** · Question 16 of 43\n\nHow is the partner priced?\n\n_Include monthly fees, per-location pricing, usage tiers, referral-only pricing, discounts, bundles, or N/A._",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "3A3aZmGW",
+            "role": "partner",
+            "ts": "2026-05-14T10:32:01.199Z",
+            "content": "monthly",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "81qUUC_c",
+            "role": "agent",
+            "ts": "2026-05-14T10:32:01.280Z",
+            "content": "**Pricing & commercials (FAQ, Process Guide)** · Question 17 of 43\n\nAre there ABC-exclusive discounts or bundles?",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "kU_PimID",
+            "role": "partner",
+            "ts": "2026-05-14T10:32:05.566Z",
+            "content": "yes",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "XUl6LO-Z",
+            "role": "agent",
+            "ts": "2026-05-14T10:32:05.646Z",
+            "content": "**Pricing & commercials (FAQ, Process Guide)** · Question 18 of 43\n\nWhat commissions, referral fees, spiffs, or booking incentives apply?",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "jPopEdSZ",
+            "role": "partner",
+            "ts": "2026-05-14T10:32:09.801Z",
+            "content": "none",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "1q3xbalE",
+            "role": "agent",
+            "ts": "2026-05-14T10:32:09.881Z",
+            "content": "**Pricing & commercials (FAQ, Process Guide)** · Question 19 of 43\n\nAre there natural upsell or cross-sell opportunities?",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "_zuovjoq",
+            "role": "partner",
+            "ts": "2026-05-14T10:32:14.944Z",
+            "content": "cross sell",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "xvMATZf0",
+            "role": "agent",
+            "ts": "2026-05-14T10:32:15.024Z",
+            "content": "**Integration scope** · Question 20 of 43\n\nIs there an integration?\n\nOptions: Yes · No",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "1a_pArco",
+            "role": "partner",
+            "ts": "2026-05-14T10:32:21.159Z",
+            "content": "No",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "XHscFeUI",
+            "role": "agent",
+            "ts": "2026-05-14T10:32:21.239Z",
+            "content": "**Activation & operations (Integration Guide, Process Guide)** · Question 21 of 33\n\nDescribe the onboarding and activation process end-to-end.",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "-6ylKh3A",
+            "role": "partner",
+            "ts": "2026-05-14T10:33:12.333Z",
+            "content": "onboaridng is end to end process",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "ywou9SBc",
+            "role": "agent",
+            "ts": "2026-05-14T10:33:12.413Z",
+            "content": "**Activation & operations (Integration Guide, Process Guide)** · Question 22 of 33\n\nABC owns",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "rkSBtdfV",
+            "role": "partner",
+            "ts": "2026-05-14T10:33:19.938Z",
+            "content": "everything",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "h007l1UN",
+            "role": "agent",
+            "ts": "2026-05-14T10:33:20.018Z",
+            "content": "**Activation & operations (Integration Guide, Process Guide)** · Question 23 of 33\n\nPartner owns",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "c3x9x0Uf",
+            "role": "partner",
+            "ts": "2026-05-14T10:33:32.940Z",
+            "content": "everything",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "hxA2JokM",
+            "role": "agent",
+            "ts": "2026-05-14T10:33:33.020Z",
+            "content": "**Activation & operations (Integration Guide, Process Guide)** · Question 24 of 33\n\nCustomer owns",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "TJfs1tOd",
+            "role": "partner",
+            "ts": "2026-05-14T10:33:38.410Z",
+            "content": "none",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "kSRnwiTr",
+            "role": "agent",
+            "ts": "2026-05-14T10:33:38.490Z",
+            "content": "**Activation & operations (Integration Guide, Process Guide)** · Question 25 of 33\n\nHow long does onboarding typically take?",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "mHJ8pVw4",
+            "role": "partner",
+            "ts": "2026-05-14T10:34:02.383Z",
+            "content": "1 week",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "cpWWAvuH",
+            "role": "agent",
+            "ts": "2026-05-14T10:34:02.463Z",
+            "content": "**Sales workflow (FAQ, Process Guide)** · Question 26 of 33\n\nWhich sales motion applies?\n\nOptions (reply with one line, comma-separated): Referral, Resell, Both",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "ErvpkEyu",
+            "role": "partner",
+            "ts": "2026-05-14T10:34:13.185Z",
+            "content": "yes",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "CNArepP8",
+            "role": "agent",
+            "ts": "2026-05-14T10:34:13.265Z",
+            "content": "**Sales workflow (FAQ, Process Guide)** · Question 27 of 33\n\nHow does the referral or sales process work?\n\n_Include referral steps, routing, tracking, and post-submission customer experience._",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "GP53RqJT",
+            "role": "partner",
+            "ts": "2026-05-14T10:34:26.431Z",
+            "content": "end to end",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "kcEn7DEY",
+            "role": "agent",
+            "ts": "2026-05-14T10:34:26.511Z",
+            "content": "**Sales workflow (FAQ, Process Guide)** · Question 28 of 33\n\nWhat happens after a referral is submitted?",
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "WWK7lS4c",
+            "role": "partner",
+            "ts": "2026-05-14T10:34:34.020Z",
+            "content": "follow up",
+            "attachments": [],
+            "meta": {
+              "step": "intake"
+            }
+          },
+          {
+            "id": "0_LIzBUD",
+            "role": "agent",
+            "ts": "2026-05-14T10:34:34.100Z",
+            "content": "**Sales workflow (FAQ, Process Guide)** · Question 29 of 33\n\nHow can reps track referral status?",
             "meta": {
               "step": "intake"
             }
           }
         ],
         "attachments": [],
-        "lastPartnerResponseAt": "2026-05-13T13:20:14.130Z"
+        "lastPartnerResponseAt": "2026-05-14T10:34:34.020Z"
       }
     }
   },
   "order": [
-    "NmvxksNHd7",
-    "_IPOnAEfSl",
+    "Hek9awJGEW",
     "demo-loop-data",
     "demo-northbeam",
     "demo-helix-platform",
