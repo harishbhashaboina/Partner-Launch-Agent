@@ -56,7 +56,7 @@ interface CatalogCache {
 
 let cache: CatalogCache | null = null;
 
-const DEFAULT_DIR = "Users/harishbhashaboina/Desktop/hackathon/Partner-Launch-Agent/generated";
+const DEFAULT_DIR = "/Users/harishbhashaboina/Desktop/hackathon/Partner-Launch-Agent/generated";
 const DEFAULT_BRIEF_FILENAME = "intake-expanded.json";
 
 export function partnerTemplatesDir(): string {
@@ -117,65 +117,357 @@ export async function loadPartnerCatalog(): Promise<CatalogPartner[]> {
   return partners;
 }
 
+function asStr(v: unknown): string {
+  return String(v ?? "").trim();
+}
+
+/** Nested `briefData` / camelCase (agent) vs flat snake_case from `intake-expanded.json`. */
+function pickBrief(
+  brief: Record<string, unknown>,
+  json: Record<string, unknown>,
+  briefKey: string,
+  ...flatKeys: string[]
+): string {
+  const fromBrief = asStr(brief?.[briefKey]);
+  if (fromBrief) return fromBrief;
+  for (const k of flatKeys) {
+    const v = asStr(json?.[k]);
+    if (v) return v;
+  }
+  return "";
+}
+
+function pickResearch(
+  research: Record<string, unknown>,
+  json: Record<string, unknown>,
+  researchKey: string,
+  ...flatKeys: string[]
+): string {
+  const fromR = asStr(research?.[researchKey]);
+  if (fromR) return fromR;
+  for (const k of flatKeys) {
+    const v = asStr(json?.[k]);
+    if (v) return v;
+  }
+  return "";
+}
+
+function collectIndexedLines(
+  json: Record<string, unknown>,
+  prefix: string,
+  field: string,
+  maxRows = 24,
+): string[] {
+  const lines: string[] = [];
+  for (let i = 0; i < maxRows; i++) {
+    const line = asStr(json[`${prefix}${i}__${field}`]);
+    if (!line) {
+      if (i === 0) continue;
+      break;
+    }
+    lines.push(line);
+  }
+  return lines;
+}
+
+function painPointsFromJson(json: Record<string, unknown>): string {
+  const blob = asStr(json.pain_points);
+  if (blob) return blob;
+  return collectIndexedLines(json, "pain_points__", "pain_point").join("\n");
+}
+
+function prerequisitesFromJson(json: Record<string, unknown>): string {
+  const blob = asStr(json.prerequisites);
+  if (blob) return blob;
+  const blocks: string[] = [];
+  for (let i = 0; i < 12; i++) {
+    const req = asStr(json[`prerequisites__${i}__requirement`]);
+    const det = asStr(json[`prerequisites__${i}__details`]);
+    const own = asStr(json[`prerequisites__${i}__owner`]);
+    if (!req && !det && !own) {
+      if (i === 0) continue;
+      break;
+    }
+    blocks.push([req, det, own].filter(Boolean).join(" — "));
+  }
+  return blocks.join("\n");
+}
+
+function limitationsFromJson(json: Record<string, unknown>): string {
+  const blob = asStr(json.known_limitations);
+  if (blob) return blob;
+  const blocks: string[] = [];
+  for (let i = 0; i < 12; i++) {
+    const lim = asStr(json[`known_limitations__${i}__limitation`]);
+    const imp = asStr(json[`known_limitations__${i}__impact`]);
+    const work = asStr(json[`known_limitations__${i}__workaround`]);
+    if (!lim && !imp && !work) {
+      if (i === 0) continue;
+      break;
+    }
+    blocks.push([lim, imp, work].filter(Boolean).join(" — "));
+  }
+  return blocks.join("\n");
+}
+
+function errorsFromJson(json: Record<string, unknown>): string {
+  const blob = asStr(json.common_errors);
+  if (blob) return blob;
+  const blocks: string[] = [];
+  for (let i = 0; i < 12; i++) {
+    const sym = asStr(json[`common_errors__${i}__error_symptom`]);
+    const cause = asStr(json[`common_errors__${i}__likely_cause`]);
+    const fix = asStr(json[`common_errors__${i}__resolution_steps`]);
+    if (!sym && !cause && !fix) {
+      if (i === 0) continue;
+      break;
+    }
+    blocks.push([sym, cause, fix].filter(Boolean).join(" — "));
+  }
+  return blocks.join("\n");
+}
+
+function isAbcToPartnerDirection(dir: string): boolean {
+  const d = dir.toLowerCase();
+  if (/\babc\s+to\s+partner\b/.test(d)) return true;
+  const ia = d.indexOf("abc");
+  const ip = d.indexOf("partner");
+  if (ia !== -1 && ip !== -1 && ia < ip) return true;
+  return false;
+}
+
+function isPartnerToAbcDirection(dir: string): boolean {
+  const d = dir.toLowerCase();
+  if (/\bpartner\s+to\s+abc\b/.test(d)) return true;
+  const ia = d.indexOf("abc");
+  const ip = d.indexOf("partner");
+  if (ia !== -1 && ip !== -1 && ip < ia) return true;
+  return false;
+}
+
+function dataExchangeFromJson(json: Record<string, unknown>): {
+  toPartner: string;
+  toAbc: string;
+} {
+  const toPartner: string[] = [];
+  const toAbc: string[] = [];
+  for (let i = 0; i < 16; i++) {
+    const dir = asStr(json[`data_exchange__${i}__direction`]);
+    if (!dir) {
+      if (i === 0) continue;
+      break;
+    }
+    const field = asStr(json[`data_exchange__${i}__field_name`]);
+    const dtype = asStr(json[`data_exchange__${i}__data_type`]);
+    const freq = asStr(json[`data_exchange__${i}__trigger_frequency`]);
+    const notes = asStr(json[`data_exchange__${i}__notes_conditions`]);
+    const line = [field, dtype, freq, notes].filter(Boolean).join("; ");
+    if (isAbcToPartnerDirection(dir)) {
+      toPartner.push(line || dir);
+    } else if (isPartnerToAbcDirection(dir)) {
+      toAbc.push(line || dir);
+    } else {
+      toPartner.push(`${dir}: ${line}`.trim());
+    }
+  }
+  return { toPartner: toPartner.join("\n"), toAbc: toAbc.join("\n") };
+}
+
+function contactsBlockFromJson(json: Record<string, unknown>): string {
+  const blob = asStr(json.contacts);
+  if (blob) return blob;
+  const lines: string[] = [];
+  for (let i = 0; i < 16; i++) {
+    const typ = asStr(json[`contacts__${i}__contact_type`]);
+    const nm = asStr(json[`contacts__${i}__name`]);
+    const title = asStr(json[`contacts__${i}__title`]);
+    const email = asStr(json[`contacts__${i}__email`]);
+    const phone = asStr(json[`contacts__${i}__phone_or_slack`]);
+    if (!typ && !nm && !email) {
+      if (i === 0) continue;
+      break;
+    }
+    lines.push([typ, nm, title, email, phone].filter(Boolean).join(" | "));
+  }
+  return lines.join("\n");
+}
+
+function escalationFromContacts(json: Record<string, unknown>): string {
+  const line1 = [
+    asStr(json[`contacts__1__contact_type`]),
+    asStr(json[`contacts__1__name`]),
+    asStr(json[`contacts__1__title`]),
+    asStr(json[`contacts__1__email`]),
+    asStr(json[`contacts__1__phone_or_slack`]),
+  ]
+    .filter(Boolean)
+    .join(" | ");
+  return line1;
+}
+
+function responsibilityMatrixFromJson(json: Record<string, unknown>): string {
+  const a = asStr(json["responsibility_matrix.abc_owns"]);
+  const p = asStr(json["responsibility_matrix.partner_owns"]);
+  const c = asStr(json["responsibility_matrix.customer_owns"]);
+  const parts: string[] = [];
+  if (a) parts.push(`ABC owns: ${a}`);
+  if (p) parts.push(`Partner owns: ${p}`);
+  if (c) parts.push(`Customer owns: ${c}`);
+  return parts.join("\n");
+}
+
 function normalize(
   folderName: string,
   folderPath: string,
   json: any,
 ): CatalogPartner | null {
-  const research = json?.research ?? {};
-  const brief = json?.briefData ?? {};
-  const name = String(json?.partnerName ?? folderName).trim();
+  const research = (json?.research ?? {}) as Record<string, unknown>;
+  const brief = (json?.briefData ?? {}) as Record<string, unknown>;
+  const flat = json as Record<string, unknown>;
+
+  const name =
+    asStr(json?.partnerName) ||
+    asStr(json?.partner_name) ||
+    folderName.trim();
   if (!name) return null;
-  const str = (v: any): string => String(v ?? "").trim();
+
+  const dx = dataExchangeFromJson(flat);
+  const contactsBlock = contactsBlockFromJson(flat);
+  const primaryContact =
+    pickBrief(brief, flat, "primaryContact", "contacts") || contactsBlock;
+
   const partner: CatalogPartner = {
-    id: str(json?.partnerId) || folderName,
+    id: asStr(json?.partnerId) || asStr(json?.partner_id) || folderName,
     folder: folderPath,
     name,
-    website: str(json?.website),
-    oneLiner: str(brief?.oneLiner),
-    archetype: str(research?.archetype) || str(brief?.partnershipType),
-    partnershipType: str(brief?.partnershipType),
-    launchDate: str(brief?.launchDate),
-    abcProducts: str(brief?.abcProducts),
-    segment: str(brief?.segment),
-    subSegment: str(brief?.subSegment),
-    geography: str(brief?.geography),
-    operatorValue: str(brief?.operatorValue),
-    memberValue: str(brief?.memberValue),
-    painPoints: str(brief?.painPoints),
-    qualifyingCriteria: str(brief?.qualifyingCriteria),
-    knockOuts: str(brief?.knockOuts),
-    icpNotes: str(brief?.icpNotes),
-    pricing: str(brief?.pricing),
-    discounts: str(brief?.discounts),
-    commission: str(brief?.commission),
-    integrationName: str(brief?.integrationName),
-    goLiveDate: str(brief?.goLiveDate) || str(json?.targetDateHuman),
-    setupModel: str(brief?.setupModel),
-    customerFacingDescription: str(brief?.customerFacingDescription),
-    prerequisites: str(brief?.prerequisites),
-    dataAbcToPartner: str(brief?.dataAbcToPartner),
-    dataPartnerToAbc: str(brief?.dataPartnerToAbc),
-    limitations: str(brief?.limitations),
-    errors: str(brief?.errors),
-    supportEmail: str(brief?.supportEmail),
-    activationProcess: str(brief?.activationProcess),
-    activationOwnership: str(brief?.activationOwnership),
-    postReferral: str(brief?.postReferral),
-    supportTicket: str(brief?.supportTicket),
-    primaryContact: str(brief?.primaryContact),
-    escalationContact: str(brief?.escalationContact),
-    customerQuote: str(brief?.customerQuote),
-    valueProp: str(research?.valueProp),
-    idealCustomerProfile: str(research?.idealCustomerProfile),
-    scope: str(research?.scope),
-    competitiveLandscape: str(research?.competitiveLandscape),
+    website: asStr(json?.website),
+    oneLiner: pickBrief(brief, flat, "oneLiner", "partner_one_liner"),
+    archetype:
+      asStr(research?.archetype) ||
+      pickBrief(brief, flat, "partnershipType", "partnership_type"),
+    partnershipType: pickBrief(
+      brief,
+      flat,
+      "partnershipType",
+      "partnership_type",
+    ),
+    launchDate: pickBrief(brief, flat, "launchDate", "launch_date"),
+    abcProducts: pickBrief(brief, flat, "abcProducts", "abc_products"),
+    segment: pickBrief(brief, flat, "segment", "customer_segments"),
+    subSegment: pickBrief(brief, flat, "subSegment", "sub_segments"),
+    geography: pickBrief(brief, flat, "geography", "geographies"),
+    operatorValue: pickBrief(brief, flat, "operatorValue", "operator_value"),
+    memberValue: pickBrief(brief, flat, "memberValue", "member_value"),
+    painPoints:
+      pickBrief(brief, flat, "painPoints", "pain_points") ||
+      painPointsFromJson(flat),
+    qualifyingCriteria: pickBrief(
+      brief,
+      flat,
+      "qualifyingCriteria",
+      "qualifying_criteria",
+    ),
+    knockOuts: pickBrief(brief, flat, "knockOuts", "not_a_fit"),
+    icpNotes: pickBrief(brief, flat, "icpNotes", "icp_notes", "ideal_customer_profile"),
+    pricing: pickBrief(brief, flat, "pricing", "pricing_model"),
+    discounts: pickBrief(brief, flat, "discounts", "abc_discounts"),
+    commission: pickBrief(brief, flat, "commission", "commission_model"),
+    integrationName:
+      pickBrief(brief, flat, "integrationName", "integration_name") ||
+      (asStr(flat.has_integration)
+        ? `has_integration: ${asStr(flat.has_integration)}`
+        : ""),
+    goLiveDate:
+      pickBrief(
+        brief,
+        flat,
+        "goLiveDate",
+        "target_go_live_date",
+        "onboarding_timeline",
+      ) || asStr(json?.targetDateHuman),
+    setupModel: pickBrief(brief, flat, "setupModel", "setup_model"),
+    customerFacingDescription: pickBrief(
+      brief,
+      flat,
+      "customerFacingDescription",
+      "customer_facing_workflow",
+    ),
+    prerequisites:
+      pickBrief(brief, flat, "prerequisites") || prerequisitesFromJson(flat),
+    dataAbcToPartner:
+      pickBrief(brief, flat, "dataAbcToPartner", "data_abc_to_partner") ||
+      dx.toPartner,
+    dataPartnerToAbc:
+      pickBrief(brief, flat, "dataPartnerToAbc", "data_partner_to_abc") ||
+      dx.toAbc,
+    limitations:
+      pickBrief(brief, flat, "limitations") || limitationsFromJson(flat),
+    errors: pickBrief(brief, flat, "errors") || errorsFromJson(flat),
+    supportEmail: pickBrief(
+      brief,
+      flat,
+      "supportEmail",
+      "integration_support_contact",
+    ),
+    activationProcess: pickBrief(
+      brief,
+      flat,
+      "activationProcess",
+      "activation_process",
+    ),
+    activationOwnership:
+      pickBrief(brief, flat, "activationOwnership", "activation_ownership") ||
+      responsibilityMatrixFromJson(flat),
+    postReferral: pickBrief(
+      brief,
+      flat,
+      "postReferral",
+      "post_referral_journey",
+    ),
+    supportTicket: pickBrief(
+      brief,
+      flat,
+      "supportTicket",
+      "support_ticket_process",
+    ),
+    primaryContact,
+    escalationContact:
+      pickBrief(brief, flat, "escalationContact", "escalation_contact") ||
+      escalationFromContacts(flat),
+    customerQuote: pickBrief(brief, flat, "customerQuote", "social_proof"),
+    valueProp: pickResearch(
+      research,
+      flat,
+      "valueProp",
+      "partner_one_liner",
+      "operator_value",
+    ),
+    idealCustomerProfile: pickResearch(
+      research,
+      flat,
+      "idealCustomerProfile",
+      "ideal_customer_profile",
+    ),
+    scope:
+      pickResearch(research, flat, "scope", "sales_motion", "referral_process") ||
+      [asStr(flat.upsell_cross_sell), asStr(flat.referral_process)]
+        .filter(Boolean)
+        .join("\n"),
+    competitiveLandscape:
+      pickResearch(
+        research,
+        flat,
+        "competitiveLandscape",
+        "not_a_fit",
+        "upsell_cross_sell",
+      ),
     contact: {
-      name: str(json?.contact?.name),
-      email: str(json?.contact?.email),
+      name: asStr(json?.contact?.name) || asStr(json[`contacts__0__name`]),
+      email: asStr(json?.contact?.email) || asStr(json[`contacts__0__email`]),
     },
     searchBlob: "",
   };
+
   partner.searchBlob = [
     partner.name,
     partner.website,
@@ -190,14 +482,29 @@ function normalize(
     partner.memberValue,
     partner.painPoints,
     partner.qualifyingCriteria,
+    partner.knockOuts,
     partner.icpNotes,
+    partner.pricing,
+    partner.discounts,
+    partner.commission,
     partner.integrationName,
+    partner.setupModel,
     partner.customerFacingDescription,
     partner.prerequisites,
+    partner.dataAbcToPartner,
+    partner.dataPartnerToAbc,
+    partner.limitations,
+    partner.errors,
+    partner.activationProcess,
+    partner.postReferral,
+    partner.supportTicket,
+    partner.primaryContact,
+    partner.customerQuote,
     partner.valueProp,
     partner.idealCustomerProfile,
     partner.scope,
     partner.competitiveLandscape,
+    contactsBlock,
   ]
     .filter(Boolean)
     .join(" \n ")
