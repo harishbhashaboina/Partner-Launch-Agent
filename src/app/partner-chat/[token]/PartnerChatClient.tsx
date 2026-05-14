@@ -108,8 +108,7 @@ export function PartnerChatClient({
               Partner Onboarding Chat
             </div>
             <div className="text-xs text-white/50">
-              Hi {contactName.split(" ")[0]} — this is a private intake thread
-              with the ABC Partner Launch Agent.
+              Hi {contactName.split(" ")[0]} — this is a private ABC Partner Launch Agent. We want to ensure our ABC teams and customers understand the value your solution delivers so we can promote it as best as possible. Please review and validate the information below. Feel free to suggest changes.
             </div>
           </div>
           <span className="pill-accent">
