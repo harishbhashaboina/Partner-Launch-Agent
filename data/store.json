@@ -1,26 +1,48 @@
 {
   "partners": {
-    "demo-loop-data": {
-      "id": "demo-loop-data",
-      "name": "Loop Data",
-      "website": "loopdata.io",
+    "gymlaunch": {
+      "id": "gymlaunch",
+      "name": "GymLaunch",
+      "website": "gymlaunch.com",
       "contact": {
-        "name": "Priya Shah",
-        "email": "priya@loopdata.io"
+        "name": "Partner Lead",
+        "email": "partnerships@gymlaunch.com"
       },
       "createdAt": "2026-05-12T10:29:22.195Z",
       "updatedAt": "2026-05-14T10:29:22.195Z",
       "stage": "internal-review",
       "followUps": [],
       "research": {
-        "valueProp": "Loop Data turns warehouse models into governed activation surfaces. Joint with ABC, customers move from a Snowflake or BigQuery model to a live workflow inside ABC without brittle reverse-ETL — cutting time-to-activation from weeks to hours.",
-        "idealCustomerProfile": "Mid-market data and revenue teams (300–3,000 employees) running Snowflake/BigQuery with a downstream activation gap. Strong fit when there's an analytics engineer in seat and at least one revenue system already integrated with ABC.",
-        "archetype": "Data Affiliate",
-        "archetypeRationale": "Loop Data's value lands inside ABC through a technical integration. Sales motion is integration-first, monetization typically via API fee, primary KPI is product adoption and retention.",
-        "scope": "Phase 1 (60 days): production-grade Loop ↔ ABC integration, joint landing page, one anchor customer reference. Phase 2: in-product cross-promotion + quarterly business reviews.",
-        "competitiveLandscape": "Sits alongside generic reverse-ETL tools but wins on governance and lineage on the activation path. Few competitors integrate this tightly into ABC.",
+        "valueProp": "Gym Launch is a business consulting and digital marketing agency built specifically to help Gyms and Studios grow their memberships, revenue and profit.",
+        "idealCustomerProfile": "Independent gyms and boutique studios looking to grow membership, revenue, and profitability through proven sales and marketing playbooks.",
+        "archetype": "Go-To-Market",
+        "archetypeRationale": "GymLaunch's motion is consulting + marketing services that drive demand into ABC's gym customers — classic Go-To-Market lift via co-selling and joint demand gen.",
+        "scope": "Joint demand gen with Glofox + Ignite gym customers, co-branded campaigns, and shared playbooks for membership growth.",
+        "competitiveLandscape": "Other gym-focused agencies exist, but GymLaunch's track record and depth in the fitness vertical is differentiated.",
+        "riskFlags": []
+      }
+    },
+    "your-reformer": {
+      "id": "your-reformer",
+      "name": "Your Reformer",
+      "website": "yourreformer.com",
+      "contact": {
+        "name": "Partner Lead",
+        "email": "partnerships@yourreformer.com"
+      },
+      "createdAt": "2026-04-05T10:00:00.000Z",
+      "updatedAt": "2026-05-14T15:27:15.910Z",
+      "stage": "launching",
+      "followUps": [],
+      "research": {
+        "valueProp": "YR will integrate with Glofox & Ignite allowing customers to seamlessly offer Your Reformer machine bookings, check-ins and class booking data through their preferred ABC platform.",
+        "idealCustomerProfile": "Pilates and reformer studios on Glofox or Ignite that want a unified experience for machine bookings, attendance, and class scheduling.",
+        "archetype": "Channel",
+        "archetypeRationale": "Your Reformer extends ABC's reach into the reformer Pilates segment via a hardware-aware integration — a Channel motion that opens a new buyer surface.",
+        "scope": "Phase 1: Glofox integration for reformer bookings + check-ins. Phase 2: Ignite parity and class booking analytics.",
+        "competitiveLandscape": "Few hardware-integrated reformer partners with native Glofox/Ignite support — strong defensibility.",
         "riskFlags": [
-          "Security review needed for warehouse credentials"
+          "Hardware/firmware compatibility matrix to be confirmed"
         ]
       },
       "internalAwareness": {
@@ -28,27 +50,27 @@
         "body": "## Overview\nWe've signed **Loop Data** ([loopdata.io](https://loopdata.io)) as a new Data Affiliate partner. The integration moves into onboarding this week with primary contact **Priya Shah** (priya@loopdata.io).\n\n## Value Prop\nLoop Data turns warehouse models into governed activation surfaces. Joint with ABC, customers move from a Snowflake/BigQuery model to a live workflow inside ABC without brittle reverse-ETL.\n\n## Ideal Customer Profile\nMid-market data and revenue teams (300–3,000 employees) on Snowflake/BigQuery with a downstream activation gap.\n\n## Partner Archetype — Data Affiliate\nLoop Data's value lands inside ABC through a technical integration. Integration-first sales motion. Monetization via API fee.\n\n## Scope\nPhase 1 (60 days): production-grade integration, joint landing page, one anchor reference. Phase 2: in-product cross-promotion + QBRs.\n\n## What to expect next\n- Partner-facing launch chat goes out today.\n- The agent will follow up if the partner is unresponsive at 10/20/30 days.\n- Once intake closes, we'll publish a launch timeline with three communications.\n\nReply here with edits or call out blockers before we hit \"Approve & Launch to Partner\"."
       }
     },
-    "demo-northbeam": {
-      "id": "demo-northbeam",
-      "name": "Northbeam Advisors",
-      "website": "northbeam.co",
+    "pipe": {
+      "id": "pipe",
+      "name": "Pipe",
+      "website": "pipe.com",
       "contact": {
-        "name": "Marcus Reed",
-        "email": "marcus@northbeam.co"
+        "name": "Partner Lead",
+        "email": "partnerships@pipe.com"
       },
       "createdAt": "2026-04-30T10:29:22.195Z",
       "updatedAt": "2026-05-13T10:29:22.195Z",
       "stage": "partner-chat",
       "followUps": [],
       "research": {
-        "valueProp": "Northbeam is a fast-growing GTM advisory shop that lands ABC inside mid-market deals via outbound referral. Their team brings warm intros and senior-level relationships across the revenue stack.",
-        "idealCustomerProfile": "Mid-market companies (500–5,000 employees) actively re-platforming their revenue stack, where Northbeam is already advising on tooling decisions.",
-        "archetype": "Go-To-Market",
-        "archetypeRationale": "Northbeam's strongest motion is outbound referral. Value: higher close rates and lower churn. Revenue share monetization.",
-        "scope": "Phase 1: 5 anchor referrals in 60 days + co-branded one-pager. Phase 2: shared QBR cadence + jointly run executive briefings.",
-        "competitiveLandscape": "Competing advisory shops exist, but Northbeam's tight integration into ABC's deal cycle differentiates.",
+        "valueProp": "Pipe is a capital provider that ABC Fitness Solutions, LLC has partnered with to launch ABC Capital and is not otherwise affiliated with ABC Fitness Solutions, LLC.",
+        "idealCustomerProfile": "ABC gym and studio customers seeking working capital and growth financing through ABC Capital.",
+        "archetype": "Platform",
+        "archetypeRationale": "Pipe powers the ABC Capital platform offering — a Platform partnership that adds a financial services surface inside ABC's product.",
+        "scope": "Launch ABC Capital, joint underwriting flow, and in-product offers for eligible ABC customers.",
+        "competitiveLandscape": "Embedded capital providers exist; Pipe differentiates on speed, pricing, and developer-grade APIs.",
         "riskFlags": [
-          "Referral attribution flow not yet wired"
+          "Compliance and disclosure language pending legal review"
         ]
       },
       "internalAwareness": {
@@ -116,13 +138,13 @@
         ]
       }
     },
-    "demo-helix-platform": {
-      "id": "demo-helix-platform",
-      "name": "Helix Platform",
-      "website": "helixplatform.com",
+    "hyrox": {
+      "id": "hyrox",
+      "name": "HYROX",
+      "website": "hyrox.com",
       "contact": {
-        "name": "Avery Chen",
-        "email": "avery@helixplatform.com"
+        "name": "Partner Lead",
+        "email": "partnerships@hyrox.com"
       },
       "createdAt": "2026-04-04T10:29:22.195Z",
       "updatedAt": "2026-05-12T10:29:22.195Z",
@@ -246,27 +268,27 @@
         ]
       }
     },
-    "demo-quietchannel": {
-      "id": "demo-quietchannel",
-      "name": "QuietChannel",
-      "website": "quietchannel.com",
+    "replify": {
+      "id": "replify",
+      "name": "Replify",
+      "website": "replify.ai",
       "contact": {
-        "name": "Sam Patel",
-        "email": "sam@quietchannel.com"
+        "name": "Partner Lead",
+        "email": "partnerships@replify.ai"
       },
       "createdAt": "2026-03-30T10:29:22.195Z",
       "updatedAt": "2026-04-09T10:29:22.195Z",
       "stage": "partner-chat",
       "followUps": [],
       "research": {
-        "valueProp": "QuietChannel is a developer-tooling vendor whose users overlap heavily with ABC's ICP. Joint go-to-market drives inbound leads from QuietChannel into ABC.",
-        "idealCustomerProfile": "Series B–D companies (100–800 employees) standardizing on modern developer infra.",
-        "archetype": "Channel",
-        "archetypeRationale": "QuietChannel reaches the same buyer and drives inbound leads. Monetized on gross revenue.",
-        "scope": "Co-marketing + inbound lead routing in Phase 1.",
-        "competitiveLandscape": "Unique niche; few direct competitors.",
+        "valueProp": "Replify AI provides value by acting as a 24/7 virtual team member that automates lead capture, appointment booking, and member inquiries across phone, text, and email.",
+        "idealCustomerProfile": "Gyms and studios that want to capture more leads after-hours and reduce no-shows by automating the front-desk conversation across phone, text, and email.",
+        "archetype": "Platform",
+        "archetypeRationale": "Replify slots into ABC as an always-on AI front-desk layer — a Platform partnership that extends booking, lead capture, and member service inside Glofox and Ignite.",
+        "scope": "Phase 1: lead capture + appointment booking integration. Phase 2: member inquiry routing and analytics.",
+        "competitiveLandscape": "Generic AI receptionists exist; Replify wins on fitness-vertical context and native ABC booking integration.",
         "riskFlags": [
-          "Partner hasn't replied to intake in 5 weeks"
+          "PII handling and call recording compliance to be confirmed per region"
         ]
       },
       "internalAwareness": {
@@ -280,7 +302,10 @@
         "intakeIndex": 0,
         "intakeAnswers": {},
         "attachments": [],
-        "partnerInputs": {},
+        "partnerInputs": {
+          "reviewNotes": "Brief looks accurate."
+        },
+        "lastPartnerResponseAt": "2026-05-13T10:00:00.000Z",
         "messages": [
           {
             "id": "m1",
@@ -289,6 +314,24 @@
             "content": "Hi Sam 👋\n\nI'm ABC's Partner Launch Agent. Congrats on signing with ABC.\n\nWe'll capture your **Partner Launch Intake** here so we can fill the launch templates (Partner Data Brief, Integration Guide, decks, and FAQs) for your team.\n\nTake your time — you can attach files where helpful (logos, one-pagers, etc.).\n\n**Partner basics (all templates)** · Question 1 of 43\n\nWhat is the partner name?",
             "meta": {
               "step": "intake"
+            }
+          },
+          {
+            "id": "m2",
+            "role": "partner",
+            "ts": "2026-05-13T10:00:00.000Z",
+            "content": "Brief looks accurate.",
+            "meta": {
+              "step": "review-details"
+            }
+          },
+          {
+            "id": "m3",
+            "role": "agent",
+            "ts": "2026-05-13T10:00:05.000Z",
+            "content": "Thanks — got it. ✅\n\nNext, can you walk me through the **integration**? A short description is perfect, and if you have an integration / API doc, please attach it.",
+            "meta": {
+              "step": "integration-details"
             }
           }
         ]

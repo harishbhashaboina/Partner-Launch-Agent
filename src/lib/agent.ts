@@ -418,7 +418,7 @@ export async function generateLaunchTimeline(
         sendDate: t(21),
         status: "drafted",
         subject: `Coming soon: ${partner.name} × ABC`,
-        body: comingSoonComm(partner, targetISO),
+        body: comingSoonComm(partner, targetISO, t(10)),
         attachments: ["Partner Brief (1-pager)", "Key dates"],
       },
       {
@@ -452,24 +452,27 @@ export async function generateLaunchTimeline(
   };
 }
 
-function comingSoonComm(p: Partner, targetISO: string): string {
+function comingSoonComm(
+  p: Partner,
+  targetISO: string,
+  pilotISO: string,
+): string {
   const r = p.research!;
-  return `## Coming soon: ${p.name} × ABC
+  return `We are excited to introduce our newest ${r.archetype} Partnership, **${p.name}**. Here's some key details to be aware of.
 
-We're a few weeks out from launching our integration with **${p.name}** (${r.archetype}). Here's the short version so you can start positioning it.
-
-**Why it matters**
-${r.valueProp}
+**Why it Matters**
+${r.valueProp} They offer best-in-class support and preferred pricing for ABC customers.
 
 **Who it's for**
-${r.idealCustomerProfile}
+This will be available for Glofox clients initially and for Ignite clients later (Q4). ${r.idealCustomerProfile}
 
-**Key dates**
-- Beta with anchor customers: see launch timeline
-- Launch readiness review: see launch timeline
-- Public launch: ${humanDate(targetISO)}
+**Key Dates**
+- Glofox Pilot: ${humanDate(pilotISO)}
+- Glofox Start Sell: ${humanDate(targetISO)}
+- Ignite: TBD (Q4)
 
-The full Prepare-for-Launch packet (process guide, integration guide, FAQ, internal talk tracks) drops one week out. Reply here with questions.`;
+**Prepare for Launch**
+Your full Launch Readiness packet will drop 2 weeks before your finalized start sell date. Additional details will be posted here. Stay tuned!`;
 }
 
 function resolveTargetDate(raw?: string): Date {
