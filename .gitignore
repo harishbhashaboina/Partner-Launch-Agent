@@ -1,0 +1,17 @@
+# Dependencies & build
+node_modules/
+.next/
+out/
+
+# Local / generated
+generated/
+uploads/
+.DS_Store
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# IDE (optional local)
+.idea/

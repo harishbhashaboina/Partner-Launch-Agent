@@ -259,17 +259,25 @@ function ensureUrl(s: string): string {
 export interface PartnerChatPrompt {
   step:
     | "welcome"
+    | "intake"
+    | "summary"
+    | "closed"
     | "review-details"
     | "integration-details"
-    | "target-date"
-    | "summary"
-    | "closed";
+    | "target-date";
   message: string;
 }
 
 export async function partnerChatPrompt(args: {
   partner: Partner;
-  step: PartnerChatPrompt["step"];
+  step:
+    | "welcome"
+    | "intake"
+    | "summary"
+    | "closed"
+    | "review-details"
+    | "integration-details"
+    | "target-date";
   lastPartnerMessage?: string;
 }): Promise<string> {
   const { partner, step } = args;
@@ -278,66 +286,61 @@ export async function partnerChatPrompt(args: {
     case "welcome":
       return `Hi ${partner.contact.name.split(" ")[0]} 👋
 
-I'm ABC's Partner Launch Agent. Congrats on signing with ABC — I'll help us go from "signed" to "live" cleanly.
+I'm ABC's Partner Launch Agent. Congrats on signing with ABC.
 
-Here's the brief our team put together about **${partner.name}** so far:
+We'll capture your **Partner Launch Intake** here so we can fill the launch templates (Partner Data Brief, Integration Guide, decks, and FAQs) for your team.
 
-**Value Prop**
-${r.valueProp}
-
-**Ideal Customer Profile**
-${r.idealCustomerProfile}
-
-**Scope**
-${r.scope}
-
-Could you review the above and share anything you'd change, add, or want our team to know? Even a quick "looks good" is great.`;
-    case "review-details":
-      return `Thanks — got it. ✅
-
-Next, can you walk me through the **integration**? A short description is perfect, and if you have an integration / API doc, please attach it. The more concrete, the faster we can build the joint go-to-market.
-
-A few things that help:
-- Which ABC surfaces / objects does it touch?
-- Auth model (OAuth, API key, etc.)
-- Any rate limits or environments (sandbox / prod) we should know about`;
-    case "integration-details":
-      return `Great — that gives me what I need to scope the launch.
-
-What's a realistic **target integration completion date**? (You can give an exact date or a window — e.g. "early June" — and I'll work backward to build the launch timeline.)`;
-    case "target-date":
-      return `Locked in. Closing out this intake — give me a moment to summarize and hand back to the ABC partner team.`;
+Take your time — you can attach files where helpful (logos, one-pagers, etc.).`;
     case "summary":
       return summaryMessage(partner);
     case "closed":
-      return `This intake is closed. The ABC partner team has everything they need and will reach out with the launch plan shortly. If anything changes on your side, reply here and I'll re-open the thread.`;
+      return `This intake is closed. The ABC partner team has everything they need and will reach out with the launch plan shortly. If anything changes on your side, reply here and we'll re-open the thread.`;
+    default:
+      return summaryMessage(partner);
   }
 }
 
+function strAns(
+  a: Record<string, unknown> | undefined,
+  key: string,
+): string {
+  if (!a) return "";
+  const v = a[key];
+  return typeof v === "string" ? v : "";
+}
+
 function summaryMessage(p: Partner): string {
-  const s = p.partnerChat?.partnerInputs;
+  const a = p.partnerChat?.intakeAnswers ?? {};
   const r = p.research!;
-  return `Here's what I've captured — please confirm or correct anything:
-
-**Partner:** ${p.name}
-**Primary contact:** ${p.contact.name} (${p.contact.email})
-
-**Value Prop**
-${r.valueProp}
-
-**Ideal Customer Profile**
-${r.idealCustomerProfile}
-
-**Partner notes / edits**
-${s?.reviewNotes?.trim() || "_(none)_"}
-
-**Integration overview**
-${s?.integrationDescription?.trim() || "_(none)_"}
-
-**Target completion date**
-${s?.targetDate ? humanDate(s.targetDate) : "_TBD_"}
-
-If this all looks right, hit **Confirm & Close** below and I'll publish everything to the ABC partner team.`;
+  const lines = [
+    "Here's what I've captured from the intake — please confirm or correct anything:",
+    "",
+    `**Partner (from intake):** ${strAns(a, "partner_name") || p.name}`,
+    `**Primary contact:** ${p.contact.name} (${p.contact.email})`,
+    "",
+    "**Research brief (internal draft)**",
+    "",
+    "**Value Prop**",
+    r.valueProp,
+    "",
+    "**Ideal Customer Profile**",
+    r.idealCustomerProfile,
+    "",
+    "**Scope**",
+    r.scope,
+    "",
+    "**Integration overview (from intake)**",
+    strAns(a, "customer_facing_workflow") || "_(none)_",
+    "",
+    "**Target go-live (from intake)**",
+    strAns(a, "target_go_live_date") || strAns(a, "launch_date") || "_TBD_",
+    "",
+    "**Partner notes / corrections**",
+    (p.partnerChat?.partnerInputs?.reviewNotes ?? "").trim() || "_(none — add below if needed)_",
+    "",
+    "If this looks right, hit **Confirm & Close** below. We'll generate filled templates under your partner folder.",
+  ];
+  return lines.join("\n");
 }
 
 function humanDate(iso: string): string {
@@ -356,8 +359,13 @@ function humanDate(iso: string): string {
 export async function generateLaunchTimeline(
   partner: Partner,
 ): Promise<LaunchTimeline> {
-  const rawTarget = partner.partnerChat?.partnerInputs.targetDate;
-  const target = resolveTargetDate(rawTarget);
+  const rawTarget =
+    strAns(partner.partnerChat?.intakeAnswers, "target_go_live_date") ||
+    strAns(partner.partnerChat?.intakeAnswers, "launch_date") ||
+    partner.partnerChat?.partnerInputs?.targetDate;
+  const target = resolveTargetDate(
+    typeof rawTarget === "string" ? rawTarget : String(rawTarget ?? ""),
+  );
   const targetISO = formatISO(target);
 
   const t = (offsetDaysBeforeLaunch: number) =>
@@ -365,7 +373,8 @@ export async function generateLaunchTimeline(
 
   const r = partner.research!;
   const integration =
-    partner.partnerChat?.partnerInputs.integrationDescription ||
+    strAns(partner.partnerChat?.intakeAnswers, "customer_facing_workflow") ||
+    partner.partnerChat?.partnerInputs?.integrationDescription ||
     "Integration details to be confirmed with partner.";
 
   return {

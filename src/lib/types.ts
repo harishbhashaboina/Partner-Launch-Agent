@@ -53,11 +53,13 @@ export interface Attachment {
 
 export type PartnerChatStep =
   | "welcome"
+  | "intake"
+  | "summary"
+  | "closed"
+  /** legacy rows in persisted store.json */
   | "review-details"
   | "integration-details"
-  | "target-date"
-  | "summary"
-  | "closed";
+  | "target-date";
 
 export interface PartnerChatState {
   token: string;
@@ -65,11 +67,16 @@ export interface PartnerChatState {
   messages: ChatMessage[];
   attachments: Attachment[];
   lastPartnerResponseAt?: string;
-  partnerInputs: {
+  /** @deprecated legacy intake; retained for older store rows */
+  partnerInputs?: {
     reviewNotes?: string;
     integrationDescription?: string;
     targetDate?: string;
   };
+  /** Index of the next question in the flattened intake questionnaire */
+  intakeIndex?: number;
+  /** Structured answers keyed by question id (including expanded repeatable keys) */
+  intakeAnswers?: Record<string, unknown>;
 }
 
 export interface LaunchCommunication {
